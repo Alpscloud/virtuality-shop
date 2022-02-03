@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Project name</title>
+	<title>Virtuality shop</title>
 
 	<!-- Meta tags -->
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="author" content="Serhii 'winde' Kuptsov">
+	
 	
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -24,8 +24,6 @@
 	<meta name="msapplication-navbutton-color" content="#000000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
-	<!-- All libs styles -->
-<!-- 	<link rel="stylesheet" href="css/libs.min.css"> -->
 	<!-- Main file with styles -->
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -42,40 +40,3002 @@
 
 		<!-- Header -->
 		<header class="header">
-	<div class="container">
-		<div class="row align-vertical-center header__row">
-			<!-- NAV -->
-			<nav class="nav">
-	<ul class="nav__list">
-		<li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
-	</ul>
-</nav>
-			<!-- //NAV -->
-		</div>
-	</div>
 
+	<div class="header-top">
+		<div class="container">
+			<div class="row align-horisontal-between align-vertical-center header-top__row">
+				<a href="index.html" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+
+				<div class="header-contacts">
+					<div class="row align-horisontal-end align-vertical-center header-contacts__row row-nowrap">
+						
+						<div class="header-contacts__item hidden-tablet">
+							<button class="btn-search btn-search__sm" type="button">
+								<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+								</svg>
+							</button>
+						</div>
+
+						<div class="header-contacts__item">
+							<button class="btn-hamburger" type="button">
+								<svg  viewBox="0 0 15 11" xmlns="http://www.w3.org/2000/svg">
+									<rect width="15" height="1" rx="0.5" />
+									<rect y="5" width="15" height="1" rx="0.5" />
+									<rect y="10" width="15" height="1" rx="0.5" />
+								</svg>
+								<span>Меню</span>
+							</button>
+						</div>
+
+						<div class="header-contacts__item hidden-tablet">
+							<p class="worktime ic-block ic-block__worktime">Пн-Пт с <b>10:00-19:00</b>, Сб-Вс: <b>10:00-20:00</b></p>
+						</div>
+						<div class="header-contacts__item">
+							<a href="tel:+7 (499) 404-13-91" class="phone-link ic-block ic-block__phone"><b>+7 (499) 404-13-91</b></a>
+						</div>
+
+						<button class="btn-link js-open-callback-btn hidden-mobile" type="button">Заказать звонок</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //header top -->
+
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row align-horisontal-between align-vertical-center header-bottom__row row-nowrap">
+				<!-- Catalog btn -->
+				<button class="btn-catalog b-radius-7" type="button">
+					<svg  viewBox="0 0 15 11"  xmlns="http://www.w3.org/2000/svg">
+						<rect width="15" height="1" rx="0.5" />
+						<rect y="5" width="15" height="1" rx="0.5" />
+						<rect y="10" width="15" height="1" rx="0.5" />
+					</svg>
+					<span>Каталог <i>товаров</i></span>
+				</button>
+				<!-- //Catalog btn -->
+
+				<div class="search-wrapper">
+					
+					<div class="search js-search">
+						<form class="search-form">
+							<div class="search-form__group">
+								<input type="text" class="search-form__input b-radius-7" placeholder="Поиск по магазину ..." name="s" required>
+								<button class="search-form__btn" type="submit">
+									<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<button class="btn-search btn-search__mobile js-toggle-mobile-search-btn" type="button">
+						<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+						</svg>
+					</button>
+				</div>
+
+				<div class="header-tools">
+					<div class="header-tools__item--col">
+						<div class="header-tools__item">
+							<a href="page-faq.html" class="header-tools__link">
+								<span class="header-tools__link--text">FAQ</span>
+								<span class="header-tools__link--ic">
+									<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.9887 8.22133e-06C17.066 -0.00735394 22 4.93082 22 11.011C22 17.0655 17.0605 22.0018 11.0104 22C4.92772 22 -0.00633005 17.0637 6.09568e-06 10.9871C0.00453191 4.92806 4.92772 0.00645012 10.9887 8.22133e-06ZM11.7554 13.054C11.5544 12.4476 11.9364 12.177 12.2858 11.8798C13.0932 11.1859 13.8599 10.4534 14.2817 9.43738C14.8483 8.0717 14.6664 6.79068 13.7313 5.67071C12.7673 4.52498 11.511 4.11086 10.0781 4.49369C8.66695 4.87008 7.79799 5.84281 7.47575 7.29775C7.43377 7.53502 7.40356 7.77429 7.38523 8.01464H9.15664C9.2028 7.81771 9.23267 7.63641 9.28789 7.46248C9.36622 7.22278 9.49208 7.00196 9.65769 6.81368C9.8233 6.62539 10.0251 6.47365 10.2507 6.36781C10.4763 6.26198 10.7208 6.20432 10.9692 6.19838C11.2176 6.19245 11.4645 6.23837 11.6947 6.33331C12.6804 6.75387 13.0923 7.88949 12.5501 8.84381C12.2927 9.27261 11.9814 9.6655 11.6241 10.0126C11.157 10.4856 10.6339 10.9015 10.146 11.3543C10.0446 11.4463 9.93508 11.5917 9.92693 11.7224C9.89978 12.1586 9.91698 12.5976 9.91698 13.0568L11.7554 13.054ZM9.93236 16.7084H11.6947V14.947H9.93236V16.7084Z" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						
+					</div>
+
+					<div class="header-tools__item--col hidden-mobile-xs">
+						<div class="header-tools__item">
+							<a href="page-compare.html" class="header-tools__link">
+								<span class="header-tools__link--text">Сравнение</span>
+								<span class="header-tools__link--ic">
+									<svg viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z" />
+									</svg>
+								</span>
+
+								<span class="header-tools__link--count">10</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="header-tools__item--col">
+						<div class="header-tools__item">
+							<a href="page-cart.html" class="header-tools__link">
+								<span class="header-tools__link--text">Корзина</span>
+								<span class="header-tools__link--ic">
+									<svg viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.6119 7.55085C21.2924 7.16525 20.8054 6.9189 20.3237 6.9189H18.9831L13.8092 0.390543C13.4898 -0.0218305 12.9242 -0.102163 12.4948 0.197745C12.0916 0.524431 12.013 1.10283 12.3063 1.54198C12.3063 1.56875 12.3324 1.56875 12.3324 1.59553L16.5951 6.91355H5.1215L9.35799 1.59553C9.70885 1.20994 9.67743 0.610119 9.30563 0.2513C8.93382 -0.107519 8.34207 -0.0753856 7.99121 0.304855C7.96503 0.331633 7.93885 0.35841 7.91266 0.385188L2.73356 6.94568H1.66004C0.748849 6.94568 0 7.71687 0 8.64873C0 8.75584 0 8.86831 0.0261835 8.97542L2.17323 20.0238C2.38794 21.1753 3.37768 22 4.53499 22H17.4592C18.6113 22 19.6062 21.1753 19.8209 20.0238L21.968 8.97542C22.0675 8.48271 21.9313 7.96322 21.6119 7.55085ZM8.20592 16.516C8.20592 17.0354 7.77651 17.4746 7.26855 17.4746C6.76059 17.4746 6.33118 17.0354 6.33118 16.516V12.6225C6.33118 12.103 6.76059 11.6639 7.26855 11.6639C7.77651 11.6639 8.20592 12.103 8.20592 12.6225V16.516ZM11.9292 16.516C11.9292 17.0354 11.4998 17.4746 10.9918 17.4746C10.4839 17.4746 10.0545 17.0354 10.0545 16.516V12.6225C10.0545 12.103 10.4839 11.6639 10.9918 11.6639C11.4998 11.6639 11.9292 12.103 11.9292 12.6225V16.516ZM15.6316 16.516C15.6316 17.0354 15.2022 17.4746 14.6942 17.4746C14.1862 17.4746 13.7568 17.0354 13.7568 16.516V12.6225C13.7568 12.103 14.1862 11.6639 14.6942 11.6639C15.2022 11.6639 15.6316 12.103 15.6316 12.6225V16.516Z" />
+									</svg>
+								</span>
+
+								<span class="header-tools__link--count">10</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="header-tools__item--col">
+						<div class="header-tools__item">
+							<button type="button" class="header-tools__link js-open-login-popup-btn">
+								<span class="header-tools__link--text">Войти</span>
+								<span class="header-tools__link--ic">
+									<svg  viewBox="0 0 16 20"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.88205 9.63281C9.15142 9.63281 10.2485 9.15625 11.1472 8.22266C12.0459 7.28516 12.4989 6.14062 12.4989 4.81641C12.4989 3.49219 12.0421 2.34766 11.1472 1.41016C10.2485 0.472656 9.15142 0 7.88205 0C6.61268 0 5.51556 0.476562 4.6169 1.41016C3.71823 2.34375 3.26141 3.49219 3.26141 4.81641C3.26141 6.14062 3.71823 7.28516 4.61315 8.22266C5.51182 9.16016 6.61268 9.63281 7.88205 9.63281Z" />
+										<path d="M15.9588 15.3789C15.9326 14.9883 15.8802 14.5625 15.8053 14.1133C15.7267 13.6602 15.6256 13.2344 15.5057 12.8438C15.3822 12.4414 15.2137 12.0391 15.004 11.6602C14.7868 11.2617 14.5322 10.918 14.2476 10.6328C13.948 10.3359 13.5848 10.0977 13.1617 9.92188C12.7423 9.75 12.2743 9.66016 11.7763 9.66016C11.5816 9.66016 11.3906 9.74219 11.0274 9.99219C10.8027 10.1445 10.5406 10.3203 10.2448 10.5195C9.99391 10.6875 9.65317 10.8438 9.23379 10.9844C8.82565 11.1211 8.40627 11.1914 7.99813 11.1914C7.58998 11.1914 7.17061 11.1211 6.76246 10.9844C6.34308 10.8438 6.00234 10.6875 5.75146 10.5195C5.4594 10.3242 5.19729 10.1484 4.96887 9.99219C4.60192 9.74219 4.4147 9.66016 4.21999 9.66016C3.72197 9.66016 3.25392 9.75 2.83454 9.92188C2.41142 10.0977 2.04821 10.3359 1.74865 10.6328C1.46408 10.918 1.20945 11.2617 0.992277 11.6602C0.782588 12.043 0.614088 12.4414 0.490522 12.8438C0.3707 13.2344 0.2696 13.6602 0.190967 14.1133C0.112333 14.5625 0.0599111 14.9883 0.0374444 15.3789C0.0112333 15.7617 0 16.1602 0 16.5586C0 17.6016 0.318278 18.4492 0.943599 19.0703C1.56892 19.6875 2.38895 20 3.38498 20H12.615C13.611 20 14.4311 19.6875 15.0527 19.0742C15.6817 18.4531 16 17.6055 16 16.5625C16 16.1562 15.985 15.7617 15.9588 15.3789Z" />
+									</svg>
+								</span>
+
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //header bottom -->
+
+	
 </header>
 		<!-- //Header -->
 
 		<!-- Main -->
 		<main class="main">
-			<div class="content">
-				<ol>
-					<li>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текст приставка взобравшись предупредила продолжил, путь заманивший скатился до правилами маленькая несколько, по всей бросил, всеми силуэт курсивных семь даль. Первую!</li>
-					<li>Подзаголовок страну которое предупредила путь над диких силуэт лучше живет букв то, использовало если своих ее lorem приставка послушавшись строчка толку свое дорогу образ переулка безопасную. Свое курсивных, приставка силуэт!</li>
-					<li>Заманивший меня ты продолжил вопрос своего океана. Переписывается скатился, они ведущими, заглавных семь моей. Всеми алфавит инициал все маленький подпоясал правилами пустился, пояс использовало, рыбного сих предупредила взгляд страну однажды.</li>
-					<li>Ipsum все коварных буквоград, путь страну, щеке его мир переписали страна составитель, раз вершину жаренные по всей семантика знаках. Грустный его переулка, большого, необходимыми своих буквоград собрал наш деревни маленькая о.</li>
-					<li>Дороге заглавных силуэт не журчит живет языкового. Грамматики маленькая несколько гор знаках океана, необходимыми она заманивший по всей одна, однажды ручеек своих запятых вскоре первую над мир пор безопасную города жизни.</li>
-					<li>Свою коварный рукопись силуэт пустился оксмокс лучше предложения, алфавит залетают буквоград агенство, вопроса запятой языкового подпоясал если, текстами подзаголовок. Свое, которой проектах правилами мир одна! Последний, имени, жизни. От всех, рекламных.</li>
-					<li>Одна агенство живет там ручеек своих журчит инициал щеке рекламных скатился первую ты подзаголовок дороге коварный страна он дал все алфавит, свой? Приставка инициал до, речью. Страна свой одна, себя.</li>
-					<li>Переулка курсивных даль однажды рекламных обеспечивает букв прямо за продолжил последний его предупредила, вскоре речью, назад он составитель живет одна! Алфавит взобравшись напоивший щеке на берегу! Бросил, путь, сбить! Взобравшись, вопроса.</li>
-					<li>Себя меня всемогущая языкового имени грустный семантика ему переписывается парадигматическая свой точках строчка диких продолжил она назад речью повстречался его на берегу несколько, своих, пор бросил, ipsum букв рыбного буквоград! Ручеек.</li>
-					<li>Деревни его большой подпоясал эта продолжил за страна образ буквенных, пояс путь, грустный то мир толку единственное рыбными если имеет. Страну текстами точках заголовок приставка рыбными сих до повстречался запятой.</li>
-				</ol>
+
+			<h1 class="w3c">Интернет-магазин Virtuality Club</h1>
+
+
+			<section class="sect__promo color-bg gutter-bottom">
+
+				<!-- Breadcrumbs -->
+				<div class="breadcrumbs">
+					<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+						<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+							<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+								<meta content="1" itemprop="position">
+								<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+									<span itemprop="name">
+										<span>Главная</span>
+									</span>
+								</a>
+							</li>
+
+							<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+								<meta content="2" itemprop="position">
+								<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+									<span itemprop="name">Интернет-магазин</span>
+								</span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //Breadcrumbs -->
+
+
+				<div class="container">
+
+					<div class="promo-block gutter-bottom">
+						<div class="row promo-block__row row-nowrap">
+
+							<div class="promo-slider__wrapper">
+								<div class="promo-slider flex-slider slider-gutters js-promo-slider">
+									<div class="promo-slide bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+										<div class="promo-slide__content">
+											<p class="company-name">Virtuality  Club</p>
+
+											<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+											<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+											<a href="#" class="btn">
+												<span>Подробнее</span>
+												<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>											</a>
+										</div>
+
+										<div class="promo-slide__img">
+											<img src="img/promo/1.png" alt="">
+										</div>
+									</div>
+									<!-- //slide -->
+
+									<div class="promo-slide bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+										<div class="promo-slide__content">
+											<p class="company-name">Virtuality  Club</p>
+
+											<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+											<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+											<a href="#" class="btn">
+												<span>Подробнее</span>
+												<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>											</a>
+										</div>
+
+										<div class="promo-slide__img">
+											<img src="img/promo/1.png" alt="">
+										</div>
+									</div>
+									<!-- //slide -->
+								</div>
+
+								<!-- Controls -->
+								<div class="slider-controls">
+									<div class="slider-navigation">
+										<button class="slider-navigation__btn slider-navigation__btn--prev js-promo-slider-btn-prev b-radius-7" type="button">
+											<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>										</button>
+										<button class="slider-navigation__btn slider-navigation__btn--next js-promo-slider-btn-next b-radius-7" type="button">
+											<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>										</button>
+									</div>
+
+									<div class="slider-pagination js-promo-slider-pagination"></div>
+								</div>
+								<!-- //Controls -->
+							</div>
+
+							<div class="promo-block__offer">
+
+								<!-- Timer -->
+								<div class="timer-wrapper">
+									<p class="timer-title">Товары со скидкой</p>
+									<div class="timer b-radius-10">
+										<div class="timer-items">
+											<div class="timer-item">
+												<span class="timer-item__value js-timer-days">02</span>
+												<span class="timer-item__label js-timer-days-label">Дней</span>
+											</div>
+											<span class="timer-item__divider">:</span>
+											<div class="timer-item">
+												<span class="timer-item__value js-timer-hours">23</span>
+												<span class="timer-item__label js-timer-hours-label">Часов</span>
+											</div>
+											<span class="timer-item__divider">:</span>
+											<div class="timer-item">
+												<span class="timer-item__value js-timer-minutes">54</span>
+												<span class="timer-item__label js-timer-minutes-label">Минут</span>
+											</div>
+											<span class="timer-item__divider">:</span>
+											<div class="timer-item">
+												<span class="timer-item__value js-timer-seconds">10</span>
+												<span class="timer-item__label js-timer-seconds-label">Секунд</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //Timer -->
+
+								<div class="promo-products-cards-slider__wrapper">
+
+									<div class="promo-products-cards-slider js-promo-products-cards-slider slider-gutters">
+										<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
 			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>										<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>										<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>									</div>
+
+
+									<div class="slider-pagination js-promo-products-cards-slider-pagination"></div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="virtuality">
+	<img src="img/virtuality.svg" alt="">
+</div>					</div>
+
+
+					<div class="advantages  border-top-block gutter-top">
+						<h2 class="text-center sect-title">Преимущества компании</h2>
+
+						<div class="advantages-slider__wrapper">
+
+							<div class="advantages-slider js-advantages-slider">
+
+								<div class="advantage">
+									<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/1.svg');"></span>
+									<h3 class="advantage__title">Надежная и быстрая доставка</h3>
+								</div>
+
+								<!-- //adv item -->
+
+
+								<div class="advantage">
+									<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/2.svg');"></span>
+									<h3 class="advantage__title">Оригинальные и качественные товары</h3>
+								</div>
+
+								<!-- //adv item -->
+
+
+								<div class="advantage">
+									<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/3.svg');"></span>
+									<h3 class="advantage__title">Гарантия на товары Virtuality Club</h3>
+								</div>
+
+								<!-- //adv item -->
+
+
+								<div class="advantage">
+									<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/4.svg');"></span>
+									<h3 class="advantage__title">Сервисный центр при магазине</h3>
+								</div>
+
+								<!-- //adv item -->
+
+
+								<div class="advantage">
+									<span class="advantage__ic" style="background-image: url('img/icons/svg/advantages/5.svg');"></span>
+									<h3 class="advantage__title">Эксперты на рынка<br> с 2015г.</h3>
+								</div>
+
+								<!-- //adv item -->
+							</div>
+
+							<div class="slider-pagination js-advantages-slider-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+				
+			</section>
+			<!-- //sect promo -->
+
+
+			<section class="sect__products-cards gutters">
+				
+				<div class="container">
+					<div class="products-cards__entering">
+						<div class="row align-vertical-center align-horisontal-between">
+							<h2 class="sect-title">Хит продаж</h2>
+
+							<div class="tab-controls">
+								<button class="tab-controls__btn b-radius-7 is-active" type="button">Для игр</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Для бизнеса</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Аксессуары</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Комплекты</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="products-cards-slider__wrapper">
+
+	<div class="products-cards-slider js-products-cards-slider flex-slider slider-gutters">
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+	</div>
+
+
+	<!-- Controls -->
+	<div class="slider-controls">
+		<div class="slider-navigation">
+			<button class="slider-navigation__btn slider-navigation__btn--prev js-products-cards-slider-btn-prev b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+			<button class="slider-navigation__btn slider-navigation__btn--next js-products-cards-slider-btn-next b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+		</div>
+
+		<div class="slider-pagination js-products-cards-slider-pagination"></div>
+	</div>
+	<!-- //Controls -->
+</div>				</div>
+				<!-- //container -->
+			</section>
+			<!-- //sect products -->
+
+			<section class="sect__products-cards gutters">
+				
+				<div class="container">
+					<div class="products-cards__entering">
+						<div class="row align-vertical-center align-horisontal-between">
+							<h2 class="sect-title">Товары брендов</h2>
+
+							<div class="tab-controls">
+								<button class="tab-controls__btn b-radius-7 is-active" type="button">Для игр</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Для бизнеса</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Аксессуары</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Комплекты</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="products-cards-slider__wrapper">
+
+	<div class="products-cards-slider js-products-cards-slider flex-slider slider-gutters">
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+	</div>
+
+
+	<!-- Controls -->
+	<div class="slider-controls">
+		<div class="slider-navigation">
+			<button class="slider-navigation__btn slider-navigation__btn--prev js-products-cards-slider-btn-prev b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+			<button class="slider-navigation__btn slider-navigation__btn--next js-products-cards-slider-btn-next b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+		</div>
+
+		<div class="slider-pagination js-products-cards-slider-pagination"></div>
+	</div>
+	<!-- //Controls -->
+</div>				</div>
+				<!-- //container -->
+			</section>
+			<!-- //sect products -->
+
+
+			<section class="sect__promo-slider gutter-bottom">
+				
+				<div class="promo-slider__wrapper">
+
+					<div class="promo-slider promo-slider-full js-promo-slider-full">
+
+						<div class="promo-slide bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+							<div class="promo-slide__content">
+								<p class="company-name">Virtuality  Club</p>
+
+								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+
+							</div>
+
+							<div class="promo-slide__img">
+								<img src="img/promo/1.png" alt="">
+							</div>
+						</div>
+						<!-- //slide -->
+
+						<div class="promo-slide promo-slide-dark bg b-radius-10" style="background-image: url('img/promo/2-bg.png');">
+
+							<div class="promo-slide__content">
+								<p class="company-name">Virtuality  Club</p>
+
+								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+							</div>
+
+						</div>
+						<!-- //slide -->
+
+						<div class="promo-slide bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+							<div class="promo-slide__content">
+								<p class="company-name">Virtuality  Club</p>
+
+								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+
+							</div>
+
+							<div class="promo-slide__img">
+								<img src="img/promo/2.png" alt="">
+							</div>
+						</div>
+						<!-- //slide -->
+
+						<div class="promo-slide promo-slide-dark bg b-radius-10" style="background-image: url('img/promo/2-bg.png');">
+
+							<div class="promo-slide__content">
+								<p class="company-name">Virtuality  Club</p>
+
+								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+							</div>
+
+						</div>
+						<!-- //slide -->
+					</div>
+
+					<div class="container">
+
+
+						<!-- Controls -->
+						<div class="slider-controls">
+							<div class="slider-navigation">
+								<button class="slider-navigation__btn slider-navigation__btn--prev js-promo-slider-full-btn-prev b-radius-7" type="button">
+									<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>								</button>
+								<button class="slider-navigation__btn slider-navigation__btn--next js-promo-slider-full-btn-next b-radius-7" type="button">
+									<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>								</button>
+							</div>
+
+							<div class="slider-pagination js-promo-slider-full-pagination"></div>
+						</div>
+						<!-- //Controls -->
+
+					</div>
+				</div>
+			</section>
+			<!-- //sect promo slider -->
+
+
+			<section class="sect__products-cards gutters color-bg">
+				
+				<div class="container">
+					<div class="virtuality-wrapper">
+
+						<div class="products-cards__entering">
+							<div class="row align-vertical-center align-horisontal-between">
+								<h2 class="sect-title">Акции</h2>
+
+								<div class="tab-controls">
+									<button class="tab-controls__btn b-radius-7 is-active" type="button">Для игр</button>
+									<button class="tab-controls__btn b-radius-7" type="button">Для бизнеса</button>
+									<button class="tab-controls__btn b-radius-7" type="button">Аксессуары</button>
+									<button class="tab-controls__btn b-radius-7" type="button">Комплекты</button>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="products-cards-slider__wrapper">
+
+	<div class="products-cards-slider js-products-cards-slider flex-slider slider-gutters">
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+	</div>
+
+
+	<!-- Controls -->
+	<div class="slider-controls">
+		<div class="slider-navigation">
+			<button class="slider-navigation__btn slider-navigation__btn--prev js-products-cards-slider-btn-prev b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+			<button class="slider-navigation__btn slider-navigation__btn--next js-products-cards-slider-btn-next b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+		</div>
+
+		<div class="slider-pagination js-products-cards-slider-pagination"></div>
+	</div>
+	<!-- //Controls -->
+</div>
+
+						<div class="virtuality">
+	<img src="img/virtuality.svg" alt="">
+</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //sect stocks -->
+
+			<section class="sect__products-cards gutters">
+				
+				<div class="container">
+
+					<div class="products-cards__entering">
+						<div class="row align-vertical-center align-horisontal-between">
+							<h2 class="sect-title">Новинки</h2>
+
+							<div class="tab-controls">
+								<button class="tab-controls__btn b-radius-7 is-active" type="button">Для игр</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Для бизнеса</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Аксессуары</button>
+								<button class="tab-controls__btn b-radius-7" type="button">Комплекты</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="products-cards-slider__wrapper">
+
+	<div class="products-cards-slider js-products-cards-slider flex-slider slider-gutters">
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+		<!-- Card -->
+		<article class="product-card b-radius-10">
+	<!-- Labels -->
+	<div class="product-labels">
+		<span class="product-label product-label__sale">Новогодний Sale - 15%</span>
+
+		<span class="product-label product-label__hidden product-label__installment">Рассрочка 0-0-18</span>
+		<span class="product-label product-label__hidden product-label__stock">-50% на аксессуар</span>
+		<span class="product-label product-label__hidden product-label__hit">Хит продаж</span>
+		<span class="product-label product-label__hidden product-label__cashback">Кэшбэк 15%</span>
+
+
+		<!-- Toggle btn -->
+		<button class="btn-toggle-labels js-toggle-product-card-labels-btn" type="button">
+			<svg  viewBox="0 0 5 8"  xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.16016 0.25L4.66016 3.75L1.16016 7.25L0.339844 6.42969L3.01953 3.75L0.339844 1.07031L1.16016 0.25Z" />
+			</svg>
+		</button>
+	</div>
+	<!-- //Labels -->
+
+	<a href="page-product.html" class="product-card__thumbnail ">
+		<img src="img/products/1.png" alt="">
+	</a>
+
+	<div class="product-card__content">
+		<h3 class="product-card__title">
+			<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+		</h3>
+		<div class="product-rating align-horisontal-start">
+			<div class="rating rating-4">
+				<div class="rating-stars">
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+					<span class="rating-star"></span>
+				</div>
+				<span class="rating-value">4</span>
+			</div>
+
+			<span class="product-feedbacks">18 Отзывов</span>
+		</div>
+		<div class="product-prices">
+			<span class="product-prices__old">4 290 ₽</span>
+			<span class="product-prices__new">3 940 ₽</span>
+		</div>
+
+		<div class="btns">
+			<!-- Add to cart -->
+			<button class="btn-add b-radius-7" type="button">
+				<span class="btn-add__text">в корзину</span>
+				<span class="btn-add__ic b-radius-6">
+					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
+					</svg>
+				</span>
+			</button>
+			<!-- //Add to cart -->
+
+			<!-- Compare btn -->
+			<button class="btn-ic" type="button">
+				<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z"/>
+				</svg>
+			</button>
+			<!-- //Compare btn -->
+		</div>
+		
+	</div>
+</article>
+		<!-- //Card -->
+
+	</div>
+
+
+	<!-- Controls -->
+	<div class="slider-controls">
+		<div class="slider-navigation">
+			<button class="slider-navigation__btn slider-navigation__btn--prev js-products-cards-slider-btn-prev b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+			<button class="slider-navigation__btn slider-navigation__btn--next js-products-cards-slider-btn-next b-radius-7" type="button">
+				<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+			</button>
+		</div>
+
+		<div class="slider-pagination js-products-cards-slider-pagination"></div>
+	</div>
+	<!-- //Controls -->
+</div>
+
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //sect new products -->
+
+			<section class="sect__brands gutter-bottom">
+				
+				<div class="container">
+
+					<div class="our-brands border-top-block gutter-top">
+						<h2 class="sect-title text-center">Наши бренды</h2>
+
+						<div class="our-brands-slider__wrapper">
+							
+
+
+							<div class="our-brands-slider js-our-brands-slider slider-gutters">
+
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/1.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/2.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/3.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/4.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/5.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/6.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/1.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/2.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/3.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/4.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/5.png" alt=""></a>
+								<a href="#" class="our-brand b-radius-10"><img src="img/brands/6.png" alt=""></a>
+							</div>
+
+
+							<!-- Controls -->
+							<div class="slider-controls">
+								<div class="slider-navigation">
+									<button class="slider-navigation__btn slider-navigation__btn--prev js-our-brands-slider-btn-prev b-radius-7" type="button">
+										<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>									</button>
+									<button class="slider-navigation__btn slider-navigation__btn--next js-our-brands-slider-btn-next b-radius-7" type="button">
+										<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>									</button>
+								</div>
+
+								<div class="slider-pagination js-our-brands-slider-pagination"></div>
+							</div>
+							<!-- //Controls -->
+
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //sect new products -->
+
+
+			<section class="sect__faq gutters color-bg">
+				<h2 class="sect-title text-center container">Часто задаваемые вопросы</h2>
+			</section>
+
+			<!-- //sect faq -->
+
+			<section class="sect__feedbacks gutters">
+				<h2 class="sect-title text-center container">Наши отзывы</h2>
+			</section>
+
+			<!-- //sect feedbacks -->
+
+			<section class="sect__sertificates gutter-bottom">
+				<div class="container">
+					<div class="border-top-block gutter-top">
+						
+
+						<h2 class="sect-title text-center">Дипломы и сертификаты</h2>
+
+					</div>
+				</div>
+				
+			</section>
+
+			<!-- //sect sertificates -->
+
+
+
+
+
+
 		</main>
 		<!-- //Main -->
 
@@ -88,10 +3048,8 @@
 
 	<!-- jQuery IF NEEDED-->
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!-- Google map -->
-<!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script> -->
 <!-- All libs scripts -->
-<!-- 	<script src="js/libs.min.js"></script> -->
+<script src="js/libs.min.js"></script>
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 </body>

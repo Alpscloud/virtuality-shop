@@ -9,3 +9,190 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1200px)
+	// Header
+	.btn-catalog
+		max-width 150px
+		i
+			display none
+			
+
++max-screen(1050px)
+	// Header
+	.header-bottom
+		position relative
+			
+	.search-wrapper
+		flex auto
+		display flex
+		justify-content flex-end
+		flex none
+		
+		
+	.search
+		position absolute
+		vertical-center()
+		z-index 2
+		width 100%
+		right 0
+		padding 15px 20px
+		background-color $header-bg
+		transition all .17s ease-in-out
+		opacity 0
+		visibility hidden
+		pointer-events none
+		
+		&.is-opened
+			opacity 1
+			visibility visible
+			pointer-events auto
+			
+
+	.btn-search__mobile
+		display inline-block
+		
+	.btn-catalog
+		max-width none
+		i
+			display inline
+			
++max-screen(992px)
+	.container
+		padding-left 15px
+		padding-right 15px
+		
+	.search
+		padding-left 15px
+		padding-right 15px
+
+		
+	// Header
+	.btn-catalog
+		max-width none
+		
+		i
+			display none
+			
+	.search-wrapper
+		margin 0 15px
+		
+	.header-tools__item--col
+		margin-right 15px
+		
+
+
+	.hidden-tablet
+		display none
+		
++max-screen(767px)
+	// Header
+	.btn-catalog
+		height 30px
+		font-size 10px
+		svg
+			margin-right 10px
+			
+		i
+			display inline
+			
+	.btn-search__mobile
+		width 30px
+		height 30px
+		svg
+			height 16px
+			
+	.search
+		padding 8px 15px
+		&-form
+			&__input
+				height 40px
+				padding-top 5px
+				padding-bottom 5px
+				
+			&__btn
+				width 30px
+				height 30px
+				svg
+					height 16px
+			
+	.header-tools__item--col
+		margin-right 10px
+		
+	.header
+		&-top
+			padding 20px 0
+			position relative
+			.container
+				padding-right 60px
+		&-bottom
+			padding 10px 0
+			
+
+	
+			
+	.header-tools__link
+		&--text
+			display none
+		&--ic
+			width 40px
+			height 35px
+			margin-left 0
+			svg
+				width 15px
+				height 15px
+				
+		&--count
+			font-size 10px
+			padding 0 6px
+			height 15px
+			right -8px
+			
+	.btn-hamburger
+		position absolute
+		vertical-center()
+		right 15px
+		span
+			display none
+		svg
+			margin-right 0
+			
+	.header-contacts__item
+		border none
+		padding 0
+		
+	
+			
+
+	.hidden-mobile
+		display none
+		
++max-screen(620px)
+	// Header
+	.logo
+		max-width 120px
+		
+	.header-top
+		padding 12px 0
+		.container
+			padding-right 50px
+			
+	.phone-link
+		font-size 10px
+		padding-left 18px
+		&:before
+			height 11px
+			width 8px
+			
++max-screen(450px)
+	// Header
+	.btn-catalog
+		i
+			display none
+			
+	.search-wrapper
+		margin 0 10px
+			
+
+	.hidden-mobile-xs
+		display none
+			

@@ -18,6 +18,169 @@
 			visibility hidden
 			pointer-events none
 			
-.swiper-container
-	*
-		box-sizing border-box
+
+.slider-gutters
+	margin-left -10px
+	margin-right -10px
+	.slick-slide
+		padding-left 10px
+		padding-right 10px
+			
+.slider-pagination
+	margin-top 20px
+	.slick-dots
+		position relative
+		bottom auto
+		height 10px
+		font-size 0
+		
+		li
+			display inline-block
+			margin 0
+			height 100%
+			margin 0 10px 0 0
+			&:last-child
+				margin-right 0
+			button
+				display inline-block
+				width 20px
+				height 100%
+				position relative
+				padding 0
+				&:before
+					pseudo()
+					transition all .17s ease-in-out
+					width 100%
+					height 2px
+					position absolute
+					vertical-center()
+					background-color #C9CCD0
+					border-radius 100px
+					font-size 0
+					
+			&.slick-active
+				button
+					&:before
+						opacity 1
+						background-color $text-color
+						
+.slider-controls
+	position relative
+	margin-top 20px
+	.slider-pagination
+		position absolute
+		position-center()
+		margin-top 0
+						
+.slider-navigation
+	display flex
+	flex-wrap nowrap
+	width 110px
+	height 50px
+	justify-content space-between
+	&__btn
+		position relative
+		display inline-block
+		width 50px
+		height 50px
+		border 1px solid $border-color
+		background-color $basic-white-color
+	
+		
+		svg
+			position absolute
+			svg()
+			height 12px
+			fill $text-color
+			position-center()
+		&--prev
+			svg
+				transform translate(-50%, -50%) scaleX(-1)
+				
+		&:hover
+			border-color $accent-color
+			background-color $accent-color
+			svg
+				fill $basic-white-color
+			
+			
+.flex-slider
+	.slick-list,
+	.slick-track
+		height 100%
+		
+	.slick-track
+		display flex !important
+		flex-wrap nowrap
+		
+	.slick-slide
+		float none !important
+		height auto
+		> div
+			height 100%
+			
+.promo-slider
+	
+	width 100%
+	
+
+
+	&__wrapper
+		min-width 0
+		
+	&-full
+		margin 0
+		.slick-slide
+			width 100%
+			padding-left 20px
+			padding-right 20px
+			max-width 1590px
+			
+		.promo-slide
+			min-height 420px
+			
+			&__content
+				max-width 575px
+				
+			&__title
+				font-size 33px
+				line-height 43px
+				margin-bottom 30px
+			&__text
+				font-size 17px
+				line-height 27px
+				
+			
+		
+		
+
+		
+
+// Products cards slider
+
+	
+		
+.advantages-slider
+	margin-bottom -30px
+	margin-left -10px
+	margin-right -10px
+	
+
+	
+	.slick-slide
+		padding 30px 10px
+	
+
+.promo-products-cards-slider
+	
+	.product-card__thumbnail
+		height 218px
+		
+
+
+		
+
+
+
+		
+	

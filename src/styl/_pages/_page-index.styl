@@ -1,0 +1,319 @@
+.sect__promo
+	padding-top 15px
+
+
+
+
+
+.promo-slide
+	overflow hidden
+	position relative
+	padding 60px
+	display flex !important
+	align-items center
+	min-height 580px
+	height 100%
+	&__content
+		max-width 590px
+		position relative
+		z-index 2
+	&__img
+		// width auto
+		// max-width 766px
+		// height auto
+		// max-height 640px
+		position absolute
+		top 0
+		height 100%
+		width auto
+		right 0
+		pointer-events none
+		transition all .35s ease-in-out
+	
+		img
+			display block
+			height 100%
+			width auto
+			
+	&__title
+		font 60px $Bold
+		line-height 70px
+		margin-bottom 25px
+		color $basic-white-color
+		
+	&__text
+		max-width 460px
+		font-size 17px
+		line-height 27px
+		color #D0DCEF
+		
+	.btn
+		margin-top 35px
+		
+	&-dark
+		color $text-color
+		
+		.company-name,
+		.promo-slide__title,
+		.promo-slide__text
+			color inherit
+			
+
+.company-name
+	text-transform uppercase
+	color $accent-color
+	font 12px $Bold
+	letter-spacing 0.1em
+	margin-bottom 15px
+	
+
+.promo-block
+	position relative
+	&__offer
+		flex none
+		margin-left 20px
+		width 370px
+		
+.virtuality
+	width 168px
+	position absolute
+	top 0
+	margin-left 15px
+	left 100%
+	img
+		display block
+		
+
+.advantages
+
+	
+	.sect-title
+		margin-bottom 70px
+		
+
+	
+.advantage
+	position relative
+	min-height 150px
+	background-color $basic-white-color
+	box-shadow 7px 6px 13px -10px rgba(28, 26, 26, 0.15), 8px 8px 30px -6px rgba(28, 26, 26, 0.1)
+	@extends .b-radius-10
+	font 20px $Bold
+	line-height 24px
+	padding 50px 20px 20px
+	text-align center
+	transition all .17s ease-in-out
+	&:hover
+		background-color $darkest-accent-color
+		color $basic-white-color
+		box-shadow none
+	&__ic
+		display inline-block
+		position absolute
+		horisontal-center()
+		border-radius 50%
+		background-color $accent-color
+		width 60px
+		height 60px
+		background-repeat no-repeat
+		background-position 50% 
+		background-size 33px 33px
+		top -30px
+		z-index 1
+
+		
+// Products cards
+.sect__products-cards
+	overflow hidden
+	
+.products-cards
+	&__entering
+		margin-bottom 45px
+		.sect-title
+			margin-bottom 0
+			margin-right 20px
+			
+.product-card
+	border 1px solid $border-color
+	transition border-color .17s ease-in-out
+	position relative
+	height 100%
+	display flex !important
+	flex-direction column
+	background-color $basic-white-color
+	
+	.product-labels
+		position absolute
+		top 15px
+		left 15px
+		z-index 1
+		
+		
+	.rating
+		margin-right 15px
+		
+	.product-rating
+		margin-bottom 10px
+		
+	.product-prices
+		margin-bottom 20px
+		
+	&:hover
+		border-color $accent-color
+		
+	&__thumbnail
+		flex-col-center()
+		padding 10px
+		height 225px
+		margin-bottom 10px
+		flex none
+		img
+			@extends .content-img
+	
+	&__content
+		padding 20px 25px
+		flex 1
+		display flex
+		flex-direction column
+	&__title
+		font 15px $Bold
+		line-height 22px
+		margin-bottom 15px
+		flex 1
+		a
+			color $text-color
+			&:hover
+				color $accent-color
+				
+
+				
+.product-rating
+	display flex
+	align-items center
+	flex-wrap nowrap
+				
+.product-feedbacks
+	color $light-text-color
+	display inline-block
+	font-family $Reg
+	
+a.product-feedbacks
+	&:hover
+		color $accent-color
+		
+.product-prices
+	display flex
+	flex-wrap nowrap
+	align-items center
+	font 21px $Reg
+	font-weight bold
+	span
+		display inline-block
+		margin-right 15px
+		&:last-child
+			margin-right 0
+			
+	&__old
+		color $light-text-color
+		font-size 17px
+		font-weight normal
+		text-decoration line-through
+		
+	&__new
+		color $sale-color
+		
+
+.btns
+	display flex
+	flex-wrap nowrap
+	
+	.btn-add
+		flex 1
+		
+	.btn-ic
+		margin-left 10px
+		
+
+.product-labels
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	padding-right 10px
+
+.product-label
+	display inline-block
+	text-align center
+	border-radius 5px
+	border 1px solid 
+	font 12px $Reg
+	font-weight 600
+	padding 2px 10px
+	background-color $basic-white-color
+	margin 0 5px 5px 0
+	height 25px
+	&__hidden
+		display none
+		&.is-toggled
+			display inline-block
+	&__sale
+		background-color $sale-color
+		color $basic-white-color
+		border-color $sale-color
+	&__installment
+		color $installment-color
+	&__stock
+		color $stock-color
+	&__hit
+		color $hit-color
+	&__cashback
+		color $cashback-color
+		
+.btn-toggle-labels
+	height 25px
+	width 25px
+	border 1px solid $border-color
+	background-color $basic-white-color
+	border-radius 5px
+	position relative
+	svg
+		svg()
+		position absolute
+		position-center()
+		height 8px
+		width 5px
+		fill #1D1D1F
+	&:hover
+		background-color $accent-color
+		border-color $accent-color
+		svg
+			fill $basic-white-color
+			
+	&.is-toggled
+		svg
+			transform translate(-50%, -50%) scaleX(-1)
+			
+// Stocks
+.virtuality-wrapper
+	position relative	
+	
+	.virtuality
+		left auto
+		margin-left 0
+		right 100%
+		margin-right 20px
+		vertical-center()
+
+	
+.our-brand
+	display flex !important
+	flex-col-center()
+	border 1px solid $border-color
+	background-color $basic-white-color
+	height 125px
+	img
+		@extends .content-img
+		max-width 170px
+		max-height 80px
+		
+	&:hover
+		border-color $accent-color

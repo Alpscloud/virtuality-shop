@@ -1,22 +1,95 @@
 .btn
-	display inline-block
-	padding 12px 15px
-	font 1em $Reg
-	line-height 1
+	display inline-flex
+	align-items center
+	justify-content center
 	text-align center
-	color $text-color
-	border 2px solid transparent
-	transition all .17s ease-in-out
-	backface-visibility hidden
+	flex-wrap nowrap
+	background-color $accent-color
+	@extends .b-radius-7
+	font 12px $Bold
+	letter-spacing 0.1em
+	color $basic-white-color
+	text-transform uppercase
+	padding 25px 60px
+	svg
+		svg()
+		flex none
+		width 11px
+		height 8px
+		fill $basic-white-color
+		margin-left 10px
+	&:hover
+		background-color $dark-accent-color
+		svg
+			transform translateX(5px)
 	
-	&-accent
+	&-link
+		display inline-block
+		color $accent-color
+		white-space nowrap
+		line-height 1
+		border-bottom 1px solid
+		&:hover
+			color $darkest-accent-color
+			
+	&-add
+		display inline-flex
 		background-color $accent-color
-		
-	&-transparent
-		background-color transparent
-		
-	&-dark
-		background-color $basic-black-color
+		padding 4px
+		align-items center
+		color $basic-white-color
+		padding-left 20px
+		&__ic
+			flex none
+			width 42px
+			height 42px
+			position relative
+			background-color $dark-accent-color
+			margin-left 10px
+			svg
+				svg()
+				position absolute
+				position-center()
+				fill $basic-white-color
+				width 16px
+				height 16px
+		&__text
+			flex 1
+			text-align center
+			font 12px $Bold
+			letter-spacing 0.1em
+			text-transform uppercase
+			
+		&:hover
+			background-color $darkest-accent-color
+			.btn-add__ic
+				background-color $accent-color
+				
+	&-ic
+		width 50px
+		height 50px
+		flex none
+		border 1px solid $border-color
+		position relative
+		border-radius 7px
+		svg
+			svg()
+			position absolute
+			position-center()
+			fill $light-text-color
+			width 22px
+			height 22px
+		&:hover
+			border-color $accent-color
+			svg
+				fill $text-color
+				
+		&.is-active
+			background-color $accent-color
+			svg
+				fill $basic-white-color
+	
+	
 		
 	&-close
 		display inline-block
@@ -26,78 +99,82 @@
 		background-size 20px 20px
 		
 	&-search
-		&::-ms-clear
-			display none 
-			width 0
-			height 0
-		&::-ms-reveal
-			display none 
-			width 0
-			height 0
-		
-		&::-webkit-search-decoration,
-		&::-webkit-search-cancel-button,
-		&::-webkit-search-results-button,
-		&::-webkit-search-results-decoration
-			display none
-		
-	&-top
-		display none
-		border-radius 50%
-		width 40px
-		height 40px
-		position fixed
-		right 30px
-		bottom 30px
+		display inline-block
+		width 45px
+		height 45px
 		background-color $accent-color
-		z-index 10
-		text-align center
-		transition all .17s ease-in-out
-		box-shadow 0px 0px 13px 0px rgba($basic-black-color, 0.21)
-		&:after
-			content ''
-			display inline-block
+		position relative
+		border-radius 6px
+		svg
+			svg()
+			fill $basic-white-color
 			position absolute
-			top 15px
-			left 10px
-			width 20px
-			height 20px
-			transform rotate(-45deg)
-			border-top 1px solid $basic-black-color
-			border-right 1px solid $basic-black-color
-			transition all .23s ease-in-out
-		&:hover
-			background-color $basic-black-color
-			transform scale(1.1)
-			box-shadow 0px 0px 13px 0px rgba($accent-color, 0.21)
-			&:after
-				border-top 1px solid $accent-color
-				border-right 1px solid $accent-color
+			position-center()
+			
+		&__sm
+			width 22px
+			height 22px
+			background-color transparent
+			svg
+				fill $accent-color
+				
+			&:hover
+				svg
+					fill $darkest-accent-color
+		
+		&__mobile
+			display none
+			svg
+				height 22px
+		
+		
+	
 		
 
 	&-hamburger
-		display inline-block
-		flex none
-		width 50px
-		height 50px
-		border-radius 50%
-		background-color $accent-color
-		position relative
-		transition background-color .17s ease-in-out
-		margin-left 15px
-		&__line
-			width 27px
-			height 2px
-			background-color $basic-black-color
+		display inline-flex
+		align-items center
+		justify-content center
+		font-family $Reg
+		line-height 1
+		svg
 			display block
-			margin 6px auto
-			transition all 0.3s ease-in-out	
+			width 15px
+			height 11px
+			fill $accent-color
+			transition fill .17s ease-in-out
+			flex none
+			margin-right 10px
+			
+		&:hover
+			color $accent-color
+			
+
+	&-catalog
+		flex 1
+		padding-left 15px
+		padding-right 15px
+		width 100%
+		max-width 260px
+		display inline-flex
+		align-items center
+		justify-content center
+		background-color $accent-color
+		text-transform uppercase
+		color $basic-white-color
+		font 12px $Bold
+		line-height 1
+		letter-spacing 0.1em
+		height 45px
+		&:hover,
 		&.is-active
-			.btn__hamburger--line
-				&:nth-child(1)
-					transform translateY(8px) rotate(45deg)
-				&:nth-child(2)
-					opacity 0	
-				&:nth-child(3)
-					transform translateY(-8px) rotate(-45deg)
+			background-color $dark-accent-color
+		svg
+			svg()
+			flex none
+			width 15px
+			height 11px
+			fill $basic-white-color
+			margin-right 15px
+		
 		
