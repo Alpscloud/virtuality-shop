@@ -1,0 +1,49 @@
+{
+  "name": "clean_starting_template",
+  "version": "1.0.0",
+  "description": "My starting template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alpscloud/alps_popup.git"
+  },
+  "author": "Sergey 'winde' Kuptsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alpscloud/"
+  },
+  "homepage": "https://github.com/Alpscloud/",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-debug": "^3.1.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-include": "^2.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-watch": "^4.3.11",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1",
+    "stream-combiner2": "^1.1.1",
+    "stylus-media-queries": "^1.0.0",
+    "twig": "^1.11.0"
+  },
+  "dependencies": {}
+}

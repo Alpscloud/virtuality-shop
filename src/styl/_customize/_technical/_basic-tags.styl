@@ -1,0 +1,74 @@
+// ========== ========== G L O B A L   S T Y L E S ========== ==========
+html
+	text-size-adjust none
+	box-sizing border-box
+	&.is-fixed
+		overflow hidden
+	
+*
+	padding 0
+	margin 0
+	box-sizing inherit
+	&:after,
+	&:before
+		box-sizing inherit
+
+
+body
+	font $body-font-size $body-font-family
+	line-height $body-line-height
+	overflow-x hidden
+	min-width 320px
+	height 100%
+	opacity 1
+	position relative
+	color $text-color
+	background-color $body-bg
+
+h1,h2,h3,h4,h5,h6,ul,li
+	margin 0
+	padding 0
+
+input,
+textarea
+	outline none
+	background transparent
+	border none
+	box-shadow none
+	transition all .17s ease-in-out
+	&:focus
+		outline none
+		
+textarea
+	resize vertical
+	width 100%
+	
+select
+	appearance none
+	-webkit-appearance none
+	-moz-appearance none
+	transition all .17s ease-in-out
+	cursor pointer
+	&:focus
+		outline none
+
+a
+	text-decoration none
+	outline none
+	transition all .17s ease-in-out
+	&:hover
+		text-decoration none
+		
+button
+	box-shadow none
+	border none
+	outline none
+	cursor pointer
+	transition all .17s ease-in-out
+	background transparent
+	&:focus
+		outline none
+
+img
+	width 100%
+	height auto

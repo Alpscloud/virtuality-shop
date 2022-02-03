@@ -1,0 +1,153 @@
+.disable-hover,
+.disable-hover * 
+	pointer-events none !important
+
+.gutters
+	padding $gutters
+	
+.gutter
+	&-top
+		padding-top $gutter-top
+	&-bottom
+		padding-bottom $gutter-bottom
+	
+.w3c
+	visibility hidden
+	display none
+	
+.content__wrapper
+	overflow hidden
+	width 100%
+	height 100%
+
+.sect-title
+	font 2em $Bold
+	margin-bottom 40px
+	
+.title
+	font-family $Bold
+	&-h1-size
+		font-size 36px
+		line-height 38px
+	&-h2-size
+		font-size 32px
+		line-height 34px
+	&-h3-size
+		font-size 28px
+		line-height 32px
+		
+.text-center
+	text-align center
+	
+.text-left
+	text-align left
+	
+.text-right
+	text-align right
+	
+.basic-white-color
+	color $basic-white-color
+
+.basic-black-color
+	color $basic-black-color
+	
+.light-text-color
+	color $light-text-color
+	
+.dark-text-color
+	color $dark-text-color
+	
+.accent-color
+	color $accent-color
+	
+.content-img
+	display block
+	margin 0 auto
+	max-width 100%
+	max-height 100%
+	width auto
+	height auto
+	
+.bg
+	bg(50%, 50%)
+	
+.bg-with-overlay
+	position relative
+	bg(50%, 50%)
+	&:before
+		pseudo()
+		position absolute
+		fullSize()
+		background-color rgba($bg-overlay-color, $bg-overlay-opacity)
+	.container
+		position relative
+		z-index 2
+		
+.color-bg
+	background-color $color-bg
+	
+.visually-hidden
+	position absolute
+	clip rect(0 0 0 0)
+	width 1px
+	height 1px
+	margin -1px
+	z-index -999
+	opacity 0
+	visiiblity hidden
+	
+.thumbnail
+	position relative
+	overflow hidden
+	width 100%
+	padding-top 50%
+	img
+		display block
+		position absolute
+		position-center()
+		width 100%
+		height 100%
+		object-fit cover
+	
+
+.content
+	*
+		&:last-child
+			margin-bottom 0
+			
+	h2,h3,h3,h4,h5,h6
+		line-height 1
+		font-family $Bold
+		
+	strong, b
+		font-family $Bold
+		
+
+	ul, ol
+		li
+			display block
+			position relative
+			margin-bottom 10px
+			
+			&:last-child
+				margin-bottom 0
+				
+	ul
+		li
+			&:before
+				pseudo()
+				width 4px
+				height 4px
+				border-radius 50%
+				margin-right 4px
+				background-color $text-color
+				
+	ol
+		counter-reset list
+		li
+			&:before
+				counter-increment list
+				content counter(list) ". "
+				display inline-block
+				margin-right 4px
+

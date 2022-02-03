@@ -1,0 +1,23 @@
+.slider
+	&__loader
+		position absolute
+		fullSize()
+		z-index 10
+		background-color $light-color
+		transition all .15s ease-in-out
+		&:before
+			pseudo()
+			width 30px
+			height 30px
+			position absolute
+			position-center()
+			background url('../img/slider-loader.gif') 50% 50% no-repeat / 30px 30px
+			
+		&.is-loaded
+			opacity 0
+			visibility hidden
+			pointer-events none
+			
+.swiper-container
+	*
+		box-sizing border-box

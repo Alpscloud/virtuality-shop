@@ -1,0 +1,60 @@
+// Position
+position-center()
+	top 50%
+	left 50%
+	transform translate(-50%,-50%)
+	
+vertical-center()
+	top 50%
+	transform translateY(-50%)
+
+horisontal-center()
+	left 50%
+	transform translateX(-50%)
+
+flex-col-center()
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+//==============================
+
+pseudo()
+	content ''
+	display inline-block
+	
+fullSize()
+	top 0
+	left 0
+	width 100%
+	height 100%
+	
+bg(x,y)
+	background-repeat no-repeat
+	background-size cover
+	background-position x y
+	
+svg()
+	display block
+	width 100%
+	height 100%
+	transition all .17s ease-in-out
+	
+radius-overflow()
+	-webkit-mask-image -webkit-radial-gradient(#fff,#000)
+	
+// Web fonts
+//=======================================================================================================
+// @font-face
+// Usage: webfont('Crimson-Text-Roman', 'crimson-text', 'crimsontext-roman-webfont', true, normal, normal)
+//=======================================================================================================
+
+webfont(family, folder, file, weight = normal, style = normal)
+	@font-face
+		font-family family
+		src url('../fonts/' + folder + '/' + file + '.woff2') format('woff2'),
+				url('../fonts/' + folder + '/' + file + '.woff') format('woff')
+				
+		font-weight weight
+		font-style style
+		font-display swap
