@@ -1,0 +1,87 @@
+<!-- Popup feedback-->
+<div class="popup popup-feedback js-popup js-popup-feedback">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				
+				<div class="feedback-full">
+
+					<div class="feedback-full__content">
+						<div class="feedback-header row align-horisontal-between align-vertical-top">
+							<div class="feedback-author">
+								<div class="feedback-author__photo bg" style="background-image: url('img/empty.svg');"></div>
+								<div class="feedback-author__info">
+									<p class="feedback-author__name">Пантелеймон Кулиш</p>
+									<div class="rating rating-4">
+										<div class="rating-stars">
+											<span class="rating-star"></span>
+											<span class="rating-star"></span>
+											<span class="rating-star"></span>
+											<span class="rating-star"></span>
+											<span class="rating-star"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="feedback-src card b-radius-7">
+								<img src="img/google.png" alt="Google maps">
+							</div>
+						</div>
+
+						<div class="feedback-text">
+							<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. </p>
+						</div>
+
+						<div class="feedback-gallery slider-with-loading">
+
+							<div class="feedback-gallery-slider js-feedback-gallery-slider">
+								<a href="img/faq/1.png" class="thumbnail fancy-link b-radius-7 bg" data-fancybox="feedback-gallery" style="background-image: url('img/faq/1.png');"></a>
+								<a href="img/faq/1.png" class="thumbnail fancy-link b-radius-7 bg" data-fancybox="feedback-gallery" style="background-image: url('img/faq/1.png');"></a>
+								<a href="img/faq/1.png" class="thumbnail fancy-link fancy-link__video b-radius-7 bg" data-fancybox="feedback-gallery" style="background-image: url('img/faq/1.png');"></a>
+								<a href="img/faq/1.png" class="thumbnail fancy-link b-radius-7 bg" data-fancybox="feedback-gallery" style="background-image: url('img/faq/1.png');"></a>
+							</div>
+
+							<div class="feedback-gallery__controls">
+
+								<button class="btn-slider-arrow js-feedback-gallery-slider-btn-prev" type="button">
+									<svg  viewBox="0 0 30 15"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.197763 7.01777L7.01255 0.236653C7.25866 -0.0490523 7.68641 -0.0782059 7.97354 0.160853C8.26066 0.405743 8.29582 0.831386 8.04971 1.11709C8.02627 1.14624 8.00283 1.16957 7.97354 1.19289L2.31896 6.82536H29.3203C29.6953 6.82536 30 7.12856 30 7.50172C30 7.87489 29.6953 8.17809 29.3203 8.17809H2.32482L7.97939 13.8047C8.26652 14.0496 8.30168 14.4753 8.05557 14.761C7.80947 15.0467 7.38171 15.0817 7.09459 14.8368C7.06529 14.8134 7.04185 14.7901 7.01841 14.761L0.197763 7.97401C-0.0659199 7.71163 -0.0659199 7.28599 0.197763 7.01777Z" />
+									</svg>
+								</button>
+								
+								<div class="slider-pagination js-feedback-gallery-slider-pagination"></div>
+
+								<button class="btn-slider-arrow js-feedback-gallery-slider-btn-next" type="button">
+									<svg  viewBox="0 0 30 15" xmlns="http://www.w3.org/2000/svg">
+										<path d="M29.8022 7.01777L22.9874 0.236653C22.7413 -0.0490524 22.3136 -0.0782059 22.0265 0.160853C21.7393 0.405743 21.7042 0.831386 21.9503 1.11709C21.9737 1.14624 21.9972 1.16957 22.0265 1.19289L27.681 6.82536H0.679721C0.304702 6.82536 0 7.12856 0 7.50172C0 7.87489 0.304702 8.17809 0.679721 8.17809H27.6752L22.0206 13.8047C21.7335 14.0496 21.6983 14.4753 21.9444 14.761C22.1905 15.0467 22.6183 15.0817 22.9054 14.8368C22.9347 14.8134 22.9582 14.7901 22.9816 14.761L29.8022 7.97401C30.0659 7.71163 30.0659 7.28599 29.8022 7.01777Z" />
+									</svg>
+
+								</button>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="feedback-link__wrapper">
+						<a href="#" rel="nofollow" target="_blank" class="feedback-link">
+							<span>Читать отзыв на google maps </span>
+							{% include '../btn-arrow.html' %}
+						</a>
+
+					</div>
+					
+
+
+				</div>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup feedback -->

@@ -13,6 +13,12 @@
 	align-items center
 	min-height 580px
 	height 100%
+	&__bg
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
 	&__content
 		max-width 590px
 		position relative
@@ -99,6 +105,7 @@
 	box-shadow 7px 6px 13px -10px rgba(28, 26, 26, 0.15), 8px 8px 30px -6px rgba(28, 26, 26, 0.1)
 	@extends .b-radius-10
 	font 20px $Bold
+	height 100%
 	line-height 24px
 	padding 50px 20px 20px
 	text-align center
@@ -134,13 +141,12 @@
 			margin-right 20px
 			
 .product-card
-	border 1px solid $border-color
-	transition border-color .17s ease-in-out
+	
 	position relative
 	height 100%
 	display flex !important
 	flex-direction column
-	background-color $basic-white-color
+	
 	
 	.product-labels
 		position absolute
@@ -158,8 +164,7 @@
 	.product-prices
 		margin-bottom 20px
 		
-	&:hover
-		border-color $accent-color
+
 		
 	&__thumbnail
 		flex-col-center()
@@ -302,18 +307,234 @@ a.product-feedbacks
 		right 100%
 		margin-right 20px
 		vertical-center()
+		
+	&__right
+		.virtuality
+			right auto
+			left 100%
+			margin-right 0
+			margin-left 20px
 
 	
 .our-brand
 	display flex !important
 	flex-col-center()
-	border 1px solid $border-color
-	background-color $basic-white-color
+	padding 10px
 	height 125px
 	img
 		@extends .content-img
 		max-width 170px
 		max-height 80px
+		transition all .17s ease-in-out
+	&:hover
+	
+		img
+			filter grayscale(0)
+		
+	&-sm
+		height 50px
+		padding 7.5px
+		//width 135px
+		img
+			max-width 95px
+			max-height 20px
+			filter grayscale(1) 
+				
+
+// Faq
+.faq
+	&-item
+		display flex !important
+		align-items flex-end
+		height 306px
+		overflow hidden
+		text-align center
+		color $basic-white-color
+		font 20px $Bold
+		line-height 24px
+		position relative
+		&__content
+			flex-col-center()
+			height 145px
+			width 100%
+			padding 40px 20px 10px
+			position relative
+			z-index 1
+			svg
+				display block
+				width 100%
+				height 100%
+				position absolute
+				top 0
+				left 0
+				z-index -1
+				fill $accent-color
+		&__bg
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			
+.faq-slider
+	.slick-slide
+		&:nth-child(3n+1)
+			.faq-item__content
+				svg
+					fill $accent-color
+		&:nth-child(3n+2)
+			.faq-item__content
+				svg
+					fill $red-color
+		&:nth-child(3n+3)
+			.faq-item__content
+				svg
+					fill $darkest-accent-color
+					
+		&:nth-child(even)
+			.faq-item__content
+				svg
+					transform scaleX(-1)
+				
+// Feedback
+.feedback
+	display flex !important
+	height 100%
+	flex-direction column
+	padding 20px 20px 35px
+	&-header
+		margin-bottom 25px
+	&-author
+		display flex
+		flex-wrap nowrap
+		align-items center
+		justify-content flex-start
+		margin-right 15px
+		&__photo
+			flex none
+			border-radius 50%
+			width 80px
+			height 80px
+			margin-right 20px
+			
+		&__name
+			font 16px $Bold
+			line-height 24px
+			margin-bottom 3px
+			
+	&-link
+		text-transform uppercase
+		color $accent-color
+		display inline-flex
+		align-items center
+		justify-content flex-start
+		font 12px $Bold
+		letter-spacing 0.1em
+		margin-top 20px
+		svg
+			svg()
+			width 11px
+			fill $accent-color
+			flex none
+			margin-left 10px
+		&:hover
+			color $darkest-accent-color
+			svg
+				fill $darkest-accent-color
+				transform translateX(5px)
+				
+	&-text
+		font-size 17px
+		line-height 27px
+		flex 1
+		p
+			display inline
+			
+			
+	&-src
+		flex-col-center()
+		width 85px
+		height 65px
+		flex none
+		img
+			@extends .content-img
+			max-width 55px
+			max-height 55px
+			
+	&-full
+		text-align left
+		
+	&-gallery
+		margin 40px 0 30px
+		
+		margin-left -5px
+		margin-right -5px
+		
+		.slick-slide
+			padding-left 5px
+			padding-right 5px
+			
+		.thumbnail
+			padding-top 62%
+			
+		&__controls
+			display flex
+			align-items center
+			justify-content space-between
+			flex-wrap nowrap
+			margin-top 15px
+			
+			.slider-pagination
+				margin-top 0
+			
+
+.slider-controls__feedbacks
+	display flex
+	flex-wrap nowrap
+	align-items center
+	justify-content space-between		
+
+
+.sertificate
+	flex-col-center()
+	display flex !important
+	padding 5px
+	span
+		display block
+		position relative
+		border-radius 7px
+		overflow hidden
+		backface-visibility hidden
+		&:before,
+		&:after
+			pseudo()
+			position absolute
+			transition all .17s ease-in-out
+		&:before
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background-color rgba($basic-black-color, .7)
+			z-index 1
+			opacity 0
+		&:after
+			position-center()
+			z-index 2
+			width 55px
+			height 55px
+			border-radius 50%
+			background rgba($basic-white-color, .25) url('../img/icons/svg/zoom.svg') 50% no-repeat / 16px 16px
+			margin-top 20px
+			opacity 0
+	img
+		@extends .content-img
 		
 	&:hover
-		border-color $accent-color
+		span
+			&:before
+				opacity 1
+			&:after
+				opacity 1
+				margin-top 0
+		

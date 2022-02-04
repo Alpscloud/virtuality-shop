@@ -1,0 +1,77 @@
+<!-- Popup feedback form-->
+<div class="popup js-popup js-popup-feedback-form" >
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Оставить отзыв</p>
+				<p class="popup__subtitle text-center">Заполните форму, чтобы оставить отзыв</p>
+
+				<form  class="form">
+
+					<div class="form-group is-error">
+						<input type="name" class="form-input js-required-input" name="name" placeholder="Введите имя *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-input js-required-input" name="email" placeholder="Введите e-mail *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<!-- Form rating -->
+						<div class="form-rating">
+							<span class="form-rating__label">Ваша оценка:</span>
+							<div class="form-rating__stars">
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-1" value="1">
+								<label class="form-rating__star" for="user-mark-1" aria-label="Ужасно"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-2" value="2">
+								<label class="form-rating__star" for="user-mark-2" aria-label="Сносно"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-3" value="3">
+								<label class="form-rating__star" for="user-mark-3" aria-label="Нормально"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-4" value="4">
+								<label class="form-rating__star" for="user-mark-4" aria-label="Хорошо"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-5" value="5">
+								<label class="form-rating__star" for="user-mark-5" aria-label="Отлично"></label>
+							</div>
+						</div>
+						<!-- //Form rating -->
+					</div>
+
+					<div class="form-group ">
+						<textarea name="message"  class="form-input form-textarea js-required-input" placeholder="Ваш комментарий *"></textarea>
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox">
+							<span class="form-checkbox">Даю согласие на обработку персональных данных и согласен с <a href="#">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>Оставить отзыв</span>
+							{% include '../btn-arrow.html' %}
+						</button>
+					</div>
+
+
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup feedback form-->

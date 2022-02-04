@@ -1,9 +1,57 @@
-.nav
-	&__item
+.footer-nav
+	li
+		display block
+		margin-bottom 25px
+		&:last-child
+			margin-bottom 0
+	a
 		display inline-block
-		margin-right 15px
+		line-height 25px
+		font 15px $Reg
+		&:hover
+			color $basic-white-color
+	&__main
+		li
+			display block
+			margin-bottom 20px
+			position relative
+			padding-left 18px
+			&:before
+				pseudo()
+				position absolute
+				top 11px
+				left 0
+				width 3px
+				height 3px
+				border-radius 50%
+				background-color currentColor
+			&:last-child
+				margin-bottom 0
+		a
+			display inline-block
+			text-transform uppercase
+			font 15px $Reg
+			padding-bottom 5px
+			line-height 25px
+			border-bottom 1px solid transparent
+			
+			&:hover
+				color $basic-white-color
+				border-color $accent-color
+				
+
+.footer-navs
+	display flex
+	.footer-nav
+		padding-left 30px
+		padding-right 30px
+		
+.footer-subnav
+	li
+		display inline-block
+		margin-right 26px
 		&:last-child
 			margin-right 0
-	&__link
-		display block
-		color $text-color
+	a
+		&:hover
+			color $basic-white-color

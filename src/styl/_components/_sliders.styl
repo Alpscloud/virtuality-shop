@@ -18,6 +18,25 @@
 			visibility hidden
 			pointer-events none
 			
+.slider-with-loading
+	position relative
+	&:before
+		pseudo()
+		position absolute
+		top -1px
+		right -1px
+		bottom -1px
+		left -1px
+		z-index 3
+		background $basic-white-color url('../img/slider-loader.gif') 50% no-repeat / 30px
+		transition all 1s ease-in-out
+		
+	&.is-loaded
+		&:before
+			opacity 0
+			visibility hidden
+			pointer-events none
+			
 
 .slider-gutters
 	margin-left -10px
@@ -121,8 +140,7 @@
 			
 .promo-slider
 	
-	width 100%
-	
+
 
 
 	&__wrapper
@@ -166,9 +184,16 @@
 	margin-right -10px
 	
 
+	.slick-track
+		display flex !important
+		flex-wrap nowrap
 	
 	.slick-slide
 		padding 30px 10px
+		float none !important
+		height auto
+		> div
+			height 100%
 	
 
 .promo-products-cards-slider
@@ -176,6 +201,17 @@
 	.product-card__thumbnail
 		height 218px
 		
+
+
+.tab-controls-slider
+	max-width 660px
+	width 100%
+	.slick-slide
+		padding-left 5px
+		padding-right 5px
+		
+	.our-brand
+		width 100%	
 
 
 		

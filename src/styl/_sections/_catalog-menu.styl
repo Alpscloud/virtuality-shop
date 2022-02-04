@@ -1,0 +1,169 @@
+.catalog-menu
+	position absolute
+	z-index 10
+	top 100%
+	left 0
+	width 100%
+	background-color $header-bg
+	opacity 0
+	visibility hidden
+	pointer-events none
+	transition all .23s ease-in-out
+	margin-top 25px
+	height calc(100vh - 127px)
+	//outline 1px solid red
+	display flex
+	&.is-opened
+		opacity 1
+		visibility visible
+		pointer-events auto
+		margin-top 0
+	
+	.container
+		position relative
+
+		
+		.btn-close
+			position absolute
+			top 30px
+			right 20px
+			
+	&__col
+		height 100%
+		overflow-y auto
+		overflow-x hidden
+		
+	&__row
+		height 100%
+	
+	&__main
+		width 100%
+		max-width 390px
+		flex 1
+		padding-top 30px
+		padding-bottom 30px
+		.catalog-menu__title
+			color $accent-color
+			
+	&__categories
+		flex 1
+		padding-left 60px
+		padding-top 30px
+		padding-bottom 30px
+		
+	&__adv
+		width 330px
+		flex none
+		margin-left 35px
+		padding-top 140px
+		
+	&__title
+		margin-bottom 20px
+		font 25px $Bold
+		line-height 35px
+		
+
+.catalog-menu
+	&__nav
+		li
+			display block
+		
+				
+		a
+			display flex
+			height 45px
+			align-items center
+			font 17px $Bold
+			line-height 27px
+			color $text-color
+			position relative
+			z-index 1
+			&:before
+				pseudo()
+				position absolute
+				vertical-center()
+				left 0
+				height 1px
+				width 0
+				border-radius 50px
+				background-color $accent-color
+				transition width .17s ease-in-out
+			&:after
+				pseudo()
+				position absolute
+				height 100%
+				right 0
+				width 1000%
+				opacity 0
+				transition opacity .17s ease-in-out
+				background-color rgba($accent-color, .1)
+				pointer-events none
+			&:hover
+				color $accent-color
+				padding-left 30px
+				&:after
+					opacity 1
+				&:before
+					width 20px
+				
+
+.site-sections
+	margin-top 40px
+	.catalog-menu__title
+		color $text-color
+		
+	ul
+		li
+			margin-bottom 14px
+			&:last-child
+				margin-bottom 0
+				
+		a
+			display inline-block
+			padding-bottom 6px
+			font 20px $Bold
+			line-height 24px
+			border-bottom 1px solid transparent
+			color $text-color
+			&:hover
+				color $accent-color
+				border-color $accent-color
+				
+
+
+.catalog-menu__categories
+	&-lists
+		display flex
+		flex-wrap wrap
+		justify-content flex-start
+		margin-bottom -30px
+		margin-left -15px
+		margin-right -15px
+	&-list
+		width 50%
+		margin-bottom 30px
+		padding-left 15px
+		padding-right 15px
+		
+		&_title
+			margin-bottom 15px
+			font-family $Bold
+			a
+				color $text-color
+				border-bottom 1px solid transparent
+				&:hover
+					color $accent-color
+					border-color $accent-color
+					
+		ul
+			li
+				margin-bottom 15px
+				display block
+				&:last-child
+					margin-bottom 0
+			a
+				color $text-color
+				border-bottom 1px solid transparent
+				&:hover
+					color $accent-color
+					border-color $accent-color

@@ -18,43 +18,73 @@ input[type="search"]::-webkit-search-results-decoration
 	&-input
 		display block
 		width 100%
-		padding 10px 15px
+		padding 19px 25px
 		text-align left
-		background-color $light-color
-		border 2px solid transparent
-		font 1em $Reg
+		background-color $basic-white-color
+		border 1px solid $light-border-color
+		font 17px $Reg
 		color $text-color
+		border-radius 7px
 		&:hover,
 		&:focus
 			border-color $accent-color
 		&::-webkit-input-placeholder
-			font 1em $Reg
-			color $text-color
+			font 17px $Reg
+			color $light-text-color
 		&::-moz-placeholder
-			font 1em $Reg
-			color $text-color
+			font 17px $Reg
+			color $light-text-color
 		&:-moz-placeholder
-			font 1em $Reg
-			color $text-color
+			font 17px $Reg
+			color $light-text-color
 		&:-ms-input-placeholder
-			font 1em $Reg
-			color $text-color
-			
-		&.is-error
-			border-color red
+			font 17px $Reg
+			color $light-text-color
+		
 			
 	&-group
+		margin-bottom 15px
+		text-align left
 		position relative
-		margin-bottom 10px
 		&:last-child
 			margin-bottom 0
+			
+		&.text-center
+			text-align center
+			.link
+				font-size 15px
 			
 		&__label
 			display inline-block
 			margin-bottom 5px
 			
+		&__error
+			display none
+			margin-top 10px
+			font 12px $Reg
+			color $error-color
+			
+		&__password
+			.form-input
+				padding-right 50px
+				
+			.btn-password
+				position absolute
+				right 20px
+				z-index 1
+				top 24px
+			
+		&__checkbox
+			margin 25px 0
+			
+		&.is-error
+			.form-group__error
+				display block
+			.form-input
+				border-color $error-color
+			
 	&-textarea
-		min-height 200px
+		min-height 150px
 	
 
 
@@ -63,23 +93,28 @@ input[type="search"]::-webkit-search-results-decoration
 	&-checkbox
 		display inline-block
 		position relative
-		padding-left 25px
-		font 1em $Reg
-		line-height 1
+		padding-left 50px
+		font 15px $Reg
+		line-height 22px
 		color $text-color
+		a
+			color $accent-color
+			border-bottom 1px solid
+			&:hover
+				color $text-color
 		&:before
 			pseudo()
 			transition all .17s ease-in-out
 			position absolute
 			left 0
-			vertical-center()
-			border-radius 2px
-			width 16px
-			height 16px
-			border 1px solid $text-color
+			top 3px
+			border-radius 7px
+			width 35px
+			height 35px
+			border 1px solid $light-border-color
 			background-position 50% 50%
 			background-repeat no-repeat
-			background-size 12px 12px
+			background-size 17px
 			
 		&__label
 			display inline-block
@@ -88,7 +123,8 @@ input[type="search"]::-webkit-search-results-decoration
 				&:checked
 					+ span
 						&:before
-							background-color $text-color
+							background-color $accent-color
+							border-color $accent-color
 							background-image url('../img/icons/svg/checkbox-ic.svg')
 							
 .form
@@ -131,5 +167,55 @@ input[type="search"]::-webkit-search-results-decoration
 					+ span
 						&:after
 							display block
+							
 
+
+.form-rating
+	display flex
+	flex-wrap nowrap
+	align-items center
+	justify-content flex-start
+	&__label
+		font 17px $Reg
+		display inline-block
+		margin-right 15px
+		
+	&__stars
+		position relative
+		height 23px
+		width 120px
+		background url('../img/icons/svg/rating.svg') repeat-x / 24px 23px
+		
+	&__star
+		position absolute
+		top 0
+		left 0
+		height 100%
+		background-repeat repeat-x
+		background-size 24px 23px
+		&:nth-of-type(1)
+			z-index 5
+			width 20%
+		&:nth-of-type(2)
+			z-index 4
+			width 40%
+		&:nth-of-type(3)
+			z-index 3
+			width 60%
+		&:nth-of-type(4)
+			z-index 2
+			width 80%
+		&:nth-of-type(5)
+			z-index 1
+			width 100%
+			
+		&:hover
+			background-image url('../img/icons/svg/rating-fill.svg')
+			
+	&__input
+		&:checked + .form-rating__star
+			background-image url('../img/icons/svg/rating-fill.svg')
+			
+		
+		
 

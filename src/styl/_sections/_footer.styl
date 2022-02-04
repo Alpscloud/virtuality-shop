@@ -1,2 +1,75 @@
 .footer
 	background-color $footer-bg
+	color $footer-text-color
+	a
+		color inherit
+	&-top
+		padding 90px 0 60px
+	&-bottom
+		background-color $footer-lighten-bg
+		padding 35px 0
+		
+
+	.logo
+		margin-bottom 30px
+		
+	&__col
+		padding-left 30px
+		padding-right 30px
+		&:first-child
+			flex 1
+			width 100%
+			max-width 500px
+		&:last-child
+			width 300px
+			flex none
+		
+	&__row
+		margin-left -30px
+		margin-right -30px
+		
+	&-contacts
+		.link
+			font-size 15px
+			&:hover
+				color $basic-white-color
+				
+		p
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+				
+		a
+			&:hover
+				color $basic-white-color
+				
+.copyright
+	color #3F3F46
+		
+.support-link
+	display inline-block
+	margin-top 20px
+	position relative
+	padding-left 33px
+	svg
+		display inline-block
+		width 18px
+		height 15px
+		fill currentColor
+		position absolute
+		vertical-center()
+		left 0
+	&:hover
+		color $accent-color
+		
+
+.work-schedule
+	margin-top 50px
+	color #ACACB7
+	line-height 1.75
+	
+	&__title
+		font-size 12px
+		line-height 1
+		color #3F3F46
+		margin-bottom 15px

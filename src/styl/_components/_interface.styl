@@ -91,6 +91,27 @@
 		&:last-child
 			margin-right 0
 			
+.tab-controls-slider
+	&__wrapper
+		display flex
+		flex-wrap nowrap
+		flex-grow 1
+		min-width 0
+		justify-content flex-end
+		
+
+				
+.tab-controls-slider__navigation
+	flex none
+	width 40px
+	display flex
+	margin-left 5px
+	flex-direction column
+	button
+		margin-bottom 5px
+		&:last-child
+			margin-bottom 0
+			
 // Rating
 .rating
 	display flex
@@ -134,4 +155,104 @@
 		width 17px
 		height 17px
 		background url('../img/icons/svg/rating-fill.svg') 50% no-repeat / contain
+
+
+
+.link
+	color $text-color
+	font-family $Reg
+	border-bottom 1px solid 
+	&:hover
+		color $accent-color
 		
+	&-accent
+		color $accent-color
+		&:hover
+			color $darkest-accent-color
+			
+
+.fancy-link
+	position relative
+	overflow hidden
+	display block
+	&:before,
+	&:after
+		pseudo()
+		position absolute
+		transition all .17s ease-in-out
+	&:before
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color rgba($basic-black-color, .7)
+		z-index 1
+		opacity 0
+	&:after
+		position-center()
+		z-index 2
+		width 55px
+		height 55px
+		border-radius 50%
+		background rgba($basic-white-color, .25) url('../img/icons/svg/zoom.svg') 50% no-repeat / 16px 16px
+		margin-top 20px
+		opacity 0
+	&:hover
+		&:before
+			opacity 1
+		&:after
+			opacity 1
+			margin-top 0
+			
+	&__video
+		&:after
+			background-image url('../img/icons/svg/video.svg')
+	
+		
+		
+
+.socials
+	font-size 0
+	white-space nowrap
+	li
+		display inline-block
+		margin-right 7px
+		&:last-child
+			margin-right 0
+			
+	a
+		display block
+		position relative
+		width 50px
+		height 50px
+		border-radius 10px
+		border 1px solid #3C3C46
+		svg
+			svg()
+			position absolute
+			position-center()
+			width 20px
+			height 20px
+			fill #3C3C46
+		&:hover
+			border-color $accent-color
+			svg
+				fill $basic-white-color
+				
+
+// Adv banner
+.offer-block
+	overflow hidden
+	display flex
+	flex-direction column
+	justify-content space-between
+	text-align center
+	line-height 27px
+	font 17px $Reg
+	height 500px
+	padding 20px
+
+	&__title
+		font 60px $Bold
+		line-height 70px
+		margin-bottom 3px

@@ -145,6 +145,8 @@
 										{% include '../parts/components/product-card.html' %}
 										{% include '../parts/components/product-card.html' %}
 										{% include '../parts/components/product-card.html' %}
+										{% include '../parts/components/product-card.html' %}
+										{% include '../parts/components/product-card.html' %}
 									</div>
 
 
@@ -219,7 +221,7 @@
 				
 				<div class="container">
 					<div class="products-cards__entering">
-						<div class="row align-vertical-center align-horisontal-between">
+						<div class="row align-vertical-center align-horisontal-between row-nowrap">
 							<h2 class="sect-title">Хит продаж</h2>
 
 							<div class="tab-controls">
@@ -238,18 +240,53 @@
 			</section>
 			<!-- //sect products -->
 
-			<section class="sect__products-cards gutters">
+			<section class="sect__products-cards gutters no-top-gutters-mobile">
 				
 				<div class="container">
 					<div class="products-cards__entering">
-						<div class="row align-vertical-center align-horisontal-between">
+						<div class="row align-vertical-center align-horisontal-between row-nowrap">
 							<h2 class="sect-title">Товары брендов</h2>
+							
+							<div class="tab-controls-slider__wrapper">
+								<div class="tab-controls-slider js-tab-controls-slider">
+									<div class="tab-controls-slider__btn">
+										<button type="button" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></button>
+									</div>
+									<div class="tab-controls-slider__btn">
+										<button type="button" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></button>
+									</div>
 
-							<div class="tab-controls">
-								<button class="tab-controls__btn b-radius-7 is-active" type="button">Для игр</button>
-								<button class="tab-controls__btn b-radius-7" type="button">Для бизнеса</button>
-								<button class="tab-controls__btn b-radius-7" type="button">Аксессуары</button>
-								<button class="tab-controls__btn b-radius-7" type="button">Комплекты</button>
+									<div class="tab-controls-slider__btn">
+										<button type="button" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></button>
+									</div>
+
+									<div class="tab-controls-slider__btn">
+										<button type="button" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></button>
+									</div>
+									<div class="tab-controls-slider__btn">
+										<button type="button" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></button>
+									</div>
+									<div class="tab-controls-slider__btn">
+										<button type="button" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/6.png" alt=""></button>
+									</div>
+								</div>
+
+								<!-- Controls -->
+								<div class="tab-controls-slider__navigation">
+									<button class="btn-arrow-sm btn-arrow-sm__prev b-radius-7 js-tab-controls-slider-btn-prev" type="button">
+										<svg  viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 3.00781V3.99219H7.07812L5.29688 5.79688L6 6.5L9 3.5L6 0.5L5.29688 1.20312L7.07812 3.00781H0Z"/>
+										</svg>
+
+									</button>
+									<button class="btn-arrow-sm btn-arrow-sm__next b-radius-7 js-tab-controls-slider-btn-next" type="button">
+										<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 3.00781V3.99219H1.92188L3.70312 5.79688L3 6.5L0 3.5L3 0.5L3.70312 1.20312L1.92188 3.00781H9Z"/>
+										</svg>
+									</button>
+								</div>
+								<!-- //Controls -->
+								
 							</div>
 						</div>
 					</div>
@@ -268,8 +305,8 @@
 
 					<div class="promo-slider promo-slider-full js-promo-slider-full">
 
-						<div class="promo-slide bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
-
+						<div class="promo-slide bg b-radius-10">
+							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/1-bg.png');"></div>
 							<div class="promo-slide__content">
 								<p class="company-name">Virtuality  Club</p>
 
@@ -286,8 +323,8 @@
 						</div>
 						<!-- //slide -->
 
-						<div class="promo-slide promo-slide-dark bg b-radius-10" style="background-image: url('img/promo/2-bg.png');">
-
+						<div class="promo-slide promo-slide-dark  b-radius-10" >
+							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/2-bg.png');"></div>
 							<div class="promo-slide__content">
 								<p class="company-name">Virtuality  Club</p>
 
@@ -300,8 +337,8 @@
 						</div>
 						<!-- //slide -->
 
-						<div class="promo-slide bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
-
+						<div class="promo-slide  b-radius-10" >
+							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/1-bg.png');"></div>
 							<div class="promo-slide__content">
 								<p class="company-name">Virtuality  Club</p>
 
@@ -318,8 +355,8 @@
 						</div>
 						<!-- //slide -->
 
-						<div class="promo-slide promo-slide-dark bg b-radius-10" style="background-image: url('img/promo/2-bg.png');">
-
+						<div class="promo-slide promo-slide-dark  b-radius-10" >
+							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/2-bg.png');"></div>
 							<div class="promo-slide__content">
 								<p class="company-name">Virtuality  Club</p>
 
@@ -363,7 +400,7 @@
 					<div class="virtuality-wrapper">
 
 						<div class="products-cards__entering">
-							<div class="row align-vertical-center align-horisontal-between">
+							<div class="row align-vertical-center align-horisontal-between row-nowrap">
 								<h2 class="sect-title">Акции</h2>
 
 								<div class="tab-controls">
@@ -395,7 +432,7 @@
 				<div class="container">
 
 					<div class="products-cards__entering">
-						<div class="row align-vertical-center align-horisontal-between">
+						<div class="row align-vertical-center align-horisontal-between row-nowrap">
 							<h2 class="sect-title">Новинки</h2>
 
 							<div class="tab-controls">
@@ -428,18 +465,18 @@
 
 							<div class="our-brands-slider js-our-brands-slider slider-gutters">
 
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/1.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/2.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/3.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/4.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/5.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/6.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/1.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/2.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/3.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/4.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/5.png" alt=""></a>
-								<a href="#" class="our-brand b-radius-10"><img src="img/brands/6.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/6.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+								<a href="#" class="our-brand card b-radius-10"><img src="img/brands/6.png" alt=""></a>
 							</div>
 
 
@@ -472,12 +509,178 @@
 
 			<section class="sect__faq gutters color-bg">
 				<h2 class="sect-title text-center container">Часто задаваемые вопросы</h2>
+
+				<div class="container">
+					<div class="virtuality-wrapper virtuality-wrapper__right">
+
+
+						<div class="faq-slider__wrapper">
+							<div class="faq-slider js-faq-slider slider-gutters">
+								<a href="#" class="faq-item  b-radius-10" >
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/1.png');"></span>
+									
+									<span class="faq-item__content">
+										Помощь в установке и настройка
+
+										{% include '../parts/components/faq-svg-decor.html' %}
+
+									</span>
+								</a>
+
+								<a href="#" class="faq-item  b-radius-10">
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/2.png');"></span>
+
+									<span class="faq-item__content">
+										Оплата
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+
+								<a href="#" class="faq-item  b-radius-10">
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/3.png');"></span>
+
+									<span class="faq-item__content">
+										Гарантии и сервисный центр
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+
+								<a href="#" class="faq-item  b-radius-10" style="background-image: url('img/faq/4.png'); ">
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/4.png');"></span>
+
+									<span class="faq-item__content">
+										Доставка
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+
+								<a href="#" class="faq-item  b-radius-10" >
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/5.png');"></span>
+
+									<span class="faq-item__content">
+										Система акций
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+
+								<a href="#" class="faq-item b-radius-10" >
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/3.png');"></span>
+
+									<span class="faq-item__content">
+										Гарантии и сервисный центр
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+
+								<a href="#" class="faq-item b-radius-10">
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/4.png');"></span>
+									<span class="faq-item__content">
+										Доставка
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+
+								<a href="#" class="faq-item b-radius-10">
+									<span class="faq-item__bg bg" style="background-image: url('img/faq/5.png');"></span>
+									<span class="faq-item__content">
+										Система акций
+										{% include '../parts/components/faq-svg-decor.html' %}
+									</span>
+								</a>
+							</div>
+
+
+							<!-- Controls -->
+							<div class="slider-controls">
+								<div class="slider-navigation">
+									<button class="slider-navigation__btn slider-navigation__btn--prev js-faq-slider-btn-prev b-radius-7" type="button">
+										{% include '../parts/components/btn-arrow.html' %}
+									</button>
+									<button class="slider-navigation__btn slider-navigation__btn--next js-faq-slider-btn-next b-radius-7" type="button">
+										{% include '../parts/components/btn-arrow.html' %}
+									</button>
+								</div>
+
+								<div class="slider-pagination js-faq-slider-pagination"></div>
+							</div>
+							<!-- //Controls -->
+						</div>
+
+						{% include '../parts/components/virtuality-img.html' %}
+					</div>
+				</div>
+				<!-- //container -->
 			</section>
 
 			<!-- //sect faq -->
 
 			<section class="sect__feedbacks gutters">
 				<h2 class="sect-title text-center container">Наши отзывы</h2>
+
+				<div class="container">
+
+					<div class="feedbacks-slider__wrapper">
+						<div class="feedbacks-slider js-feedbacks-slider slider-gutters flex-slider">
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+							<!-- Feedback -->
+							{% include '../parts/components/feedback.html' %}
+							<!-- //feedback -->
+
+
+						</div>
+
+						<!-- Controls -->
+						<div class="slider-controls slider-controls__feedbacks">
+							<div class="slider-navigation">
+								<button class="slider-navigation__btn slider-navigation__btn--prev js-feedbacks-slider-btn-prev b-radius-7" type="button">
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+								<button class="slider-navigation__btn slider-navigation__btn--next js-feedbacks-slider-btn-next b-radius-7" type="button">
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+							</div>
+
+							<div class="slider-pagination js-feedbacks-slider-pagination"></div>
+
+							<div class="btn-wrapper">
+								<button class="btn js-open-feedback-form-popup-btn" type="button">
+									<span>Оставить отзыв</span>
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+							</div>
+						</div>
+						<!-- //Controls -->
+					</div>
+
+				</div>
+				<!-- //container -->
 			</section>
 
 			<!-- //sect feedbacks -->
@@ -488,6 +691,39 @@
 						
 
 						<h2 class="sect-title text-center">Дипломы и сертификаты</h2>
+
+
+						<div class="sertificates-slider__wrapper">
+
+							<div class="sertificates-slider slider-gutters js-sertificates-slider">
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/1.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/2.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/1.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/2.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/1.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/2.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/1.png" alt=""></span></a>
+								<a href="img/sertificates/1.png" class="sertificate b-radius-10 card" data-fancybox="sertificates"><span><img src="img/sertificates/2.png" alt=""></span></a>
+
+							</div>
+
+
+							<!-- Controls -->
+							<div class="slider-controls row row-nowrap align-vertical-center align-horisontal-between">
+								<div class="slider-navigation">
+									<button class="slider-navigation__btn slider-navigation__btn--prev js-sertificates-slider-btn-prev b-radius-7" type="button">
+										{% include '../parts/components/btn-arrow.html' %}
+									</button>
+									<button class="slider-navigation__btn slider-navigation__btn--next js-sertificates-slider-btn-next b-radius-7" type="button">
+										{% include '../parts/components/btn-arrow.html' %}
+									</button>
+								</div>
+
+								<div class="slider-pagination js-sertificates-slider-pagination"></div>
+
+							</div>
+							<!-- //Controls -->
+						</div>
 
 					</div>
 				</div>
@@ -507,6 +743,9 @@
 		<!-- Footer -->
 		{% include '../parts/sections/footer.html' %}
 		<!-- //Footer -->
+
+
+		{% include '../parts/components/popups/popup-feedback.html' %}
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
