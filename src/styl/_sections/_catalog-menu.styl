@@ -8,8 +8,9 @@
 	opacity 0
 	visibility hidden
 	pointer-events none
-	transition all .23s ease-in-out
 	margin-top 25px
+	transition all .23s ease-in-out
+	
 	height calc(100vh - 127px)
 	//outline 1px solid red
 	display flex
@@ -30,8 +31,7 @@
 			
 	&__col
 		height 100%
-		overflow-y auto
-		overflow-x hidden
+
 		
 	&__row
 		height 100%
@@ -51,17 +51,39 @@
 		padding-top 30px
 		padding-bottom 30px
 		
+		.catalog-menu__title
+			padding-right 25px
+		
 	&__adv
 		width 330px
 		flex none
 		margin-left 35px
 		padding-top 140px
+		padding-bottom 30px
 		
 	&__title
 		margin-bottom 20px
 		font 25px $Bold
 		line-height 35px
+		&-mobile
+			display none
 		
+
+.catalog-menu
+	&__brands
+		display flex
+		flex-wrap wrap
+		margin-left -2.5px
+		margin-right -2.5px
+		padding-right 30px
+		&-wrapper
+			margin-bottom 25px
+	&__brand
+		width 20%
+		padding 0 2.5px 5px
+		a
+			img
+				filter grayscale(0)
 
 .catalog-menu
 	&__nav
@@ -167,3 +189,51 @@
 				&:hover
 					color $accent-color
 					border-color $accent-color
+					
+
+.catalog-menu__categories-lists_wrapper
+	height 100%
+	max-height 100%
+	overflow-x hidden
+	
+
+.catalog-menu__lists
+	height 100%
+	max-height 100%
+	
+
+.catalog-menu__categories--block
+	display none
+	flex-direction column
+	flex 1
+	.catalog-menu__categories-lists_wrapper
+		height auto
+		flex 1
+		max-height none
+	&.is-active
+		display flex
+
+	
+
+
+
+	
+
+.catalog-menu__col
+
+	display flex
+	flex-direction column
+	
+
+
+.catalog-menu__col-scroll
+	position relative
+	border-right 1px solid $border-color
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		bottom 0
+		right 10px
+		width 1px
+		background-color $border-color

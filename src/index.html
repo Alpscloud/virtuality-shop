@@ -193,6 +193,8 @@
 	<div class="catalog-menu js-catalog-menu">
 	<div class="container">
 
+		<p class="catalog-menu__title catalog-menu__title-mobile">Каталог</p>
+
 		<button class="btn-close btn-close-border js-close-catalog-menu-btn" type="button">
 			<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
 				<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
@@ -200,26 +202,27 @@
 		</button>
 
 		<div class="catalog-menu__row row row-nowrap align-vertical-start">
-			<div class="catalog-menu__main catalog-menu__col">
-				<p class="catalog-menu__title">Каталог</p>
 
-				<div class="catalog-menu__lists">
+			<div class="catalog-menu__main catalog-menu__col catalog-menu__col-scroll">
+				<p class="catalog-menu__title catalog-menu__title-desktop">Каталог</p>
+
+				<div class="catalog-menu__lists styled-scroll">
 					<nav class="catalog-menu__nav">
 						<ul>
-							<li><a href="#">VR Шлемы</a></li>
-							<li><a href="#">AR/MR Очки</a></li>
-							<li><a href="#">Аксессуары</a></li>
-							<li><a href="#">Контроллеры и джойстики</a></li>
-							<li><a href="#">Системы позиционного трекинга</a></li>
-							<li><a href="#">Камеры для VR</a></li>
-							<li><a href="#">Игровые комплекты VR</a></li>
-							<li><a href="#">Компьютеры VR Ready</a></li>
-							<li><a href="#">Игры и Программы</a></li>
-							<li><a href="#">Квадрокоптеры</a></li>
-							<li><a href="#">3Д Технологии</a></li>
-							<li><a href="#">VR Аттракционы</a></li>
-							<li><a href="#">Образовательные решения</a></li>
-							<li><a href="#">Наши услуги</a></li>
+							<li data-id="1"><a href="#">VR Шлемы</a></li>
+							<li data-id="2"><a href="#">AR/MR Очки</a></li>
+							<li data-id="3"><a href="#">Аксессуары</a></li>
+							<li data-id="4"><a href="#">Контроллеры и джойстики</a></li>
+							<li data-id="5"><a href="#">Системы позиционного трекинга</a></li>
+							<li data-id="6"><a href="#">Камеры для VR</a></li>
+							<li data-id="7"><a href="#">Игровые комплекты VR</a></li>
+							<li data-id="8"><a href="#">Компьютеры VR Ready</a></li>
+							<li data-id="9"><a href="#">Игры и Программы</a></li>
+							<li data-id="10"><a href="#">Квадрокоптеры</a></li>
+							<li data-id="11"><a href="#">3Д Технологии</a></li>
+							<li data-id="12"><a href="#">VR Аттракционы</a></li>
+							<li data-id="13"><a href="#">Образовательные решения</a></li>
+							<li data-id="14"><a href="#">Наши услуги</a></li>
 						</ul>
 					</nav>
 
@@ -237,71 +240,1702 @@
 			</div>
 			<!-- //left col -->
 
-			<div class="catalog-menu__categories catalog-menu__col">
-				<div class="catalog-menu__brands"></div>
+			<div class="catalog-menu__categories catalog-menu__col catalog-menu__col-scroll">
 
-				<div class="catalog-menu__categories-lists_wrapper">
-					<p class="catalog-menu__title">Системы позиционного трекинга</p>
+				<div class="catalog-menu__categories--block js-catalog-menu-categories is-active" data-id="1">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
 
-					<div class="catalog-menu__categories-lists">
-						<nav class="catalog-menu__categories-list">
-							<p class="catalog-menu__categories-list_title"><a href="#">VR аксессуары</a></p>
-							<ul>
-								<li><a href="#">VR комплектующие</a></li>
-								<li><a href="#">Кабель и кабель менеджмент</a></li>
-								<li><a href="#">Накладки и защитные чехлы</a></li>
-								<li><a href="#">Кейсы, сумки, футляры</a></li>
-								<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
-								<li><a href="#">Крепления, ремни, держатели</a></li>
-								<li><a href="#">Наушники и гарнитуры</a></li>
-							</ul>
-						</nav>
+					<p class="catalog-menu__title">
+						<span>VR Шлемы</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
 
-						<nav class="catalog-menu__categories-list">
-							<p class="catalog-menu__categories-list_title"><a href="#">Аксессуары для контроллеров</a></p>
-							<ul>
-								<li><a href="#">VR комплектующие</a></li>
-								<li><a href="#">Кабель и кабель менеджмент</a></li>
-								<li><a href="#">Накладки и защитные чехлы</a></li>
-								<li><a href="#">Кейсы, сумки, футляры</a></li>
-							</ul>
-						</nav>
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
 
-						<nav class="catalog-menu__categories-list">
-							<p class="catalog-menu__categories-list_title"><a href="#">Аксессуары для ПК, ноутбуков и консолей</a></p>
-							<ul>
-								<li><a href="#">VR комплектующие</a></li>
-								<li><a href="#">Кабель и кабель менеджмент</a></li>
-								<li><a href="#">Накладки и защитные чехлы</a></li>
-								<li><a href="#">Кейсы, сумки, футляры</a></li>
-								<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
-								<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
-								<li><a href="#">Крепления, ремни, держатели</a></li>
-								<li><a href="#">Крепления, ремни, держатели</a></li>
-								<li><a href="#">Наушники и гарнитуры</a></li>
-								<li><a href="#">Наушники и гарнитуры</a></li>
-							</ul>
-						</nav>
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
 
-						<nav class="catalog-menu__categories-list">
-							<p class="catalog-menu__categories-list_title"><a href="#">Аксессуары для ПК, ноутбуков и консолей</a></p>
-							<ul>
-								<li><a href="#">VR комплектующие</a></li>
-								<li><a href="#">Кабель и кабель менеджмент</a></li>
-								<li><a href="#">Накладки и защитные чехлы</a></li>
-								<li><a href="#">Кейсы, сумки, футляры</a></li>
-								<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
-								<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
-								<li><a href="#">Крепления, ремни, держатели</a></li>
-								<li><a href="#">Крепления, ремни, держатели</a></li>
-								<li><a href="#">Наушники и гарнитуры</a></li>
-								<li><a href="#">Наушники и гарнитуры</a></li>
-							</ul>
-						</nav>
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
 
 
-					</div>
+	</div>
+</div>
 				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="2">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>AR/MR Очки</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="3">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Аксессуары</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="4">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Контроллеры и джойстики</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="5">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Системы позиционного трекинга</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="6">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Камеры для VR</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="7">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Игровые комплекты VR</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="8">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Компьютеры VR Ready</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="9">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Игры и Программы</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="10">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Квадрокоптеры</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="11">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>3Д Технологии</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="12">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>VR Аттракционы</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="13">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Образовательные решения</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="14">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Наши услуги</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
 			</div>
 			<!-- //center col -->
 
@@ -4430,6 +6064,7 @@
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <!-- All libs scripts -->
 <script src="js/libs.min.js"></script>
+<script src="js/libs/jquery.overlayScrollbars.js"></script>
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 </body>
