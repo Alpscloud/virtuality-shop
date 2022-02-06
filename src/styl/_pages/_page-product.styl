@@ -1,0 +1,75 @@
+.product-block
+	margin-bottom 20px
+	padding 15px 35px 15px 15px
+	&__information
+		display flex
+		flex-wrap nowrap
+		align-items center
+		flex 2
+	
+		max-width 590px
+		.product-articul
+			margin-top 5px
+	&__thumbnail
+		width 180px
+		height 130px
+		padding 10px
+		flex none
+		margin-right 25px
+		
+		img
+			@extends .content-img
+	&__title
+		font 15px $Reg
+		line-height 22px
+		font-weight 600
+		a
+			color $text-color
+			&:hover
+				color $accent-color
+	&__btn
+		width 210px
+		flex none
+		.btn-add
+			width 100%
+			padding-right 4px
+			
+
+	&__prices
+		flex 1
+		text-align center
+		
+		.product-prices
+			justify-content center
+			font-size 15px
+			span
+				font-size inherit
+
+			
+	&:last-child
+		margin-bottom 0
+		
+.product-articul
+	color $articul-color 
+		
+
+.product-status
+	color $available-color
+	font 15px $Reg
+	position relative
+	padding-left 15px
+	line-height 20px
+	margin-bottom 5px
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		width 5px
+		height 5px
+		left 0
+		border-radius 50%
+		background-color currentColor
+		
+	&.not-available
+		color $error-color
+		

@@ -250,12 +250,18 @@
 	line-height 27px
 	font 17px $Reg
 	height 500px
-	padding 20px
+	padding 20px 15px
+	color $text-color
 
 	&__title
 		font 60px $Bold
 		line-height 70px
 		margin-bottom 3px
+		
+	&__dark
+		color #D0DCEF
+		.offer-block__title
+			color $basic-white-color
 		
 
 // custom scroll
@@ -267,12 +273,170 @@
 		
 	.os-content
 		padding-right 11px !important
+		
+	.os-scrollbar-vertical
+		right 2.5px
 			
-	&.os-theme-dark
+	&.os-theme-dark,
+	.os-theme-light
 		> .os-scrollbar
 			> .os-scrollbar-track
 				background-color $border-color
 	
 				> .os-scrollbar-handle
 					background-color #3C3C46
+					
+
+
+.os-theme-dark,
+.os-theme-light
+	>.os-scrollbar
+		>.os-scrollbar-track
+			background-color $border-color
+			>.os-scrollbar-handle
+				background-color #3C3C46
 				
+.os-theme-dark,
+.os-theme-light
+	>.os-scrollbar-vertical
+		width 5px
+		padding 0
+				
+
+// Dropdown
+.dropdown
+	position absolute
+	top 100%
+	width 430px
+	horisontal-center()
+	z-index 10
+	padding-top 30px
+	opacity 0
+	visibility hidden
+	pointer-events none
+	margin-top 25px
+	transition all .23s ease-in-out
+	
+	&-wrapper
+		position relative
+		&:hover
+			.header-tools__link
+				color $accent-color
+			.dropdown
+				opacity 1
+				visibility visible
+				pointer-events auto
+				margin-top 0
+		
+	&-content
+
+		background-color $basic-white-color
+		box-shadow 7px 6px 13px -10px rgba(28, 26, 26, 0.15), 8px 8px 30px -6px rgba(28, 26, 26, 0.1)
+		
+		.product-prices
+			font-size 15px
+			margin-bottom 0
+			margin-top 10px
+			
+			
+		.product-prices
+			&__old,
+			&__new
+				font-size inherit
+		
+	&-footer
+		
+		padding 20px 25px 25px
+		box-shadow 7px -24px 23px -24px rgba(119, 129, 140, 0.34)
+		&__btns
+			display flex
+			flex-wrap nowrap
+			.btn
+				flex 1
+				margin-right 10px
+				padding 18px 10px
+				&:last-child
+					margin-right 0
+				
+		&__text
+			display flex
+			justify-content space-between
+			width 100%
+			font-weight 600
+			margin-bottom 20px
+			b, strong
+				font-family $Reg
+				font-weight 700
+				
+	&-header
+		display flex
+		align-items center
+		justify-content space-between
+		flex-wrap nowrap
+		padding 25px 25px 0
+		
+	&-body
+		padding 25px 12px 25px 25px
+		&__content
+			height 100%
+			max-height 200px
+			padding-right 15px !important
+			
+			.os-content
+				padding-right 25px !important
+		
+	&-notice
+		font-weight 600
+		
+	&-title
+		font 20px $Bold
+		
+	&-product
+		padding-bottom 10px
+		margin-bottom 10px
+		display flex
+		flex-wrap nowrap
+		position relative
+		padding-right 20px
+		border-bottom 1px solid $border-color
+		&__thumbnail
+			flex none
+			width 115px
+			height 80px
+			flex-col-center()
+			padding 15px
+			margin-right 15px
+			img
+				@extends .content-img
+		.btn-close
+			width 10px
+			height 10px
+			position absolute
+			vertical-center()
+			right 0
+			svg
+				width 100%
+				height 100%
+				
+		&__title
+			font-size 15px
+			line-height 22px
+			font-weight 600
+			a
+				color $text-color
+				&:hover
+					color $accent-color
+		&:last-child
+			padding-bottom 0
+			margin-bottom 0
+			border-bottom none
+		
+	
+		
+// Atteintion block
+.attention-block
+	border-radius 10px
+	background-color rgba(0, 149, 217, 0.05)
+	border 1px solid rgba(0, 149, 217, 0.5)
+	padding 25px
+	font-size 17px

@@ -52,6 +52,15 @@ $(document).ready(function() {
 		$('html').addClass('is-fixed');
 	});
 
+	$('.js-open-quick-buy-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-popup-quick-buy').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+
+	
+
 
 
 
@@ -116,18 +125,30 @@ $(document).ready(function() {
 	});
 
 
-	$('.catalog-menu__categories--block .catalog-menu__title').on('click', function(e) {
+	if (html > 767) {
+
+		$('.catalog-menu__categories--block .catalog-menu__title').on('click', function(e) {
+			e.preventDefault();
+
+			$(this).toggleClass('is-active');
+			$(this).parents('.catalog-menu__categories--block').find('.catalog-menu__brands-wrapper').stop().slideToggle(250);
+			$(this).parents('.catalog-menu__categories--block').find('.catalog-menu__categories-lists_wrapper').stop().slideToggle(250);
+		});
+
+		$('.catalog-menu__categories-list_title').on('click', function(e) {
+			e.preventDefault();
+
+			$(this).toggleClass('is-active');
+			$(this).parents('.catalog-menu__categories-list').find('ul').stop().slideToggle(250);
+		});
+
+	}
+
+	$('.js-toggle-site-search-btn').on('click', function(e) {
 		e.preventDefault();
 
 		$(this).toggleClass('is-active');
-		$(this).parents('.catalog-menu__categories--block').find('.catalog-menu__categories-lists_wrapper').stop().slideToggle(250);
-	});
-
-	$('.catalog-menu__categories-list_title').on('click', function(e) {
-		e.preventDefault();
-
-		$(this).toggleClass('is-active');
-		$(this).parents('.catalog-menu__categories-list').find('ul').stop().slideToggle(250);
+		$('.js-site-search').toggleClass('is-opened');
 	});
 
 
@@ -548,14 +569,21 @@ $(document).ready(function() {
 	}, 1000);
 
 
-	if (html > 767) {
+	
 
-		$(".styled-scroll").overlayScrollbars({ 
-			overflowBehavior: {x: 'hidden'}
+	$(".styled-scroll").overlayScrollbars({ 
+		overflowBehavior: {x: 'hidden'}
+	});
+
+
+
+	$(".catalog-menu__brands").overlayScrollbars({ 
+			overflowBehavior: {y: 'hidden'}
 		});
 
-	}
 
+
+	$("input[type=tel]").inputmask({"mask": "+7 (999) 999-9999","clearIncomplete": false});
 
 
 	

@@ -9,6 +9,8 @@
 		&__group
 			position relative
 			
+
+			
 		&__input
 			width 100%
 			display block
@@ -53,6 +55,24 @@
 				background-color $dark-accent-color
 				
 
+.search-form-lg
+	.search-form
+		&__input
+			height 65px
+			font-size 17px
+			&::-webkit-input-placeholder
+				font-size 17px
+
+			&::-moz-placeholder
+				font-size 17px
+			&:-moz-placeholder
+				font-size 17px
+			&:-ms-input-placeholder
+				font-size 17px
+		&__btn
+			width 45px
+			height 45px
+			right 10px
 
 .footer-search
 	margin-bottom 50px
@@ -60,18 +80,51 @@
 		&__input
 			background-color #1A1A1C
 			border-color #3C3C46
+			font-size 15px
 			&:hover,
 			&:focus
 				border-color $accent-color
 			&::-webkit-input-placeholder
-				font 15px $Reg
+				font 1em $Reg
 				color $footer-text-color
 			&::-moz-placeholder
-				font 15px $Reg
+				font 1em $Reg
 				color $footer-text-color
 			&:-moz-placeholder
-				font 15px $Reg
+				font 1em $Reg
 				color $footer-text-color
 			&:-ms-input-placeholder
-				font 15px $Reg
+				font 1em $Reg
 				color $footer-text-color
+				
+
+.site-search
+	flex 1
+	padding-right 20px
+	transition all .23s ease-in-out
+	opacity 0
+	visibility hidden
+	pointer-events none
+	&.is-opened
+		opacity 1
+		visibility visible
+		pointer-events auto
+	.search-form__input
+		height 30px
+		font-size 13px
+		&::-webkit-input-placeholder
+			font-size 13px
+
+		&::-moz-placeholder
+			font-size 13px
+		&:-moz-placeholder
+			font-size 13px
+		&:-ms-input-placeholder
+			font-size 13px
+		
+	.search-form__btn
+		height 25px
+		width 25px
+		svg
+			width 15px
+			height 15px

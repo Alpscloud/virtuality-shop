@@ -1,0 +1,100 @@
+.cabinet
+	&-aside
+		width 320px
+		margin-right 70px
+		
+		.offer-block
+			margin-top 20px
+		
+	&-nav
+		background-color $basic-white-color
+		box-shadow 7px 6px 13px -10px rgba(28, 26, 26, 0.15), 8px 8px 30px -6px rgba(28, 26, 26, 0.1)
+		position relative
+		padding-top 20px
+		&__list
+			position relative
+			padding-bottom 20px
+			&:before
+				pseudo()
+				position absolute
+				left 25px
+				right 25px
+				height 1px 
+				bottom 0
+				background-color $border-color
+				
+		&__footer
+			padding 15px 0 22px
+				
+		&__item
+			display block
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+			
+		&__link
+			display flex
+			justify-content flex-start
+			flex-wrap nowrap
+			align-items center
+			color $text-color
+			height 30px
+			line-height 1
+			padding-left 25px
+			padding-right 25px
+			position relative
+			&:before
+				pseudo()
+				position absolute
+				top 0
+				left 0
+				height 100%
+				border-radius 40px
+				background-color $accent-color
+				width 2px
+				transition opacity .17s ease-in-out
+				opacity 0
+			&--ic
+				display inline-block
+				flex none
+				width 20px
+				height 20px
+				margin-right 16px
+				svg
+					svg()
+					fill $text-color
+					fill-rule evenodd 
+					clip-rule evenodd
+					
+			&:hover
+				color $accent-color
+				svg
+					fill $accent-color
+					
+			&.is-active
+				color $accent-color
+				svg
+					fill $accent-color
+					
+				&:before
+					opacity 1
+		
+		
+			
+		
+	&-main
+		flex 1
+		&__title
+			font 25px $Bold
+			line-height 35px
+			margin-bottom 30px
+			
+		.tab-controls
+			margin-bottom 30px
+			
+
+.cabinet-search
+	margin-bottom 30px
+	
+.cabinet__row
+	flex-wrap nowrap
