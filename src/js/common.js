@@ -58,6 +58,15 @@ $(document).ready(function() {
 		$('html').addClass('is-fixed');
 	});
 
+	$('.js-open-follow-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-popup-follow').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+
+	
+
 
 	
 
@@ -151,6 +160,16 @@ $(document).ready(function() {
 		$('.js-site-search').toggleClass('is-opened');
 	});
 
+	$('.js-toggle-order-details-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-toggled');
+		$(this).parents('.cabinet-order').find('.js-order-details').stop().slideToggle(250);
+	});
+
+
+	
+
 
 	
 
@@ -234,7 +253,7 @@ $(document).ready(function() {
 			appendDots: $('.js-promo-products-cards-slider-pagination'),
 			responsive: [
 				{
-					breakpoint: 1280,
+					breakpoint: 1281,
 					settings: {
 						slidesToShow: 4
 					}
@@ -377,7 +396,7 @@ $(document).ready(function() {
 					}
 				},
 				{
-					breakpoint: 1280,
+					breakpoint: 1281,
 					settings: {
 						slidesToShow: 4,
 
@@ -530,6 +549,69 @@ $(document).ready(function() {
 			$(this).parents('.form-group').removeClass('is-error');
 		}
 	});
+
+	$('.cabinet-support-chat__form--file .btn-close').on('click', function(e) {
+		e.preventDefault();
+		$('.cabinet-support-chat__form input[type=file]').val('');
+
+		$('.cabinet-support-chat__form--file span').html('');
+		$('.cabinet-support-chat__form--file').removeClass('is-visible');
+
+	});
+
+
+	$('.cabinet-support-chat__form input[type=file]').on('change', function(e) {
+		var self = $(this);
+
+		var value =  self.val().split('\\').pop();
+
+
+
+		$('.cabinet-support-chat__form--file span').html(value);
+		$('.cabinet-support-chat__form--file').addClass('is-visible');
+
+	});
+
+
+	$('.cabinet-support-chat__wrapper .btn-accordion').on('click', function(e) {
+		
+		e.preventDefault();
+
+		$(this).toggleClass('is-toggled');
+		$(this).parents('.cabinet-support-chat__wrapper').find('.cabinet-support-chat__block').stop().slideToggle(250);
+
+	});
+
+
+
+	
+
+	// $('.js-form-file input:file').on('change', function(e) {
+	// 	var self = $(this);
+
+	// 	var files = self[0].files;
+
+	// 	var formFileResults = '';
+
+	// 	for (var i = 0; i < files.length; i++) {
+	// 		console.log(files[i]);
+
+	// 		var fileType = files[i].type;
+
+	// 		var formFileResultImg;
+
+
+	// 		formFileResults += '<div class="form-file__result">' 
+	// 		+ '<div class="form-file__result--img bg" style="background-image: url("img/offer.png");"></div>'
+	// 		+ '<div class="form-file__result--name"><span>'+ files[i].name +'</span><button class="btn-close" type="button"><svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" /></svg></button></div>'
+	// 		+ '</div>';
+	// 	}
+
+	// 	$('.form-file__results').empty().append(formFileResults);
+
+
+		
+	// });
 
 
 	// Show password in input

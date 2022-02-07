@@ -11,6 +11,7 @@
 	color $basic-white-color
 	text-transform uppercase
 	padding 25px 60px
+	border 1px solid $accent-color
 	svg
 		svg()
 		flex none
@@ -19,11 +20,28 @@
 		fill $basic-white-color
 		margin-left 10px
 	&:hover
+		border-color $dark-accent-color
 		color $basic-white-color
 		background-color $dark-accent-color
 		fill $basic-white-color
 		svg
 			transform translateX(5px)
+			
+	&.is-active
+		background-color $basic-white-color
+		color $text-color
+		svg
+			fill $text-color
+		&:hover
+			border-color $dark-accent-color
+			color $basic-white-color
+			background-color $dark-accent-color
+			
+			
+			svg
+				fill $basic-white-color
+				transform translateX(5px)
+		
 			
 	&.is-disabled,
 	&:disabled
@@ -53,6 +71,9 @@
 		&:hover
 			svg
 				fill $basic-white-color
+				
+	&-sm
+		padding 18px 20px
 				
 	&-password
 		display inline-block
@@ -244,6 +265,28 @@
 		
 
 	&-toggle
+		display inline-flex
+		flex-wrap nowrap
+		align-items center
+		color $accent-color
+		font 15px $Reg
+		
+		span
+			display inline-block
+			border-bottom 1px solid currentColor
+		svg
+			margin-left 5px
+			svg()
+			width 9px
+			fill currentColor
+		&:hover
+			color $text-color
+			svg
+				fill $text-color
+		&.is-toggled
+			svg
+				transform rotate(-180deg)
+				
 		&-triangle
 			width 7px
 			height 3px
@@ -308,5 +351,55 @@
 			height 11px
 			fill $basic-white-color
 			margin-right 15px
+			
+	&-accordion
+		display inline-block
+		width 50px
+		height 50px
+		flex none
+		border-radius 10px
+		position relative
+		border 1px solid $border-color
+		svg
+			svg()
+			position absolute
+			width 10px
+			height 10px
+			fill $text-color
+			position-center()
+		&:hover
+			border-color $accent-color
+			
+		&.is-toggled
+			svg
+				transform translate(-50%, -50%) rotate(-180deg)
+				
+	&-follow
+		display inline-block
+		width 40px
+		height 40px
+		border-radius 7px
+		background-color rgba($basic-white-color, .4)
+		position relative
+		z-index 3	
+		svg
+			svg()
+			width 16px
+			height 16px
+			fill $text-color
+			position absolute
+			position-center()
+		&:hover
+			background-color $basic-white-color
+		&.is-active
+			background-color $basic-white-color
+			svg
+				fill $accent-color
 		
 		
+
+span.btn.is-active
+	&:hover
+		background-color $basic-white-color
+		color $text-color
+		border-color $accent-color

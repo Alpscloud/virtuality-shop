@@ -1,0 +1,172 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Личный кабинет</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title container page-title">Личный кабинет</h1>
+
+
+			<section class="sect__cabinet gutter-bottom">
+				<div class="container">
+
+					<div class="cabinet">
+						<div class="row cabinet__row align-vertical-start align-horisontal-start">
+							<!-- Cabinet menu -->
+							{% include '../parts/sections/cabinet-aside.html' %}
+							<!-- //Cabinet menu -->
+
+							<div class="cabinet-main">
+								<h2 class="cabinet-main__title">Участие в акциях</h2>
+
+								
+
+								<div class="cabinet-stocks">
+									
+									<!-- Stock -->
+									<div class="cabinet-stock">
+										<a href="page-cabinet-stock.html" class="promo-slide promo-slide-dark  b-radius-10" >
+											<div class="promo-slide__bg bg"  style="background-image: url('img/promo/2-bg.png');"></div>
+											<div class="promo-slide__content">
+												<p class="company-name">Virtuality  Club</p>
+
+												<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+												<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+											</div>
+
+										</a>
+
+										{% include '../parts/components/btn-follow.html' %}
+									</div>
+									<!-- //Stock -->
+
+									<!-- Stock -->
+									<div class="cabinet-stock">
+
+										<a href="page-cabinet-stock.html" class="promo-slide  b-radius-10" >
+											<div class="promo-slide__bg bg"  style="background-image: url('img/promo/1-bg.png');"></div>
+											<div class="promo-slide__content">
+												<p class="company-name">Virtuality  Club</p>
+
+												<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+												<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+
+
+											</div>
+
+											<div class="promo-slide__img">
+												<img src="img/promo/2.png" alt="">
+											</div>
+
+
+
+
+										</a>
+
+										{% include '../parts/components/btn-follow.html' %}
+									</div>
+									<!-- //Stock -->
+
+
+									<!-- Stock -->
+									<div class="cabinet-stock">
+										<a href="page-cabinet-stock.html" class="promo-slide promo-slide-color  b-radius-10" >
+											<div class="promo-slide__bg bg"></div>
+											<div class="promo-slide__content">
+												<p class="company-name">Virtuality  Club</p>
+
+												<h2 class="promo-slide__title">Реальность,<br> которая впечатляет</h2>
+
+												<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+												
+
+											</div>
+
+											<div class="promo-slide__img">
+												<img src="img/promo/3.png" alt="">
+											</div>
+
+										</a>
+
+										{% include '../parts/components/btn-follow.html' %}
+									</div>
+									<!-- //Stock -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+		{% include '../parts/components/popups/popup-follow.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

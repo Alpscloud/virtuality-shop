@@ -26,10 +26,6 @@
 		position relative
 		z-index 2
 	&__img
-		// width auto
-		// max-width 766px
-		// height auto
-		// max-height 640px
 		position absolute
 		top 0
 		height 100%
@@ -42,6 +38,18 @@
 			display block
 			height 100%
 			width auto
+			
+		&--product
+			bottom auto
+			height auto
+			vertical-center()
+			right 60px
+			max-width 400px
+		
+			img
+				width 100%
+				display block
+				height auto
 			
 	&__title
 		font 60px $Bold
@@ -65,6 +73,50 @@
 		.promo-slide__title,
 		.promo-slide__text
 			color inherit
+			
+	&-color
+		.promo-slide__bg
+			background #E64646 url('../img/promo/circles.png') 50% no-repeat 
+			&:before,
+			&:after
+				border-radius 50%
+				pseudo()
+				position absolute
+				background-color #FFF386
+			&:before
+				width 200px
+				height 200px
+				top -135px
+				left -80px
+			&:after
+				width 330px
+				height 330px
+				left 70px
+				bottom -260px
+		.promo-slide__img
+			width 810px
+			height 810px
+			background-color #FFF386
+			right 50px
+			top -30px
+			border-radius 50%
+			bottom auto
+			img
+				width 525px
+				position absolute	
+				horisontal-center()
+				top 30px
+				height 	auto
+		.company-name
+			color #FFF386
+			
+		.promo-slide__title,
+		.promo-slide__text
+			max-width 500px
+			
+		.promo-slide__text
+			color #FFE7E7
+		
 			
 
 .company-name

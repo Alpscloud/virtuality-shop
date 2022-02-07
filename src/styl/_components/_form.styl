@@ -55,8 +55,11 @@ input[type="search"]::-webkit-search-results-decoration
 				font-size 15px
 			
 		&__label
-			display inline-block
-			margin-bottom 5px
+			display block
+			> span
+				display block
+				margin-bottom 15px
+				color $light-text-color
 			
 		&__error
 			display none
@@ -128,48 +131,12 @@ input[type="search"]::-webkit-search-results-decoration
 							background-color $accent-color
 							border-color $accent-color
 							background-image url('../img/icons/svg/checkbox-ic.svg')
+		
+		&__center
+			&:before
+				vertical-center()
 							
-.form
-	&-radio
-		display inline-block
-		position relative
-		padding-left 25px
-		font 1em $Reg
-		line-height 1
-		color $text-color
-		&:before
-			pseudo()
-			transition all .17s ease-in-out
-			position absolute
-			left 0
-			vertical-center()
-			border-radius 50%
-			width 16px
-			height 16px
-			border 1px solid $text-color
-		&:after
-			pseudo()
-			transition all .17s ease-in-out
-			position absolute
-			left 2px
-			top 2px
-			width 12px
-			height 12px
-			border-radius 50%
-			background-color $text-color
-			display none
-			
 
-			
-		&__label
-			display inline-block
-			input
-				display none
-				&:checked
-					+ span
-						&:after
-							display block
-							
 
 
 .form-rating
@@ -221,3 +188,150 @@ input[type="search"]::-webkit-search-results-decoration
 		
 		
 
+.form-tools
+	position absolute
+	right 25px
+	top 10px
+	display flex
+	align-items center
+	z-index 1
+	flex-wrap nowrap
+
+	.link
+		font-size 17px
+		
+	.form-file-sm
+		margin-left 15px
+		
+
+.form-file
+	display flex
+	justify-content center
+	align-items center
+	border-radius 10px
+	border 1px dashed $border-color
+	height 140px
+	transition border-color .17s ease-in-out
+	position relative
+	
+	&-loader
+		z-index 2
+		flex-col-center()
+		position absolute
+		background-color $basic-white-color
+
+	
+	input
+		display none
+	svg
+		display inline-block
+		svg()
+		width 10px
+		flex none
+		margin-right 10px
+	span,
+	.link
+		font-size 17px
+	&:hover
+		cursor pointer
+		border-color $accent-color
+		.link
+			color $text-color
+			
+	&-sm
+		display inline-block
+		border 1px solid $border-color
+		border-radius 10px
+		flex none
+		width 40px
+		height 40px
+		transition border-color .17s ease-in-out
+		position relative
+		svg
+			svg()
+			position absolute
+			position-center()
+			pointer-events none
+			width 10px
+			fill $text-color
+		input
+			display none
+		&:hover
+			border-color $accent-color
+			cursor pointer
+			
+
+.form-groups
+	&__row
+		margin-left -7.5px
+		margin-right -7.5px
+		flex-wrap wrap
+		padding-bottom 30px
+		margin-bottom 30px
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			left 15px
+			right 15px
+			height 1px
+			background-color $border-color
+			bottom 0
+		&:last-child
+			padding-bottom 0
+			margin-bottom 0
+			&:before
+				display none
+				
+		.form-group
+			margin-bottom 15px
+			padding-left 7.5px
+			padding-right 7.5px
+			&:last-child
+				margin-bottom 0
+			
+	&__user
+		.form-group
+			margin-bottom 30px
+			
+
+.form-file
+	
+	&__results
+		margin-top 20px
+		margin-bottom -20px
+		display flex
+		flex-wrap wrap
+		margin-left -10px
+		margin-right -10px
+	&__result
+		padding-left 10px
+		padding-right 10px
+		margin-bottom 20px
+		width calc(100% / 6)
+		&--img
+			display block
+			width 100%
+			padding-top 79%
+			border-radius 10px
+			margin-bottom 10px
+		&--name
+			display inline-flex
+			flex-wrap nowrap
+			align-items center
+			span
+				display inline-block
+				max-width 120px
+				line-height 20px
+				flex 1
+				overflow hidden
+				text-overflow ellipsis
+				
+			.btn-close
+				width 12px
+				flex none
+				height 12px
+				margin-left 8px
+				svg
+					width 100%
+					height 100%

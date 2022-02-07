@@ -85,37 +85,165 @@
 
 								<div class="cabinet-orders">
 									
-
-									<div class="attention-block">
-										<p>Интернет-заказы отсутствуют.</p>
+									<div class="tab-controls cabinet-orders__controls">
+										<a href="#" class="tab-controls__btn b-radius-7 is-active">все Заказы</a>
+										<a href="#" class="tab-controls__btn b-radius-7 ">На проработке</a>
+										<a href="#" class="tab-controls__btn b-radius-7 ">На доставке</a>
+										<a href="#" class="tab-controls__btn b-radius-7 ">Получение</a>
 									</div>
-									
+
+
+									<div class="cabinet-orders__wrapper">
+										<!-- Order -->
+										<div class="cabinet-order card b-radius-10">
+											<div class="cabinet-order__row row align-horisontal-between row-gutters">
+												<div class="cabinet-order__information col-gutters">
+
+													<div class="cabinet-order__title--wrapper">
+														<h3 class="cabinet-order__title">Заказ № 47595680468</h3>
+														<span class="cabinet-order-status status-active">На проработке</span>
+													</div>
+
+													<div>
+														<p>Дата оформления: 22.12.21</p>
+														<p>Адрес доставки: г. Сызрань, пр. Ленина 10б </p>
+													</div>
+
+													<button class="btn-toggle js-toggle-order-details-btn" type="button">
+														<span>Детали заказа</span>
+														<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+													</button>
+												</div>
+
+												<div class="cabinet-order__payment text-right col-gutters">
+													<p class="cabinet-order__price">156 989 ₽</p>
+
+													<ul>
+														<li>Оплата: <span>Картой на сайте</span></li>
+														<li>Следующий платеж: <span>14.01.22</span></li>
+														<li>Осталось платежей: <span>5</span></li>
+													</ul>
+												</div>
+												
+
+												<div class="cabinet-order__details col-gutters js-order-details">
+													{% include '../parts/components/cabinet/products.html' %}
+												</div>
+
+											</div>
+										</div>
+
+										<!-- //Order -->
+
+										<!-- Order -->
+										<div class="cabinet-order card b-radius-10">
+											<div class="cabinet-order__row row align-horisontal-between row-gutters">
+												<div class="cabinet-order__information col-gutters">
+
+													<div class="cabinet-order__title--wrapper">
+														<h3 class="cabinet-order__title">Заказ № 47595680468</h3>
+														<span class="cabinet-order-status status-delivery">На доставке</span>
+													</div>
+
+													<div>
+														<p>Дата оформления: 22.12.21</p>
+														<p>Адрес доставки: г. Сызрань, пр. Ленина 10б </p>
+													</div>
+
+													<button class="btn-toggle js-toggle-order-details-btn" type="button">
+														<span>Детали заказа</span>
+														<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+													</button>
+												</div>
+
+												<div class="cabinet-order__payment text-right col-gutters">
+													<p class="cabinet-order__price">156 989 ₽</p>
+
+													<ul>
+														<li>Оплата: <span>Картой на сайте</span></li>
+														<li>Следующий платеж: <span>14.01.22</span></li>
+														<li>Осталось платежей: <span>5</span></li>
+													</ul>
+												</div>
+												
+
+												<div class="cabinet-order__details col-gutters js-order-details">
+													{% include '../parts/components/cabinet/products.html' %}
+												</div>
+
+											</div>
+										</div>
+
+										<!-- //Order -->
+
+										<!-- Order -->
+										<div class="cabinet-order card b-radius-10">
+											<div class="cabinet-order__row row align-horisontal-between row-gutters">
+												<div class="cabinet-order__information col-gutters">
+
+													<div class="cabinet-order__title--wrapper">
+														<h3 class="cabinet-order__title">Заказ № 47595680468</h3>
+														<span class="cabinet-order-status status-receiving">Получение</span>
+													</div>
+
+													<div>
+														<p>Дата оформления: 22.12.21</p>
+														<p>Адрес доставки: г. Сызрань, пр. Ленина 10б </p>
+													</div>
+
+													<button class="btn-toggle js-toggle-order-details-btn" type="button">
+														<span>Детали заказа</span>
+														<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+													</button>
+												</div>
+
+												<div class="cabinet-order__payment text-right col-gutters">
+													<p class="cabinet-order__price">156 989 ₽</p>
+
+													<ul>
+														<li>Оплата: <span>Картой на сайте</span></li>
+														<li>Следующий платеж: <span>14.01.22</span></li>
+														<li>Осталось платежей: <span>5</span></li>
+													</ul>
+												</div>
+												
+
+												<div class="cabinet-order__details col-gutters js-order-details">
+													{% include '../parts/components/cabinet/products.html' %}
+												</div>
+
+											</div>
+										</div>
+
+										<!-- //Order -->
+									</div>
 								</div>
+
+
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- //container -->
-			</section>
+			</div>
+			<!-- //container -->
+		</section>
 
 
 
 
 
-		</main>
-		<!-- //Main -->
+	</main>
+	<!-- //Main -->
 
-		<!-- Footer -->
-		{% include '../parts/sections/footer.html' %}
-		<!-- //Footer -->
+	<!-- Footer -->
+	{% include '../parts/sections/footer.html' %}
+	<!-- //Footer -->
 
 
-		{% include '../parts/components/popups/popup-feedback.html' %}
+</div>
+<!-- //CONTENT WRAPPER -->
 
-	</div>
-	<!-- //CONTENT WRAPPER -->
-
-	{% include '../parts/scripts.html' %}
+{% include '../parts/scripts.html' %}
 
 </body>
 

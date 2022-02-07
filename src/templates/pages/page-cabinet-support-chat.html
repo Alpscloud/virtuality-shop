@@ -1,0 +1,166 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Личный кабинет</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title container page-title">Личный кабинет</h1>
+
+
+			<section class="sect__cabinet gutter-bottom">
+				<div class="container">
+
+					<div class="cabinet">
+						<div class="row cabinet__row align-vertical-start align-horisontal-start">
+							<!-- Cabinet menu -->
+							{% include '../parts/sections/cabinet-aside.html' %}
+							<!-- //Cabinet menu -->
+
+							<div class="cabinet-main">
+								<h2 class="cabinet-main__title">История обращений в службу поддержки</h2>
+
+								<div class="cabinet-support__nav">
+									<span class="btn btn-sm is-active">история обращений в службу поддержки</span>
+									<a href="page-cabinet-support-form.html" class="btn btn-sm">Обратиться в службу поддержки</a>
+								</div>
+
+
+								<div class="cabinet-support">
+									
+									<div class="cabinet-support-chats">
+										<!-- Chat -->
+										<div class="cabinet-support-chat__wrapper card b-radius-10">
+											
+											<div class="cabinet-support-chat__counter">
+												<div class="row align-horisontal-between align-vertical-center row-gutters row-nowrap">
+													<h3 class="col-gutters">Обращение № 1</h3>
+
+													<div class="cabinet-support-chat__counter--status col-gutters">
+
+														<span class="support-status support-status-send">Отправлено</span>
+														
+														{% include '../parts/components/btn-accordion.html' %}
+													</div>
+												</div>
+											</div>
+
+											{% include '../parts/components/cabinet/chat.html' %}
+										</div>
+										<!-- //Chat -->
+
+										<!-- Chat -->
+										<div class="cabinet-support-chat__wrapper card b-radius-10">
+											
+											<div class="cabinet-support-chat__counter">
+												<div class="row align-horisontal-between align-vertical-center row-gutters row-nowrap">
+													<h3 class="col-gutters">Обращение № 2</h3>
+
+													<div class="cabinet-support-chat__counter--status col-gutters">
+
+														<span class="support-status support-status-open">Открыто</span>
+														
+														{% include '../parts/components/btn-accordion.html' %}
+													</div>
+												</div>
+											</div>
+
+											{% include '../parts/components/cabinet/chat.html' %}
+										</div>
+										<!-- //Chat -->
+
+										<!-- Chat -->
+										<div class="cabinet-support-chat__wrapper card b-radius-10">
+											
+											<div class="cabinet-support-chat__counter">
+												<div class="row align-horisontal-between align-vertical-center row-gutters row-nowrap">
+													<h3 class="col-gutters">Обращение № 3</h3>
+
+													<div class="cabinet-support-chat__counter--status col-gutters">
+
+														<span class="support-status support-status-close">Закрыто</span>
+														
+														{% include '../parts/components/btn-accordion.html' %}
+													</div>
+												</div>
+											</div>
+
+											{% include '../parts/components/cabinet/chat.html' %}
+										</div>
+										<!-- //Chat -->
+									</div>
+								</div>
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+	
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
