@@ -10,7 +10,7 @@
 	letter-spacing 0.1em
 	color $basic-white-color
 	text-transform uppercase
-	padding 25px 60px
+	padding 24px 60px
 	border 1px solid $accent-color
 	svg
 		svg()
@@ -20,12 +20,11 @@
 		fill $basic-white-color
 		margin-left 10px
 	&:hover
-		border-color $dark-accent-color
+		border-color $light-accent-color
 		color $basic-white-color
-		background-color $dark-accent-color
+		background-color $light-accent-color
 		fill $basic-white-color
-		svg
-			transform translateX(5px)
+	
 			
 	&.is-active
 		background-color $basic-white-color
@@ -40,7 +39,7 @@
 			
 			svg
 				fill $basic-white-color
-				transform translateX(5px)
+			
 		
 			
 	&.is-disabled,
@@ -69,6 +68,8 @@
 			fill $text-color
 			
 		&:hover
+			background-color $accent-color
+			border-color $accent-color
 			svg
 				fill $basic-white-color
 				
@@ -79,12 +80,26 @@
 		display inline-block
 		width 15px
 		height 15px
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			position-center()
+			width 15px
+			height 15px
+			background url('../img/icons/svg/eye.svg') 50% no-repeat / contain
+			opacity 0
 		svg
 			svg()
 			fill $text-color
 		&:hover
 			svg
 				fill $accent-color
+		&.is-active
+			svg
+				opacity 0
+			&:before
+				opacity 1
 			
 	
 	&-link

@@ -160,8 +160,10 @@
 
 .link
 	color $text-color
-	font-family $Reg
+	font 1em $Reg
 	border-bottom 1px solid 
+	&.is-hidden
+		display none
 	&:hover
 		color $accent-color
 		
@@ -169,6 +171,10 @@
 		color $accent-color
 		&:hover
 			color $darkest-accent-color
+	&-danger
+		color #E54646
+		&:hover
+			color $text-color
 			
 
 .fancy-link
@@ -238,6 +244,15 @@
 			border-color $accent-color
 			svg
 				fill $basic-white-color
+				
+	&-default
+		a
+			border-color $border-color
+			svg
+				fill $light-text-color
+			&:hover
+				svg
+					fill $text-color
 				
 
 // Adv banner
@@ -459,3 +474,80 @@
 	border 1px solid rgba(0, 149, 217, 0.5)
 	padding 25px
 	font-size 17px
+	
+// DAtepicker
+.ui-widget
+	&.ui-widget-content
+		border-radius 7px
+		border 1px solid $border-color
+		padding 10px
+		margin-top 10px
+		
+	.ui-widget-header
+		background-color $color-bg
+		border none
+		font 15px $Reg
+		font-weight 600
+		
+.ui-datepicker 
+	font-family $Reg
+
+.ui-datepicker td
+	text-align center
+	
+.ui-state-default, 
+.ui-widget-content .ui-state-default
+	background-color $color-bg
+	border-color $border-color
+
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight
+	background-color $light-accent-color
+	color $basic-white-color
+	border-color $light-accent-color
+	
+
+	
+.ui-widget-content 
+	.ui-state-active
+		background-color $accent-color
+		color $basic-white-color
+		border-color $accent-color
+		
+.ui-datepicker 
+	.ui-datepicker-next,
+	.ui-datepicker-prev
+		border 1px solid $border-color
+		background-color $basic-white-color
+		border-radius 6px
+	.ui-datepicker-next-hover
+		right 2px
+	.ui-datepicker-prev-hover
+		left 2px
+
+
+
+// Prev
+.prev-link
+	display inline-block
+	color $accent-color
+	position relative
+	font 1em $Reg
+	position relative
+	padding-left 20px
+	span
+		border-bottom 1px solid currentColor
+	svg
+		position absolute
+		left 0
+		vertical-center()
+		width 13px
+		height 9px
+		fill $accent-color
+		display inline-block
+		transition fill .17s ease-in-out
+	&:hover
+		color $text-color
+		svg
+			fill $text-color

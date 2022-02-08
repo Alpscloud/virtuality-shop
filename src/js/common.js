@@ -583,6 +583,30 @@ $(document).ready(function() {
 	});
 
 
+	$('.js-toggle-stock-details-btn').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('is-toggled');
+
+		$(this).parents('.cabinet-stock-content__text').find('.cabinet-stock-content__text-description .hidden-text').stop().slideToggle(250);
+	});
+
+
+	$('.js-input-date').each(function() {
+		$('.js-input-date').attr("autocomplete", "off");
+		$(this).datepicker({
+			monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+			minDate: 0,
+			format: 'dd.mm.yyyy',
+			setDate: new Date()
+		});
+	});
+
+	$('.js-select').each(function() {
+		$(this).selectmenu()
+	});
+
+
 
 	
 
@@ -618,6 +642,8 @@ $(document).ready(function() {
 
 	$('.js-show-input-password-btn').on('click', function() {
 		var input = $(this).parents('.form-group').find('.js-pw-input');
+
+		$(this).toggleClass('is-active');
 
 
 

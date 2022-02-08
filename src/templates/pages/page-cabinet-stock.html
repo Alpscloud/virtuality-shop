@@ -1,0 +1,306 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Личный кабинет</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<div class="cabinet-heading">
+				<div class="container">
+					<div class="row align-vertical-center align-horisontal-between row-nowrap">
+						<h1 class="sect-title page-title">Личный кабинет</h1>
+
+						<a href="page-cabinet-stocks.html" class="prev-link">
+							<svg  viewBox="0 0 13 9"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.875 3.92773V5.32227H2.84766L5.37109 7.87891L4.375 8.875L0.125 4.625L4.375 0.375L5.37109 1.37109L2.84766 3.92773H12.875Z"/>
+							</svg>
+							<span class="prev-link__text" data-mobile-text="Назад"><span>Вернуться к списку акций</span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			
+
+
+			<section class="sect__cabinet gutter-bottom">
+				<div class="container">
+
+					<div class="cabinet">
+						<div class="row cabinet__row align-vertical-start align-horisontal-start">
+							<!-- Cabinet menu -->
+							{% include '../parts/sections/cabinet-aside.html' %}
+							<!-- //Cabinet menu -->
+
+							<div class="cabinet-main">
+
+
+								
+
+								<div class="cabinet-stocks">
+
+
+									<div class="cabinet-stock-content">
+										
+
+
+										<!-- Stock -->
+
+										<div class="cabinet-stock">
+											<div class="promo-slide promo-slide-dark  b-radius-10" >
+												<div class="promo-slide__bg bg"  style="background-image: url('img/promo/2-bg.png');"></div>
+												<div class="promo-slide__content">
+													<p class="company-name">Virtuality  Club</p>
+
+													<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+													<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+												</div>
+
+											</div>
+										</div>
+
+
+										<div class="cabinet-stock-content__row row align-horisontal-between row-nowrap row-gutters">
+											<div class="cabinet-stock-content__text col-gutters">
+												
+												<div class="cabinet-stock-content__title row align-vertical-center align-horisontal-start row-nowrap">
+													{% include '../parts/components/btn-follow.html' %}
+													<h2 class="cabinet-main__title">Скидка 20% на линейку Pimax</h2>
+												</div>
+
+												<div class="tags">
+													<span class="tag tag-blue">тег 1</span>
+													<span class="tag tag-orange">тег 2</span>
+													<span class="tag tag-purple">тег 2</span>
+												</div>
+
+
+												
+
+
+												<div class="cabinet-stock-content__text-description">
+													<p>Период акции: <span class="accent-color">c 1 января по 10 января 2022</span></p>
+													<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+
+													<p class="hidden-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+													<p class="hidden-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+													<p class="hidden-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+												</div>
+
+												
+
+												<button class="btn-toggle js-toggle-stock-details-btn" type="button">
+													<span>Читать условия акции</span>
+													<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+												</button>
+											</div>
+
+
+
+
+
+											<!-- Timer -->
+											<div class="cabinet-stock__timer col-gutters">
+												<div class="timer-wrapper">
+													<p class="timer-title">До конца акции осталось:</p>
+													<div class="timer b-radius-10">
+														<div class="timer-items">
+															<div class="timer-item">
+																<span class="timer-item__value js-timer-days">02</span>
+																<span class="timer-item__label js-timer-days-label">Дней</span>
+															</div>
+															<span class="timer-item__divider">:</span>
+															<div class="timer-item">
+																<span class="timer-item__value js-timer-hours">23</span>
+																<span class="timer-item__label js-timer-hours-label">Часов</span>
+															</div>
+															<span class="timer-item__divider">:</span>
+															<div class="timer-item">
+																<span class="timer-item__value js-timer-minutes">54</span>
+																<span class="timer-item__label js-timer-minutes-label">Минут</span>
+															</div>
+															<span class="timer-item__divider">:</span>
+															<div class="timer-item">
+																<span class="timer-item__value js-timer-seconds">10</span>
+																<span class="timer-item__label js-timer-seconds-label">Секунд</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- //Timer -->
+
+										</div>
+
+
+										<div class="sharing">
+											<span class="sharing-title">Поделиться:</span>
+
+											<ul class="socials socials-default text-right">
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/ok.html' %}
+													</a>
+												</li>
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/vk.html' %}
+													</a>
+												</li>
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/fb.html' %}
+													</a>
+												</li>
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/inst.html' %}
+													</a>
+												</li>
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/tw.html' %}
+													</a>
+												</li>
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/tg.html' %}
+													</a>
+												</li>
+												<li>
+													<a href="#" rel="nofollow" target="_blank">
+														{% include '../parts/components/socials/web.html' %}
+													</a>
+												</li>
+											</ul>
+										</div>
+
+
+
+										<!-- //Stock -->
+
+
+									</div>
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+			<section class="sect__promo-slider gutter-bottom">
+				<h2 class="sect-title container">Другие акции от Virtuality Club</h2>
+				<div class="promo-slider__wrapper">
+					{% include '../parts/sections/stocks-slider.html' %}
+					<div class="container">
+						<!-- Controls -->
+						<div class="slider-controls row align-vertical-center align-horisontal-between">
+							<div class="slider-navigation">
+								<button class="slider-navigation__btn slider-navigation__btn--prev js-promo-slider-full-btn-prev b-radius-7" type="button">
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+								<button class="slider-navigation__btn slider-navigation__btn--next js-promo-slider-full-btn-next b-radius-7" type="button">
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+							</div>
+
+							<div class="slider-pagination js-promo-slider-full-pagination"></div>
+
+
+							<a href="page-cabinet-stocks.html" class="prev-link hidden-mobile">
+								<svg  viewBox="0 0 13 9"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.875 3.92773V5.32227H2.84766L5.37109 7.87891L4.375 8.875L0.125 4.625L4.375 0.375L5.37109 1.37109L2.84766 3.92773H12.875Z"/>
+								</svg>
+								<span class="prev-link__text" data-mobile-text="Назад"><span>Вернуться к списку акций</span></span>
+							</a>
+						</div>
+						<!-- //Controls -->
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="sect__products-cards gutter-bottom">
+				<h2 class="sect-title container">Товары, участвующие в «Скидка 20% на линейку Pimax»</h2>
+				<div class="container">
+
+
+					{% include '../parts/sections/products-cards-slider.html' %}
+
+
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+		{% include '../parts/components/popups/popup-follow.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

@@ -485,6 +485,9 @@ a.product-feedbacks
 		font 12px $Bold
 		letter-spacing 0.1em
 		margin-top 20px
+		span
+			border-bottom 1px solid transparent
+			transition border-color .17s ease-in-out
 		svg
 			svg()
 			width 11px
@@ -492,10 +495,11 @@ a.product-feedbacks
 			flex none
 			margin-left 10px
 		&:hover
-			color $darkest-accent-color
+			span
+				border-color $accent-color
 			svg
 				fill $darkest-accent-color
-				transform translateX(5px)
+
 				
 	&-text
 		font-size 17px

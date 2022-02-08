@@ -1,0 +1,264 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Личный кабинет</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title container page-title">Личный кабинет</h1>
+
+
+			<section class="sect__cabinet gutter-bottom">
+				<div class="container">
+
+					<div class="cabinet">
+						<div class="row cabinet__row align-vertical-start align-horisontal-start">
+							<!-- Cabinet menu -->
+							{% include '../parts/sections/cabinet-aside.html' %}
+							<!-- //Cabinet menu -->
+
+							<div class="cabinet-main">
+								<h2 class="cabinet-main__title">Настройки профиля</h2>
+
+								
+
+
+								<div class="cabinet-profile">
+
+									<div class="cabinet-feedback__form card b-radius-10">
+										<form >
+											<div class="row cabinet-profile__user--row form-groups__row align-horisontal-between align-vertical-center">
+												<div class="form-group">
+													<div class="cabinet-profile__user">
+														<div class="cabinet-profile__user--avatar bg" style="background-image: url('img/empty.svg');"></div>
+														<p class="cabinet-profile__user--name">Василий Стус</p>
+													</div>
+													
+												</div>
+
+												<div class="form-group cabinet-profile__avatar-download">
+													<div class="is-hidden">
+														<button class="link link-danger" type="button">Удалить фото</button>
+													</div>
+													
+													<div>
+														<label class="link-file link link-accent">
+															<input type="file" name="fileFF[]">
+															<span>Изменить фото</span>
+														</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="row form-groups__row form-groups__user align-horisontal-start align-vertical-start">
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваше имя *</span>
+														<input type="text" class="form-input js-required-input" name="name" value="Иван">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваша фамилия</span>
+														<input type="text" class="form-input" name="surname" value="Иванов">
+													</label>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Отчество</span>
+														<input type="text" class="form-input" name="second-name" value="Иванович">
+													</label>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Дата рождения</span>
+														<input type="text" class="form-input js-input-date" name="birthday" autocomplete="off">
+													</label>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваш E-mail *</span>
+														<input type="email" class="form-input js-required-input" name="email" value="email@gmail.com">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+
+													<div class="form-group__submit is-hidden">
+														<button class="btn" type="submit">
+															<span>Подтвердить</span>
+															{% include '../parts/components/btn-arrow.html' %}
+														</button>
+
+														<button class="btn btn-light" type="button">
+															<span>Отмена</span>
+															{% include '../parts/components/btn-arrow.html' %}
+														</a>
+													</div>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваш телефон *</span>
+														<input type="tel" class="form-input js-required-input" name="phone" value="+ 7 (911) 685 22 33">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+											</div>
+
+
+											<div class="row form-groups__row form-groups__user align-horisontal-start align-vertical-start" >
+												<div class="form-group col-w-50">
+													<label class="form-checkbox__label">
+														<input name="subscr-email" type="checkbox">
+														<span class="form-checkbox form-checkbox__center">Хочу получать информацию по почте</span>
+													</label>
+												</div>
+												<div class="form-group col-w-50">
+													<label class="form-checkbox__label">
+														<input name="subscr-phone" type="checkbox">
+														<span class="form-checkbox form-checkbox__center">Хочу получать уведомления на телефон</span>
+													</label>
+												</div>
+											</div>
+
+
+										</form>
+									</div>
+
+
+									<h3 class="cabinet-main__title">Смена пароля</h3>
+
+									<div class="cabinet-feedback__form card b-radius-10">
+										<form >
+
+											<div class="row form-groups__row align-horisontal-start align-vertical-start" >
+
+												<div class="form-group form-group__password col-w-50">
+													<input type="password" class="form-input js-required-input js-pw-input" name="current-password" placeholder="Текущий пароль *">
+													<span class="form-group__error">Вы не заполнили поле</span>
+
+													<button class="btn-password js-show-input-password-btn" type="button">
+														<svg  viewBox="0 0 15 13"  xmlns="http://www.w3.org/2000/svg">
+															<path d="M7.51562 2.65625C7.09896 2.65625 6.69271 2.73958 6.29688 2.90625L4.85938 1.46875C5.71354 1.15625 6.58854 1 7.48438 1C9.13021 1 10.6198 1.46875 11.9531 2.40625C13.2865 3.32292 14.2448 4.52083 14.8281 6C14.349 7.25 13.5885 8.30208 12.5469 9.15625L10.6094 7.21875C10.7552 6.82292 10.8281 6.41667 10.8281 6C10.8281 5.08333 10.5052 4.30208 9.85938 3.65625C9.21354 2.98958 8.43229 2.65625 7.51562 2.65625ZM0.828125 0.84375L1.67188 0L13.5156 11.8125L12.6719 12.6562L10.7031 10.7188L10.4219 10.4375C9.48438 10.8125 8.51562 11 7.51562 11C5.86979 11 4.38021 10.5417 3.04688 9.625C1.71354 8.6875 0.755208 7.47917 0.171875 6C0.692708 4.66667 1.52604 3.5625 2.67188 2.6875L2.35938 2.375L0.828125 0.84375ZM4.51562 4.53125C4.28646 5.01042 4.17188 5.5 4.17188 6C4.17188 6.91667 4.49479 7.70833 5.14062 8.375C5.80729 9.02083 6.59896 9.34375 7.51562 9.34375C8.01562 9.34375 8.50521 9.21875 8.98438 8.96875L7.95312 7.9375C7.78646 7.97917 7.64062 8 7.51562 8C6.95312 8 6.47396 7.8125 6.07812 7.4375C5.70312 7.04167 5.51562 6.5625 5.51562 6C5.51562 5.85417 5.52604 5.70833 5.54688 5.5625L4.51562 4.53125ZM7.39062 4H7.51562C8.05729 4 8.52604 4.19792 8.92188 4.59375C9.31771 4.98958 9.51562 5.45833 9.51562 6L9.48438 6.125L7.39062 4Z" />
+														</svg>
+													</button>
+												</div>
+
+												<div class="form-group form-group__password col-w-50">
+													<input type="password" class="form-input js-required-input js-pw-input" name="new-password" placeholder="Новый пароль *">
+													<span class="form-group__error">Вы не заполнили поле</span>
+
+													<button class="btn-password js-show-input-password-btn" type="button">
+														<svg  viewBox="0 0 15 13"  xmlns="http://www.w3.org/2000/svg">
+															<path d="M7.51562 2.65625C7.09896 2.65625 6.69271 2.73958 6.29688 2.90625L4.85938 1.46875C5.71354 1.15625 6.58854 1 7.48438 1C9.13021 1 10.6198 1.46875 11.9531 2.40625C13.2865 3.32292 14.2448 4.52083 14.8281 6C14.349 7.25 13.5885 8.30208 12.5469 9.15625L10.6094 7.21875C10.7552 6.82292 10.8281 6.41667 10.8281 6C10.8281 5.08333 10.5052 4.30208 9.85938 3.65625C9.21354 2.98958 8.43229 2.65625 7.51562 2.65625ZM0.828125 0.84375L1.67188 0L13.5156 11.8125L12.6719 12.6562L10.7031 10.7188L10.4219 10.4375C9.48438 10.8125 8.51562 11 7.51562 11C5.86979 11 4.38021 10.5417 3.04688 9.625C1.71354 8.6875 0.755208 7.47917 0.171875 6C0.692708 4.66667 1.52604 3.5625 2.67188 2.6875L2.35938 2.375L0.828125 0.84375ZM4.51562 4.53125C4.28646 5.01042 4.17188 5.5 4.17188 6C4.17188 6.91667 4.49479 7.70833 5.14062 8.375C5.80729 9.02083 6.59896 9.34375 7.51562 9.34375C8.01562 9.34375 8.50521 9.21875 8.98438 8.96875L7.95312 7.9375C7.78646 7.97917 7.64062 8 7.51562 8C6.95312 8 6.47396 7.8125 6.07812 7.4375C5.70312 7.04167 5.51562 6.5625 5.51562 6C5.51562 5.85417 5.52604 5.70833 5.54688 5.5625L4.51562 4.53125ZM7.39062 4H7.51562C8.05729 4 8.52604 4.19792 8.92188 4.59375C9.31771 4.98958 9.51562 5.45833 9.51562 6L9.48438 6.125L7.39062 4Z" />
+														</svg>
+													</button>
+												</div>
+
+												<div class="form-group form-group__password col-w-50">
+													<input type="password" class="form-input js-required-input js-pw-input" name="confirm-password" placeholder="Подтверждение нового пароля *">
+													<span class="form-group__error">Вы не заполнили поле</span>
+
+													<button class="btn-password js-show-input-password-btn" type="button">
+														<svg  viewBox="0 0 15 13"  xmlns="http://www.w3.org/2000/svg">
+															<path d="M7.51562 2.65625C7.09896 2.65625 6.69271 2.73958 6.29688 2.90625L4.85938 1.46875C5.71354 1.15625 6.58854 1 7.48438 1C9.13021 1 10.6198 1.46875 11.9531 2.40625C13.2865 3.32292 14.2448 4.52083 14.8281 6C14.349 7.25 13.5885 8.30208 12.5469 9.15625L10.6094 7.21875C10.7552 6.82292 10.8281 6.41667 10.8281 6C10.8281 5.08333 10.5052 4.30208 9.85938 3.65625C9.21354 2.98958 8.43229 2.65625 7.51562 2.65625ZM0.828125 0.84375L1.67188 0L13.5156 11.8125L12.6719 12.6562L10.7031 10.7188L10.4219 10.4375C9.48438 10.8125 8.51562 11 7.51562 11C5.86979 11 4.38021 10.5417 3.04688 9.625C1.71354 8.6875 0.755208 7.47917 0.171875 6C0.692708 4.66667 1.52604 3.5625 2.67188 2.6875L2.35938 2.375L0.828125 0.84375ZM4.51562 4.53125C4.28646 5.01042 4.17188 5.5 4.17188 6C4.17188 6.91667 4.49479 7.70833 5.14062 8.375C5.80729 9.02083 6.59896 9.34375 7.51562 9.34375C8.01562 9.34375 8.50521 9.21875 8.98438 8.96875L7.95312 7.9375C7.78646 7.97917 7.64062 8 7.51562 8C6.95312 8 6.47396 7.8125 6.07812 7.4375C5.70312 7.04167 5.51562 6.5625 5.51562 6C5.51562 5.85417 5.52604 5.70833 5.54688 5.5625L4.51562 4.53125ZM7.39062 4H7.51562C8.05729 4 8.52604 4.19792 8.92188 4.59375C9.31771 4.98958 9.51562 5.45833 9.51562 6L9.48438 6.125L7.39062 4Z" />
+														</svg>
+													</button>
+												</div>
+
+
+												<div class="form-group__submit form-group form-group__submit-pw col-w-50">
+													<button class="btn" type="submit">
+														<span>Сменить пароль</span>
+														{% include '../parts/components/btn-arrow.html' %}
+													</button>
+
+													<button class="btn btn-light js-open-password-popup-btn" type="button">
+														<span>не помню пароль</span>
+														{% include '../parts/components/btn-arrow.html' %}
+													</a>
+												</div>
+
+											</form>
+										</div>
+
+
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //container -->
+				</section>
+
+
+
+
+
+			</main>
+			<!-- //Main -->
+
+			<!-- Footer -->
+			{% include '../parts/sections/footer.html' %}
+			<!-- //Footer -->
+
+
+
+
+		</div>
+		<!-- //CONTENT WRAPPER -->
+
+		{% include '../parts/scripts.html' %}
+
+	</body>
+
+	</html>

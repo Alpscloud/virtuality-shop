@@ -2390,548 +2390,113 @@
 							<!-- //Cabinet menu -->
 
 							<div class="cabinet-main">
-								<h2 class="cabinet-main__title">Заказы</h2>
+								<h2 class="cabinet-main__title">Обратная связь</h2>
 
-								<div class="tab-controls">
-									<a href="page-cabinet-products.html" class="tab-controls__btn b-radius-7">Заказанные товары</a>
-									<span class="tab-controls__btn b-radius-7 is-active">Заказы</span>
-								</div>
+								
 
-								<div class="cabinet-search">
 
-									<form class="search-form search-form-lg">
-										<div class="search-form__group">
-											<input type="text" class="search-form__input b-radius-7" placeholder="Артикул, номер заказа, название товара ..." name="s" required>
-											<button class="search-form__btn" type="submit">
-												<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
-													<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
-												</svg>
-											</button>
-										</div>
-									</form>
+								<div class="cabinet-feedback">
 
-								</div>
+									<div class="cabinet-feedback__form card b-radius-10">
+										<form >
+											<div class="row form-groups__row align-horisontal-start align-vertical-start">
+												<div class="form-group is-error col-w-100">
+													<input type="text" class="form-input js-required-input" name="subject" placeholder="Тема обращения *">
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
 
-								<div class="cabinet-orders">
+	
+												<div class="form-group col-w-100">
+													<textarea name="message"  class="form-input form-textarea js-required-input" placeholder="Ваш комментарий *"></textarea>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-100">
+													<div class="form-file__wrapper">
+														<label class="form-file js-form-file">
+															<input type="file" name="fileFF[]" multiple="multiple">
+															<svg  viewBox="0 0 10 19"  xmlns="http://www.w3.org/2000/svg">
+																<path d="M8.33984 4.5H9.58984V14.0703C9.58984 15.3464 9.13411 16.4271 8.22266 17.3125C7.33724 18.224 6.25651 18.6797 4.98047 18.6797C3.73047 18.6797 2.64974 18.224 1.73828 17.3125C0.852865 16.4271 0.410156 15.3464 0.410156 14.0703V3.67969C0.410156 2.74219 0.735677 1.94792 1.38672 1.29688C2.03776 0.645833 2.81901 0.320312 3.73047 0.320312C4.66797 0.320312 5.46224 0.645833 6.11328 1.29688C6.76432 1.94792 7.08984 2.74219 7.08984 3.67969V12.4297C7.08984 13.0026 6.88151 13.4974 6.46484 13.9141C6.04818 14.3047 5.55339 14.5 4.98047 14.5C4.40755 14.5 3.91276 14.3047 3.49609 13.9141C3.10547 13.4974 2.91016 13.0026 2.91016 12.4297V4.5H4.16016V12.4297C4.16016 12.638 4.23828 12.8333 4.39453 13.0156C4.57682 13.1719 4.77214 13.25 4.98047 13.25C5.21484 13.25 5.41016 13.1719 5.56641 13.0156C5.7487 12.8333 5.83984 12.638 5.83984 12.4297V3.67969C5.83984 3.10677 5.63151 2.61198 5.21484 2.19531C4.79818 1.77865 4.30339 1.57031 3.73047 1.57031C3.15755 1.57031 2.66276 1.77865 2.24609 2.19531C1.85547 2.61198 1.66016 3.10677 1.66016 3.67969V14.0703C1.66016 15.0078 1.98568 15.8021 2.63672 16.4531C3.28776 17.1042 4.06901 17.4297 4.98047 17.4297C5.91797 17.4297 6.71224 17.1042 7.36328 16.4531C8.01432 15.8021 8.33984 15.0078 8.33984 14.0703V4.5Z" />
+															</svg>
+															<span class="link">Прикрепить файл</span>
+														</label>
+														<!-- <div class="form-file__results"></div> -->
+													</div>
+													
+												</div>
+											</div>
+
+											<div class="row form-groups__row form-groups__user align-horisontal-start align-vertical-start">
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваше имя *</span>
+														<input type="text" class="form-input js-required-input" name="name" value="Иван">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваша фамилия</span>
+														<input type="text" class="form-input" name="surname" value="Иванов">
+													</label>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваш E-mail *</span>
+														<input type="email" class="form-input js-required-input" name="email" value="email@gmail.com">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваш телефон *</span>
+														<input type="tel" class="form-input js-required-input" name="phone" value="+ 7 (911) 685 22 33">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50 form-group__submit">
+													<button class="btn" type="submit">
+														<span>Отправить</span>
+														<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+													</button>
+
+													<a href="#" target="_blank" rel="nofollow" class="btn btn-light" type="submit">
+														<span>написать в Telegram</span>
+														<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+													</a>
+												</div>
+											</div>
+										</form>
+									</div>
 									
-									<div class="tab-controls cabinet-orders__controls">
-										<a href="#" class="tab-controls__btn b-radius-7 is-active">все Заказы</a>
-										<a href="#" class="tab-controls__btn b-radius-7 ">На проработке</a>
-										<a href="#" class="tab-controls__btn b-radius-7 ">На доставке</a>
-										<a href="#" class="tab-controls__btn b-radius-7 ">Получение</a>
-									</div>
-
-
-									<div class="cabinet-orders__wrapper">
-										<!-- Order -->
-										<div class="cabinet-order card b-radius-10">
-											<div class="cabinet-order__row row align-horisontal-between row-gutters">
-												<div class="cabinet-order__information col-gutters">
-
-													<div class="cabinet-order__title--wrapper">
-														<h3 class="cabinet-order__title">Заказ № 47595680468</h3>
-														<span class="cabinet-order-status status-active">На проработке</span>
-													</div>
-
-													<div>
-														<p>Дата оформления: 22.12.21</p>
-														<p>Адрес доставки: г. Сызрань, пр. Ленина 10б </p>
-													</div>
-
-													<button class="btn-toggle js-toggle-order-details-btn" type="button">
-														<span>Детали заказа</span>
-														<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
-													</button>
-												</div>
-
-												<div class="cabinet-order__payment text-right col-gutters">
-													<p class="cabinet-order__price">156 989 ₽</p>
-
-													<ul>
-														<li>Оплата: <span>Картой на сайте</span></li>
-														<li>Следующий платеж: <span>14.01.22</span></li>
-														<li>Осталось платежей: <span>5</span></li>
-													</ul>
-												</div>
-												
-
-												<div class="cabinet-order__details col-gutters js-order-details">
-													<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/1.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status">В наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span>79 999 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-<!-- //Product -->
-
-<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/2.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status not-available">Нет в наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span class="product-prices__old">4 290 ₽</span>
-				<span class="product-prices__new">3 940 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-<!-- //Product -->
-
-<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/3.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status">В наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span>12 179 999 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-									<!-- //Product -->
-												</div>
-
-											</div>
-										</div>
-
-										<!-- //Order -->
-
-										<!-- Order -->
-										<div class="cabinet-order card b-radius-10">
-											<div class="cabinet-order__row row align-horisontal-between row-gutters">
-												<div class="cabinet-order__information col-gutters">
-
-													<div class="cabinet-order__title--wrapper">
-														<h3 class="cabinet-order__title">Заказ № 47595680468</h3>
-														<span class="cabinet-order-status status-delivery">На доставке</span>
-													</div>
-
-													<div>
-														<p>Дата оформления: 22.12.21</p>
-														<p>Адрес доставки: г. Сызрань, пр. Ленина 10б </p>
-													</div>
-
-													<button class="btn-toggle js-toggle-order-details-btn" type="button">
-														<span>Детали заказа</span>
-														<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
-													</button>
-												</div>
-
-												<div class="cabinet-order__payment text-right col-gutters">
-													<p class="cabinet-order__price">156 989 ₽</p>
-
-													<ul>
-														<li>Оплата: <span>Картой на сайте</span></li>
-														<li>Следующий платеж: <span>14.01.22</span></li>
-														<li>Осталось платежей: <span>5</span></li>
-													</ul>
-												</div>
-												
-
-												<div class="cabinet-order__details col-gutters js-order-details">
-													<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/1.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status">В наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span>79 999 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-<!-- //Product -->
-
-<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/2.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status not-available">Нет в наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span class="product-prices__old">4 290 ₽</span>
-				<span class="product-prices__new">3 940 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-<!-- //Product -->
-
-<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/3.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status">В наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span>12 179 999 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-									<!-- //Product -->
-												</div>
-
-											</div>
-										</div>
-
-										<!-- //Order -->
-
-										<!-- Order -->
-										<div class="cabinet-order card b-radius-10">
-											<div class="cabinet-order__row row align-horisontal-between row-gutters">
-												<div class="cabinet-order__information col-gutters">
-
-													<div class="cabinet-order__title--wrapper">
-														<h3 class="cabinet-order__title">Заказ № 47595680468</h3>
-														<span class="cabinet-order-status status-receiving">Получение</span>
-													</div>
-
-													<div>
-														<p>Дата оформления: 22.12.21</p>
-														<p>Адрес доставки: г. Сызрань, пр. Ленина 10б </p>
-													</div>
-
-													<button class="btn-toggle js-toggle-order-details-btn" type="button">
-														<span>Детали заказа</span>
-														<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
-													</button>
-												</div>
-
-												<div class="cabinet-order__payment text-right col-gutters">
-													<p class="cabinet-order__price">156 989 ₽</p>
-
-													<ul>
-														<li>Оплата: <span>Картой на сайте</span></li>
-														<li>Следующий платеж: <span>14.01.22</span></li>
-														<li>Осталось платежей: <span>5</span></li>
-													</ul>
-												</div>
-												
-
-												<div class="cabinet-order__details col-gutters js-order-details">
-													<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/1.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status">В наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span>79 999 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-<!-- //Product -->
-
-<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/2.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status not-available">Нет в наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span class="product-prices__old">4 290 ₽</span>
-				<span class="product-prices__new">3 940 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-<!-- //Product -->
-
-<!-- Product -->
-<div class="product-block card b-radius-10">
-	<div class="product-block__row row align-vertical-center align-horisontal-beteween row-nowrap row-gutters">
-		<div class="product-block__information col-gutters">
-			<a href="page-product.html" class="product-block__thumbnail card b-radius-10">
-				<img src="img/products/3.png" alt="">
-			</a>
-			<div class="product-block__information-data">
-				<p class="product-status">В наличии</p>
-				<h3 class="product-block__title">
-					<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
-				</h3>
-				<p class="product-articul hidden-mobile">Артикул: 1639346</p>
-			</div>
-		</div>
-
-		<div class="product-block__prices col-gutters">
-			<p class="product-articul hidden-desktop">Артикул: 1639346</p>
-			<p class="product-prices">
-				<span>12 179 999 ₽</span>
-			</p>
-		</div>
-
-		<div class="product-block__btn col-gutters">
-			<!-- Add to cart -->
-			<button class="btn-add b-radius-7" type="button">
-				<span class="btn-add__text">в корзину</span>
-				<span class="btn-add__ic b-radius-6">
-					<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.7177 5.49153C15.4854 5.21109 15.1312 5.03193 14.7808 5.03193H13.8059L10.043 0.284031C9.81073 -0.0158768 9.39941 -0.0743004 9.08711 0.143815C8.79386 0.381404 8.73673 0.802055 8.95001 1.12144C8.95001 1.14091 8.96905 1.14091 8.96905 1.16039L12.0692 5.02803H3.72473L6.80581 1.16039C7.06098 0.879953 7.03813 0.443723 6.76773 0.182764C6.49732 -0.0781953 6.06696 -0.0548259 5.81179 0.221713C5.79275 0.241187 5.77371 0.260662 5.75466 0.280136L1.98804 5.0514H1.2073C0.544617 5.0514 0 5.61227 0 6.28998C0 6.36788 0 6.44968 0.0190426 6.52757L1.58053 14.5628C1.73668 15.4002 2.45649 16 3.29817 16H12.6976C13.5355 16 14.2591 15.4002 14.4152 14.5628L15.9767 6.52757C16.0491 6.16924 15.9501 5.79144 15.7177 5.49153ZM5.96794 12.0116C5.96794 12.3894 5.65564 12.7088 5.28622 12.7088C4.91679 12.7088 4.60449 12.3894 4.60449 12.0116V9.18001C4.60449 8.8022 4.91679 8.48282 5.28622 8.48282C5.65564 8.48282 5.96794 8.8022 5.96794 9.18001V12.0116ZM8.67579 12.0116C8.67579 12.3894 8.36349 12.7088 7.99407 12.7088C7.62464 12.7088 7.31235 12.3894 7.31235 12.0116V9.18001C7.31235 8.8022 7.62464 8.48282 7.99407 8.48282C8.36349 8.48282 8.67579 8.8022 8.67579 9.18001V12.0116ZM11.3684 12.0116C11.3684 12.3894 11.0561 12.7088 10.6867 12.7088C10.3173 12.7088 10.005 12.3894 10.005 12.0116V9.18001C10.005 8.8022 10.3173 8.48282 10.6867 8.48282C11.0561 8.48282 11.3684 8.8022 11.3684 9.18001V12.0116Z" />
-					</svg>
-				</span>
-			</button>
-			<!-- //Add to cart -->
-		</div>
-
-	</div>
-
-</div>
-									<!-- //Product -->
-												</div>
-
-											</div>
-										</div>
-
-										<!-- //Order -->
-									</div>
+							
 								</div>
 
-
+								
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- //container -->
-		</section>
+				<!-- //container -->
+			</section>
 
 
 
 
 
-	</main>
-	<!-- //Main -->
+		</main>
+		<!-- //Main -->
 
-	<!-- Footer -->
-	<footer class="footer">
+		<!-- Footer -->
+		<footer class="footer">
 	<div class="footer-top">
 		<div class="container">
 			<div class="row footer__row align-horisontal-between">
@@ -3462,13 +3027,15 @@
 	</div>
 </div>
 <!-- //Popup quick-buy-->
-	<!-- //Footer -->
+		<!-- //Footer -->
 
 
-</div>
-<!-- //CONTENT WRAPPER -->
+	
 
-<!-- jQuery IF NEEDED-->
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	<!-- jQuery IF NEEDED-->
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous"></script>

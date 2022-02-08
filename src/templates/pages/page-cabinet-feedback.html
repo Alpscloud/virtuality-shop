@@ -1,0 +1,179 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Личный кабинет</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title container page-title">Личный кабинет</h1>
+
+
+			<section class="sect__cabinet gutter-bottom">
+				<div class="container">
+
+					<div class="cabinet">
+						<div class="row cabinet__row align-vertical-start align-horisontal-start">
+							<!-- Cabinet menu -->
+							{% include '../parts/sections/cabinet-aside.html' %}
+							<!-- //Cabinet menu -->
+
+							<div class="cabinet-main">
+								<h2 class="cabinet-main__title">Обратная связь</h2>
+
+								
+
+
+								<div class="cabinet-feedback">
+
+									<div class="cabinet-feedback__form card b-radius-10">
+										<form >
+											<div class="row form-groups__row align-horisontal-start align-vertical-start">
+												<div class="form-group is-error col-w-100">
+													<input type="text" class="form-input js-required-input" name="subject" placeholder="Тема обращения *">
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+	
+												<div class="form-group col-w-100">
+													<textarea name="message"  class="form-input form-textarea js-required-input" placeholder="Ваш комментарий *"></textarea>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-100">
+													<div class="form-file__wrapper">
+														<label class="form-file js-form-file">
+															<input type="file" name="fileFF[]" multiple="multiple">
+															<svg  viewBox="0 0 10 19"  xmlns="http://www.w3.org/2000/svg">
+																<path d="M8.33984 4.5H9.58984V14.0703C9.58984 15.3464 9.13411 16.4271 8.22266 17.3125C7.33724 18.224 6.25651 18.6797 4.98047 18.6797C3.73047 18.6797 2.64974 18.224 1.73828 17.3125C0.852865 16.4271 0.410156 15.3464 0.410156 14.0703V3.67969C0.410156 2.74219 0.735677 1.94792 1.38672 1.29688C2.03776 0.645833 2.81901 0.320312 3.73047 0.320312C4.66797 0.320312 5.46224 0.645833 6.11328 1.29688C6.76432 1.94792 7.08984 2.74219 7.08984 3.67969V12.4297C7.08984 13.0026 6.88151 13.4974 6.46484 13.9141C6.04818 14.3047 5.55339 14.5 4.98047 14.5C4.40755 14.5 3.91276 14.3047 3.49609 13.9141C3.10547 13.4974 2.91016 13.0026 2.91016 12.4297V4.5H4.16016V12.4297C4.16016 12.638 4.23828 12.8333 4.39453 13.0156C4.57682 13.1719 4.77214 13.25 4.98047 13.25C5.21484 13.25 5.41016 13.1719 5.56641 13.0156C5.7487 12.8333 5.83984 12.638 5.83984 12.4297V3.67969C5.83984 3.10677 5.63151 2.61198 5.21484 2.19531C4.79818 1.77865 4.30339 1.57031 3.73047 1.57031C3.15755 1.57031 2.66276 1.77865 2.24609 2.19531C1.85547 2.61198 1.66016 3.10677 1.66016 3.67969V14.0703C1.66016 15.0078 1.98568 15.8021 2.63672 16.4531C3.28776 17.1042 4.06901 17.4297 4.98047 17.4297C5.91797 17.4297 6.71224 17.1042 7.36328 16.4531C8.01432 15.8021 8.33984 15.0078 8.33984 14.0703V4.5Z" />
+															</svg>
+															<span class="link">Прикрепить файл</span>
+														</label>
+														<!-- <div class="form-file__results"></div> -->
+													</div>
+													
+												</div>
+											</div>
+
+											<div class="row form-groups__row form-groups__user align-horisontal-start align-vertical-start">
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваше имя *</span>
+														<input type="text" class="form-input js-required-input" name="name" value="Иван">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваша фамилия</span>
+														<input type="text" class="form-input" name="surname" value="Иванов">
+													</label>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваш E-mail *</span>
+														<input type="email" class="form-input js-required-input" name="email" value="email@gmail.com">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50">
+													<label class="form-group__label">
+														<span>Ваш телефон *</span>
+														<input type="tel" class="form-input js-required-input" name="phone" value="+ 7 (911) 685 22 33">
+													</label>
+													<span class="form-group__error">Вы не заполнили поле</span>
+												</div>
+
+												<div class="form-group col-w-50 form-group__submit">
+													<button class="btn" type="submit">
+														<span>Отправить</span>
+														{% include '../parts/components/btn-arrow.html' %}
+													</button>
+
+													<a href="#" target="_blank" rel="nofollow" class="btn btn-light" type="submit">
+														<span>написать в Telegram</span>
+														{% include '../parts/components/btn-arrow.html' %}
+													</a>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+							
+								</div>
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+	
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

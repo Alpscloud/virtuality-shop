@@ -302,79 +302,11 @@
 			<section class="sect__promo-slider gutter-bottom">
 				
 				<div class="promo-slider__wrapper">
-
-					<div class="promo-slider promo-slider-full js-promo-slider-full">
-
-						<div class="promo-slide bg b-radius-10">
-							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/1-bg.png');"></div>
-							<div class="promo-slide__content">
-								<p class="company-name">Virtuality  Club</p>
-
-								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
-
-								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
-
-
-							</div>
-
-							<div class="promo-slide__img">
-								<img src="img/promo/1.png" alt="">
-							</div>
-						</div>
-						<!-- //slide -->
-
-						<div class="promo-slide promo-slide-dark  b-radius-10" >
-							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/2-bg.png');"></div>
-							<div class="promo-slide__content">
-								<p class="company-name">Virtuality  Club</p>
-
-								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
-
-								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
-
-							</div>
-
-						</div>
-						<!-- //slide -->
-
-						<div class="promo-slide  b-radius-10" >
-							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/1-bg.png');"></div>
-							<div class="promo-slide__content">
-								<p class="company-name">Virtuality  Club</p>
-
-								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
-
-								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
-
-
-							</div>
-
-							<div class="promo-slide__img">
-								<img src="img/promo/2.png" alt="">
-							</div>
-						</div>
-						<!-- //slide -->
-
-						<div class="promo-slide promo-slide-dark  b-radius-10" >
-							<div class="promo-slide__bg bg"  style="background-image: url('img/promo/2-bg.png');"></div>
-							<div class="promo-slide__content">
-								<p class="company-name">Virtuality  Club</p>
-
-								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
-
-								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
-
-							</div>
-
-						</div>
-						<!-- //slide -->
-					</div>
+					{% include '../parts/sections/stocks-slider.html' %}
 
 					<div class="container">
-
-
 						<!-- Controls -->
-						<div class="slider-controls">
+						<div class="slider-controls row align-vertical-center align-horisontal-between">
 							<div class="slider-navigation">
 								<button class="slider-navigation__btn slider-navigation__btn--prev js-promo-slider-full-btn-prev b-radius-7" type="button">
 									{% include '../parts/components/btn-arrow.html' %}
@@ -389,6 +321,7 @@
 						<!-- //Controls -->
 
 					</div>
+					
 				</div>
 			</section>
 			<!-- //sect promo slider -->
