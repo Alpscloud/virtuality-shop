@@ -64,6 +64,15 @@ $(document).ready(function() {
 		$('html').addClass('is-fixed');
 	});
 
+	$('.js-open-faq-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-popup-faq').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+
+	
+
 
 	
 
@@ -170,6 +179,43 @@ $(document).ready(function() {
 
 	
 
+	// Filter
+	$(document).mouseup(function (e) {
+		var container = $('.filter-group');
+			if (container.has(e.target).length === 0){
+			container.removeClass('is-opened');
+		}
+	});
+	$('.filter-group__field').on('click', function(e) {
+		e.preventDefault();
+
+		var group = $(this).parents('.filter-group');
+
+		if (group.hasClass('is-opened')) {
+			$('.filter-group').removeClass('is-opened');
+			group.removeClass('is-opened');
+		} else {
+			$('.filter-group').removeClass('is-opened');
+			group.addClass('is-opened');
+		}
+		
+	});
+
+
+	$('.filter-group__dropdown--content_select li').on('click', function(e) {
+		e.preventDefault();
+
+		var text = $(this).attr('data-text');
+		var val = $(this).attr('data-id');
+		var group = $(this).parents('.filter-group');
+
+		
+		group.removeClass('is-opened');
+		group.find('input').val(val).trigger('change');
+		group.find('.filter-group__field span').html(text);
+		
+		
+	});
 
 	
 

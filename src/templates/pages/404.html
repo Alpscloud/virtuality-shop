@@ -1,0 +1,56 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+			
+			<section class="sect__technical">
+				<div class="container">
+					<div class="block-technical">
+						<div class="row align-vertical-center align-horisontal-start row-nowrap row-gutters">
+							<div class="block-technical__content col-gutters">
+								<h1 class="block-technical__title">Упс ...<br> что-то пошло не так! </h1>
+								<p>Страница, которую вы искали не найдена.<br> Возможно, вы ввели неверный адресили, или страница была перемещена.</p>
+								<a href="index.html" class="btn">
+									<span>в магазин</span>
+									{% include '../parts/components/btn-arrow.html' %}
+								</a>
+							</div>
+							<div class="block-technical__img col-gutters">
+								<img src="img/404.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+		{% include '../parts/components/popups/popup-follow.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

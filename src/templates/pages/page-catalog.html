@@ -1,0 +1,286 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Название категории товаров</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title container page-title">Название категории товаров</h1>
+
+
+			<section class="sect__catalog-categories gutter-bottom">
+				<div class="container">
+					<div class="catalog-categories ">
+						<div class="catalog-categories__row row align-horisontal-start">
+							{% include '../parts/components/catalog-category-link.html' %}
+							{% include '../parts/components/catalog-category-link.html' %}
+							{% include '../parts/components/catalog-category-link.html' %}
+							{% include '../parts/components/catalog-category-link.html' %}
+							{% include '../parts/components/catalog-category-link.html' %}
+							{% include '../parts/components/catalog-category-link.html' %}
+						</div>
+
+					</div>
+
+					<div class="promo-block gutter-bottom">
+						<div class="row promo-block__row row-nowrap">
+
+							<div class="promo-slider__wrapper">
+								<div class="promo-slider flex-slider slider-gutters js-promo-slider">
+									<div class="promo-slide promo-slide-sm bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+										<div class="promo-slide__content">
+											<p class="company-name">Virtuality  Club</p>
+
+											<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+											<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+											<a href="#" class="btn">
+												<span>Подробнее</span>
+												{% include '../parts/components/btn-arrow.html' %}
+											</a>
+										</div>
+
+										<div class="promo-slide__img">
+											<img src="img/promo/1.png" alt="">
+										</div>
+									</div>
+									<!-- //slide -->
+
+									<div class="promo-slide promo-slide-sm bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+										<div class="promo-slide__content">
+											<p class="company-name">Virtuality  Club</p>
+
+											<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+											<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+											<a href="#" class="btn">
+												<span>Подробнее</span>
+												{% include '../parts/components/btn-arrow.html' %}
+											</a>
+										</div>
+
+										<div class="promo-slide__img">
+											<img src="img/promo/1.png" alt="">
+										</div>
+									</div>
+									<!-- //slide -->
+								</div>
+
+								<!-- Controls -->
+								<div class="slider-controls">
+									<div class="slider-navigation">
+										<button class="slider-navigation__btn slider-navigation__btn--prev js-promo-slider-btn-prev b-radius-7" type="button">
+											{% include '../parts/components/btn-arrow.html' %}
+										</button>
+										<button class="slider-navigation__btn slider-navigation__btn--next js-promo-slider-btn-next b-radius-7" type="button">
+											{% include '../parts/components/btn-arrow.html' %}
+										</button>
+									</div>
+
+									<div class="slider-pagination js-promo-slider-pagination"></div>
+								</div>
+								<!-- //Controls -->
+							</div>
+
+							<div class="promo-block__offer">
+
+								<div class="promo-products-cards-slider__wrapper">
+
+									<div class="promo-products-cards-slider js-promo-products-cards-slider slider-gutters">
+										{% include '../parts/components/product-card.html' %}
+										{% include '../parts/components/product-card.html' %}
+										{% include '../parts/components/product-card.html' %}
+										{% include '../parts/components/product-card.html' %}
+										{% include '../parts/components/product-card.html' %}
+									</div>
+
+
+									<div class="slider-pagination js-promo-products-cards-slider-pagination"></div>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+			<div class="sect__catalog gutter-bottom">
+				<div class="container">
+
+					<!-- Filter -->
+					<div class="filter">
+						<form>
+							<div class="row filter__row align-horisontal-between">
+								<div class="filter-fields__col filter__col">
+									<div class="filter-group__col col-w-25">
+
+										<div class="filter-group">
+											<div class="filter-group__field">
+												<input type="hidden" name="manufacturer">
+												<span>Производитель</span>
+											</div>
+											<div class="filter-group__dropdown">
+												<div class="filter-group__dropdown--content filter-group__dropdown--content_select">
+													<ul>
+														<li data-text="Производитель 1" data-id="1">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 2" data-id="2">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 3" data-id="3">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 4" data-id="4">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 5" data-id="5">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 6" data-id="6">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 7" data-id="7">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 8" data-id="8">Название произв. <span class="filter-group__count">(598)</span></li>
+														<li data-text="Производитель 9" data-id="9">Название произв. <span class="filter-group__count">(598)</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //col -->
+
+									<div class="filter-group__col col-w-25">
+										<div class="filter-group">
+											<div class="filter-group__field">
+												<span>Бренд</span>
+												<span class="filter-group__field-counter is-hidden">5</span>
+											</div>
+											<div class="filter-group__dropdown">
+												<div class="filter-group__dropdown--content">
+													<label class="form-checkbox__label">
+														<input name="brand-1" type="checkbox">
+														<span class="form-checkbox filter-group__checkbox">Бренд <span class="filter-group__count">(598)</span></span>
+													</label>
+													<label class="form-checkbox__label">
+														<input name="brand-2" type="checkbox">
+														<span class="form-checkbox filter-group__checkbox">Бренд <span class="filter-group__count">(598)</span></span>
+													</label>
+													<label class="form-checkbox__label">
+														<input name="brand-3" type="checkbox">
+														<span class="form-checkbox filter-group__checkbox">Бренд <span class="filter-group__count">(598)</span></span>
+													</label>
+													<label class="form-checkbox__label">
+														<input name="brand-4" type="checkbox">
+														<span class="form-checkbox filter-group__checkbox">Бренд <span class="filter-group__count">(598)</span></span>
+													</label>
+													<label class="form-checkbox__label">
+														<input name="brand-5" type="checkbox">
+														<span class="form-checkbox filter-group__checkbox">Бренд <span class="filter-group__count">(598)</span></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //col -->
+
+									<div class="filter-group__col col-w-25">
+										<div class="filter-group">
+											<div class="filter-group__field">
+												<input type="hidden" name="viewing angle">
+												<span>Угол обзора</span>
+											</div>
+											<div class="filter-group__dropdown">
+												<div class="filter-group__dropdown--content filter-group__dropdown--content_select">
+													<ul>
+														<li data-text="Любой" data-id="1">Все <span class="filter-group__count">(5)</span></li>
+														<li data-text="180&#8728;" data-id="2">180&#8728; <span class="filter-group__count">(3)</span></li>
+														<li data-text="360&#8728;" data-id="3">360&#8728; <span class="filter-group__count">(2)</span></li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-group__col col-w-25"></div>
+									<div class="filter-group__col col-w-25"></div>
+									<div class="filter-group__col col-w-25"></div>
+									<div class="filter-group__col col-w-25"></div>
+									<div class="filter-group__col col-w-25"></div>
+
+									<div class="filter-group__col col-w-25 is-hidden"></div>
+									<div class="filter-group__col col-w-25 is-hidden"></div>
+									<div class="filter-group__col col-w-25 is-hidden"></div>
+									<div class="filter-group__col col-w-25 is-hidden"></div>
+								</div>
+								<div class="filter-price__col filter__col"></div>
+							</div>
+						</form>
+					</div>
+					<!-- //Filter -->
+				</div>
+				<!-- //container -->
+			</div>
+
+
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

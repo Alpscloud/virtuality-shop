@@ -60,6 +60,19 @@
 			width 100%
 			&-pw
 				width 50%
+				
+	.block-technical
+		&__title
+			font-size 45px
+			line-height 60px
+		p
+			font-size 15px
+			line-height 20px
+			
+	// Catalog
+	.catalog-category-link
+		&__wrapper
+			width 33.333%
 			
 
 	
@@ -212,6 +225,17 @@
 		
 			&-pw
 				width 100%
+				
+
+
+	// Catalog
+	.catalog-category-link
+		font-size 16px
+		line-height 19px
+		min-height 120px
+		img
+			max-width 110px
+			
 			
 
 
@@ -319,6 +343,25 @@
 		padding-right 15px
 		
 
+	.block-technical
+		.row
+			flex-wrap wrap
+		&__content
+			width 100%
+		&__img
+			width 100%
+			
+	.sect__technical
+		padding 60px 0
+		
+	.block-technical
+		&__content
+			text-align center
+		&__img
+			margin-top 40px
+			
+		
+
 
 		
 	// Header
@@ -399,6 +442,13 @@
 					
 	.promo-slide__content
 		max-width 400px
+		
+
+	.faq-answer__content
+		padding 25px 50px 25px 25px
+		width 60%
+	.faq-answer__img
+		width 40%
 
 	// Footer
 	.footer-top
@@ -419,11 +469,22 @@
 		margin-bottom 30px !important
 		&:last-child
 			margin-bottom 0
+			
+
+
+	// Catalog
+	.catalog-category-link
+		&__wrapper
+			width 50%
+			
+			
 
 
 	.hidden-tablet
 		display none
 		
+
+
 +max-screen(767px)
 	// Header
 	.btn-catalog
@@ -877,6 +938,14 @@
 		margin-top 20px
 		
 		.timer-title
+			display none
+			
+
+	.faq-answer
+		&__content
+			width 100%
+			padding 30px
+		&__img
 			display none
 			
 
@@ -1664,6 +1733,30 @@
 				content attr(data-mobile-text)
 			span
 				display none
+				
+
+	// Catalog
+	.catalog-categories
+		padding-bottom 10px
+		margin-bottom 20px
+		&__row
+			margin-left -5px
+			margin-right -5px
+		
+	.catalog-category-link
+		font-size 12px
+		line-height 16px
+		padding 15px 10px
+		min-height 60px
+		img
+			width 35px
+			margin-right 5px
+		&__wrapper
+			padding-left 5px
+			padding-right 5px
+			margin-bottom 10px
+			
+
 		
 		
 	// Footer
@@ -1768,6 +1861,26 @@
 		font-size 12px
 		
 
+	.sect__technical
+		padding 30px 0 40px
+	.block-technical
+		&__img
+			margin-top 40px
+		&__title
+			font-size 20px
+			line-height 24px
+			margin-bottom 10px
+		p
+			font-size 12px
+			line-height 18px
+			margin-bottom 20px
+			
+		.btn
+			width 100%
+			height 40px
+			
+		
+
 	// popup
 	.popup
 		&__body
@@ -1783,6 +1896,55 @@
 			
 		.form-group__checkbox
 			margin 15px 0
+			
+	.faq-answer
+		&__content
+			padding 30px 20px
+		&__title
+			font-size 18px
+			line-height 26px
+			margin-bottom 10px
+			
+		.viewers
+			margin-bottom 15px
+			
+		&__text
+			font-size 12px
+			line-height 14px
+			p
+				margin-bottom 10px
+				
+		&__btns
+			flex-wrap wrap
+			.btn
+				flex none
+				width 100%
+				margin-right 0
+				margin-bottom 10px
+				&:last-child
+					margin-bottom 0
+					
+	.btn-lg-ic
+		svg
+			width 13px
+			height 13px
+				
+	.viewers, .likes
+		font-size 12px
+		padding-right 17px
+	
+	.viewers
+		&:after
+			width 14px
+			height 9px
+	.likes
+		span
+			
+			font-size 15px
+		&:after
+			width 12px
+			height 12px
+			bottom 3px
 			
 	.btn-close
 		width 20px

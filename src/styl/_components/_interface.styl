@@ -551,3 +551,44 @@
 		color $text-color
 		svg
 			fill $text-color
+			
+
+.viewers
+	color $light-text-color
+	display inline-block
+	position relative
+	padding-right 20px
+	line-height 1
+	font 15px $Reg
+	span
+		display inline-block
+		margin-left 5px
+	&:after
+		pseudo()
+		background url('../img/icons/svg/view.svg') 50% no-repeat / contain
+		width 17px
+		position absolute
+		height 10px
+		vertical-center()
+		right 0
+		
+.likes
+	display inline-block
+	color $accent-color
+	position relative
+	padding-right 20px
+	font 15px $Reg
+	line-height 1
+	span
+		display inline-block
+		margin-left 5px
+		font-size 20px
+		font-weight 700
+	&:after
+		pseudo()
+		width 15px
+		height 15px
+		position absolute
+		bottom 2px
+		right 0
+		background url('../img/icons/svg/like.svg') 50% no-repeat / contain
