@@ -48,10 +48,380 @@
 			<!-- //Breadcrumbs -->
 
 
-			<h1 class="sect-title container page-title">Сравнение товаров</h1>
+			<section class="sect__compare gutter-bottom">
+				<div class="container">
+					<div class="compare-entering">
+
+						<div class="row align-horisontal-between align-vertical-center">
+							<h1 class="sect-title  page-title">Сравнение товаров</h1>
+
+							<button type="button" class="btn-remove-all">
+								<svg  viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.10933 5.56641L2.05511 17.4674C2.12267 18.3246 2.82311 19 3.648 19H12.352C13.1769 19 13.8773 18.3283 13.9449 17.4674L14.8907 5.56641H1.10933ZM5.33333 16.7734C5.05244 16.7734 4.81778 16.5471 4.8 16.2502L4.26667 7.26973C4.24889 6.96172 4.47289 6.69824 4.76444 6.67969C5.07022 6.65742 5.312 6.89492 5.32978 7.19922L5.86311 16.1797C5.88444 16.4988 5.64267 16.7734 5.33333 16.7734ZM8.53333 16.2168C8.53333 16.5248 8.29511 16.7734 8 16.7734C7.70489 16.7734 7.46667 16.5248 7.46667 16.2168V7.23633C7.46667 6.92832 7.70489 6.67969 8 6.67969C8.29511 6.67969 8.53333 6.92832 8.53333 7.23633V16.2168ZM11.7333 7.26973L11.2 16.2502C11.1822 16.5434 10.9476 16.7846 10.6347 16.7697C10.3396 16.7512 10.1191 16.4877 10.1369 16.1797L10.6702 7.19922C10.688 6.89121 10.9476 6.66855 11.2356 6.67969C11.5271 6.69824 11.7511 6.96543 11.7333 7.26973Z"/>
+									<path d="M14.9333 2.22656H11.7333V1.66992C11.7333 0.749609 11.0151 0 10.1333 0H5.86667C4.98489 0 4.26667 0.749609 4.26667 1.66992V2.22656H1.06667C0.476444 2.22656 0 2.72383 0 3.33984C0 3.95586 0.476444 4.45312 1.06667 4.45312C5.97333 4.45312 10.0267 4.45312 14.9333 4.45312C15.5236 4.45312 16 3.95586 16 3.33984C16 2.72383 15.5236 2.22656 14.9333 2.22656ZM10.6667 2.22656H5.33333V1.66992C5.33333 1.36191 5.57156 1.11328 5.86667 1.11328H10.1333C10.4284 1.11328 10.6667 1.36191 10.6667 1.66992V2.22656Z"/>
+								</svg>
+								<span>Удалить все</span>
+
+							</button>
+						</div>
+					</div>
+
+					<div class="compare-categories filter-tags">
+						<span class="filter-tag">Категория товаров 01</span>
+						<span class="filter-tag">Категория01</span>
+						<span class="filter-tag">Категория01</span>
+						<span class="filter-tag">Категория01</span>
+						<span class="filter-tag">Категория01</span>
+						<span class="filter-tag">Категория01</span>
+						<span class="filter-tag">Категория01</span>
+					</div>
 
 
-			{% include '../parts/components/catalog/sect-categories.html' %}
+					<div class="products-cards-slider__wrapper gutter-bottom">
+
+						<div class="products-cards-slider js-products-cards-slider flex-slider slider-gutters">
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+							<!-- Card -->
+							{% include '../parts/components/product-card-compare.html' %}
+							<!-- //Card -->
+
+						</div>
+
+
+						<!-- Controls -->
+						<div class="slider-controls">
+							<div class="slider-navigation">
+								<button class="slider-navigation__btn slider-navigation__btn--prev js-products-cards-slider-btn-prev b-radius-7" type="button">
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+								<button class="slider-navigation__btn slider-navigation__btn--next js-products-cards-slider-btn-next b-radius-7" type="button">
+									{% include '../parts/components/btn-arrow.html' %}
+								</button>
+							</div>
+
+							<div class="slider-pagination js-products-cards-slider-pagination"></div>
+						</div>
+						<!-- //Controls -->
+					</div>
+
+
+					<div class="compare-tables__wrapper">
+
+						<div class="compare-tables__entering row align-horisontal-between align-vertical-center">
+							<h2 class="sect-title">Сравнительные характеристики</h2>
+
+							<label  class="form-checkbox-toggle__label">
+								<input type="checkbox" name="">
+								<span class="form-checkbox-toggle form-checkbox-toggle__left">Показать только различающиеся</span>
+							</label>
+						</div>
+
+
+						<div class="compare-tables">
+							<!-- TAble -->
+							<div class="compare-table__wrapper card b-radius-10">
+
+								<div class="compare-table__heading">
+									<h3>Общая информация</h3>
+
+									<button class="btn-accordion js-toggle-compare-table-btn" type="button">
+										<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z" />
+										</svg>
+									</button>
+								</div>
+
+								<div class="compare-table">
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Тип</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Модель</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Акции</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><span class="product-label product-label__sale">Новогодний Sale - 15%</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__stock">-50% на аксессуар</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__hit">Хит продаж</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__cashback">Кэшбэк 15%</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__installment">Рассрочка 0-0-18</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__stock">-50% на аксессуар</span></div>
+
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Цвет</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный, белый, красный, оранжевый</p></div>
+											<div class="compare-table__td"><p>Черный, белый, красный, оранжевый</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Материал</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Рыба-текст</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //TAble -->
+
+							<!-- TAble -->
+							<div class="compare-table__wrapper card b-radius-10">
+
+								<div class="compare-table__heading">
+									<h3>Основные характеристики</h3>
+
+									<button class="btn-accordion js-toggle-compare-table-btn" type="button">
+										<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z" />
+										</svg>
+									</button>
+								</div>
+
+								<div class="compare-table">
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Тип</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Модель</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Акции</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><span class="product-label product-label__sale">Новогодний Sale - 15%</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__stock">-50% на аксессуар</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__hit">Хит продаж</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__cashback">Кэшбэк 15%</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__installment">Рассрочка 0-0-18</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__stock">-50% на аксессуар</span></div>
+
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Цвет</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный, белый, красный, оранжевый</p></div>
+											<div class="compare-table__td"><p>Черный, белый, красный, оранжевый</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Материал</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Рыба-текст</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //TAble -->
+
+								<!-- TAble -->
+							<div class="compare-table__wrapper card b-radius-10">
+
+								<div class="compare-table__heading">
+									<h3>Общая информация</h3>
+
+									<button class="btn-accordion js-toggle-compare-table-btn" type="button">
+										<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z" />
+										</svg>
+									</button>
+								</div>
+
+								<div class="compare-table">
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Тип</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+											<div class="compare-table__td"><p>Очки виртуальной реальности</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Модель</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Акции</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><span class="product-label product-label__sale">Новогодний Sale - 15%</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__stock">-50% на аксессуар</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__hit">Хит продаж</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__cashback">Кэшбэк 15%</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__installment">Рассрочка 0-0-18</span></div>
+											<div class="compare-table__td"><span class="product-label product-label__stock">-50% на аксессуар</span></div>
+
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Цвет</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный, белый, красный, оранжевый</p></div>
+											<div class="compare-table__td"><p>Черный, белый, красный, оранжевый</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+											<div class="compare-table__td"><p>Черный</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Материал</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+											<div class="compare-table__td"><p>VR Shinecon SC-G07E</p></div>
+										</div>
+									</div>
+
+									<div class="compare-table__tr">
+										<div class="compare-table__tr--title"><p>Рыба-текст</p></div>
+										<div class="compare-table__tds">
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+											<div class="compare-table__td"><span class="check"></span></div>
+											<div class="compare-table__td"><span class="not-check"></span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //TAble -->
+
+						</div>
+
+
+					</div>
+
+
+				</div>
+				<!-- //container -->
+			</section>
+
+			
 
 
 

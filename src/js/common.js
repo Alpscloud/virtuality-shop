@@ -177,6 +177,14 @@ $(document).ready(function() {
 	});
 
 
+	$('.js-toggle-compare-table-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-toggled');
+		$(this).parents('.compare-table__wrapper').find('.compare-table').stop().slideToggle(250);
+	});
+
+
 	
 
 	// Filter
@@ -815,11 +823,15 @@ $(document).ready(function() {
 		overflowBehavior: {x: 'hidden'}
 	});
 
+	$(".compare-table").overlayScrollbars({ 
+		overflowBehavior: {y: 'hidden'}
+	});
+
 
 
 	$(".catalog-menu__brands").overlayScrollbars({ 
-			overflowBehavior: {y: 'hidden'}
-		});
+		overflowBehavior: {y: 'hidden'}
+	});
 
 
 

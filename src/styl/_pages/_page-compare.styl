@@ -1,0 +1,107 @@
+.compare
+	&-entering
+		margin-bottom 40px
+		.sect-title
+			margin-bottom 0
+			
+	&-categories
+		margin-bottom 40px
+		
+.sect__compare
+	.products-cards-slider__wrapper
+		margin-bottom 70px
+		border-bottom 1px solid $border-color
+		
+
+.compare-tables__entering
+	margin-bottom 50px
+	.sect-title
+		margin-bottom 0
+		
+.compare-table
+
+	overflow-x auto
+	
+	.product-label
+		margin 0
+
+	&__wrapper
+		margin-bottom 20px
+		overflow hidden
+		&:last-child
+			margin-bottom 0
+	&__heading
+		font 20px $Bold
+		line-height 24px
+		display flex
+		align-items center
+		flex-wrap nowrap
+		justify-content space-between
+		padding 25px
+		
+	&__tr
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+		&--title
+			text-align center
+			margin-left 25px
+			border 1px solid $border-color
+			border-bottom none
+			text-align center
+			font 17px $Reg
+			font-weight 700
+			width 165px
+			height 36px
+			display flex
+			align-items center
+			border-radius 7px 7px 0 0
+			padding 6px 25px
+	&__tds
+		display flex
+		align-items center
+		&:hover
+			background-color rgba(#FFC738, .06)
+		
+	&__td
+		height 60px
+		border-top 1px solid $border-color
+		border-bottom 1px solid $border-color
+		position relative
+		width 300px
+		flex none
+		display flex
+		align-items center
+		padding-left 35px
+		padding-right 35px
+		&:after
+			pseudo()
+			position absolute
+			vertical-center()
+			height 35px
+			width 1px
+			background-color $border-color
+			right 0
+			border-radius 30px
+		&:last-child
+			&:after
+				display none
+	
+
+
+.compare-table
+	display none
+	.os-scrollbar
+		height 25px
+		display flex
+		align-items center
+		padding-left 25px
+		padding-right 25px
+		position relative
+		margin-top -10px
+	
+	.os-scrollbar-track
+		height 5px
+		
+	.os-scrollbar-vertical
+		display none !important

@@ -395,6 +395,9 @@
 			position-center()
 		&:hover
 			border-color $accent-color
+			background-color $accent-color
+			svg
+				fill $basic-white-color
 			
 		&.is-toggled
 			svg
@@ -442,7 +445,37 @@
 				fill $accent-color
 			
 		
-		
+	&-remove-all
+		display inline-block
+		position relative
+		padding-left 30px
+		font 15px $Reg
+		color $accent-color
+		svg
+			position absolute
+			vertical-center()
+			left 0
+			svg()
+			width 15px
+			height 19px
+			fill $accent-color
+		span
+			border-bottom 1px solid currentColor
+		&:hover
+			color $text-color
+			svg
+				fill $text-color
+				
+	&-delete
+		display inline-block
+		width 20px
+		height 24px
+		svg
+			svg()
+			fill #C9CCD0
+		&:hover
+			svg
+				fill $accent-color
 
 span.btn.is-active
 	&:hover
