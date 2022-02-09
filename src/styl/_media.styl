@@ -27,6 +27,8 @@
 	.dropdown
 		margin-left -20px
 		
+	.catalog-product-card
+		width 25%		
 	// cabinet
 	.cabinet-aside
 		margin-right 40px
@@ -35,6 +37,10 @@
 		.promo-slide-color
 			.promo-slide__img
 				right -70px
+				
+
+	.product-card-full__information .product-card__thumbnail
+		margin-right 25px
 
 +max-screen(1450px)
 	// Footer
@@ -236,7 +242,53 @@
 		img
 			max-width 110px
 			
+
+	.filter-group__col
+		width 50%
+		
+
+	.catalog-products__entering
+		&--row
+			flex-wrap wrap
+		&--title
+			max-width 100%
+			flex none
+			margin-bottom 20px
+		
+	.sorting
+		flex none
+		width 100%
+		&-form
+			flex 1
 			
+			max-width none
+			
+
+	.catalog-product-card
+		width 33.3333%
+		
+
+	.product-card-full
+		padding-top 45px
+		.row
+			flex-wrap wrap
+			
+		&__col
+			margin-bottom 20px
+			
+			&:first-child
+				max-width 100%
+				
+			&:last-child
+				margin-bottom 0
+				
+				.product-rating
+					display none
+			&:nth-child(2)
+				max-width 100%
+				
+	.product-card-full__information .product-rating
+		display flex
 
 
 	
@@ -361,7 +413,8 @@
 			margin-top 40px
 			
 		
-
+	.catalog-product-card
+		width 50%
 
 		
 	// Header
@@ -477,7 +530,69 @@
 		&__wrapper
 			width 50%
 			
+
+	.filter
+		&__row
+			flex-wrap wrap
+		&__col
+			flex none
+			width 100%
+			margin-bottom 25px
+			&:last-child
+				margin-bottom 0
+				
+		&-brands
+			width calc(100% + 30px) !important
+			margin-left -15px
+			margin-right -15px
+			padding-left 25px
+			white-space nowrap
+			padding-bottom 6px
+			overflow-x auto
 			
+			span
+				margin-bottom 0
+				&:last-child
+					margin-right 15px
+			
+			
+	.sorting
+		position relative
+		
+		&-form
+			.form-groups__row
+				flex-wrap wrap
+				
+			.form-group
+				width 100%
+				margin-bottom 10px
+				&:last-child
+					margin-bottom 0
+					
+	.view-switcher
+		width 65px
+		flex-direction column
+		margin-left 10px
+		.btn-ic
+			margin-right 0
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+				
+	.catalog-pagination__wrapper
+		.row
+			flex-wrap wrap
+			justify-content center
+			
+		.btn
+			margin-top 20px
+			
+		.pagination
+			width 100%
+			
+	.pagination-list
+		justify-content center
+		
 
 
 	.hidden-tablet
@@ -1757,6 +1872,131 @@
 			margin-bottom 10px
 			
 
+	.filter
+		&__col
+			padding-left 0
+			padding-right 0
+		&__row
+			margin-left 0
+			margin-right 0
+		&-group__field
+			height 50px
+			padding 12px 15px
+			font-size 12px
+			
+		&-brand
+			height 40px
+			font-size 12px
+			
+	.filter-group__toggle
+		width 100%
+		text-align center
+	
+			
+	.form-checkbox-toggle
+		font-size 14px
+		padding-right 0
+		padding-bottom 35px
+		height auto
+		&:before
+			left 0
+			bottom 0
+			transform none
+			top auto
+		&:after
+			transform none
+			left 2px
+			bottom 2px
+			top auto
+			transform none
+			
+		&__label
+			input:checked
+				~ span
+					&:after
+						transform translateX(20px)
+			
+	.filter-group__col
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+		&:nth-child(even)
+			.filter-group__dropdown
+				left auto
+				right 0
+		
+	.filter-fields__col
+		margin-left -5px
+		margin-right -5px
+		width calc(100% + 10px)
+		flex none
+		
+	.filter-group__dropdown
+		width calc(100vw - 30px)
+		
+	.filter-group__dropdown--content_select li
+		font-size 12px
+		
+	.filter-group__count
+		font-size 12px
+		
+	.filter-color__label
+		font-size 12px
+		margin-bottom 10px
+		
+	.filter-rating
+		font-size 12px
+		padding-left 28px
+		&__label
+			margin-bottom 10px
+		
+		
+	.filter-color
+		margin-right 10px
+		
+			
+
+	.filter-prices input
+		height 44px
+	
+	.btn-clear
+		margin 20px auto 0
+		font-size 12px
+		
+	.filter-price__col
+		font-size 12px
+		p
+			margin-bottom 10px
+			
+	.form-range
+		margin-bottom 20px
+		
+	.filter
+		margin-bottom 40px
+		
+
+	.catalog-products__entering
+		margin-bottom 20px
+		&--title
+			margin-bottom 20px
+			p
+				font-size 12px
+				
+	.view-switcher
+		width 50px
+		.btn-ic
+			width 50px
+			height 50px
+			svg
+				width 15px
+				height 15px
+			
+	.ui-selectmenu-button
+		height 50px
+		font-size 12px
+		
+	.ui-selectmenu-menu .ui-menu-item
+		font-size 12px
 		
 		
 	// Footer
@@ -2048,7 +2288,140 @@
 			&-slider
 				.slick-slide
 					width 130px
+					
+	.catalog-product-card
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+		
+	.catalog-products__block
+		padding-bottom 10px
+		
+
+	.catalog-products__row
+		margin-left -5px
+		margin-right -5px
+		
+	.catalog-pagination__wrapper
+		.btn
+			width 100%
+			height 40px
 			 
+	.pagination
+		&-list
+			height 30px
+		&-item
+			&__prev
+				margin-right 20px
+			&__next
+				margin-left 10px
+		&-link
+			width 30px
+			height 30px
+			font-size 12px
+			svg
+				width 10px
+				
+	.product-card-full
+		padding 45px 15px 15px
+		&__col
+			padding 0
+			margin-bottom 15px
+			&:last-child
+				width 100%
+				display flex
+				align-items flex-end
+				justify-content space-between
+				
+		.product-prices
+			font-size 18px
+			margin-bottom 0
+			margin-right 15px
+			span
+				font-size inherit
+		.product-prices__old
+			font-size 12px !important
+			line-height 14px
+			margin-top 2px
+			
+		&__information 
+			.ul-list
+				display none
+			.product-card__thumbnail
+				width 95px
+				height 95px
+				margin-right 10px
+				padding 5px
+				
+			.product-card__title
+				font-size 14px
+				line-height 16px
+				margin-bottom 10px
+				
+		.btn-ic
+			width 35px
+			height 35px
+			svg
+				width 15px
+				height 15px
+				
+		.btns
+			.btn-add
+				order 2
+				
+			.btn-ic
+				order 1
+				margin-left 0
+				margin-right 10px
+				
+		.btn-add
+			width 35px
+			height 35px
+			padding 0
+			background none
+			&__text
+				display none
+			&__ic
+				width 100%
+				margin-left 0
+				height 100%
+				svg
+					width 15px
+					height 15px
+					
+	.catalog-product-full
+		margin-bottom 10px
+				
+	.product-feedbacks
+		font-size 10px
+		
+	.rating-value
+		font-size 10px
+		margin-left 5px
+				
+	.product-label
+		height 20px
+		font-size 10px
+		
+	.characteristics-list
+		font-size 12px
+		width 100%
+		li
+			display flex
+			width 100%
+			flex-wrap nowrap
+			justify-content space-between
+			align-items flex-end
+	
+			.divider
+				display inline-block
+			
+			
+
+
+
+
+
 	.hidden-mobile-md
 		display none
 			
@@ -2119,6 +2492,9 @@
 				transform none
 				left -15px
 				top 20px
+				
+
+	
 			 
 			
 					
@@ -2136,3 +2512,10 @@
 			
 	.btns .btn-ic
 		margin-left 5px
+		
+	.characteristics-list
+
+		li
+
+			.label
+				max-width 180px

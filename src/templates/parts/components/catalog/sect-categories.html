@@ -1,0 +1,102 @@
+<section class="sect__catalog-categories gutter-bottom">
+	<div class="container">
+		<div class="catalog-categories ">
+			<div class="catalog-categories__row row align-horisontal-start">
+				{% include '../catalog-category-link.html' %}
+				{% include '../catalog-category-link.html' %}
+				{% include '../catalog-category-link.html' %}
+				{% include '../catalog-category-link.html' %}
+				{% include '../catalog-category-link.html' %}
+				{% include '../catalog-category-link.html' %}
+			</div>
+
+		</div>
+
+		<div class="promo-block gutter-bottom">
+			<div class="row promo-block__row row-nowrap">
+
+				<div class="promo-slider__wrapper">
+					<div class="promo-slider flex-slider slider-gutters js-promo-slider">
+						<div class="promo-slide promo-slide-sm bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+							<div class="promo-slide__content">
+								<p class="company-name">Virtuality  Club</p>
+
+								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+								<a href="#" class="btn">
+									<span>Подробнее</span>
+									{% include '../btn-arrow.html' %}
+								</a>
+							</div>
+
+							<div class="promo-slide__img">
+								<img src="img/promo/1.png" alt="">
+							</div>
+						</div>
+						<!-- //slide -->
+
+						<div class="promo-slide promo-slide-sm bg b-radius-10" style="background-image: url('img/promo/1-bg.png');">
+
+							<div class="promo-slide__content">
+								<p class="company-name">Virtuality  Club</p>
+
+								<h2 class="promo-slide__title">Реальность которая впечатляет</h2>
+
+								<p class="promo-slide__text">Главная цель Virtuality Club - сделать технологии виртуальной,  реальности популярными и доступными каждому.</p>
+
+								<a href="#" class="btn">
+									<span>Подробнее</span>
+									{% include '../btn-arrow.html' %}
+								</a>
+							</div>
+
+							<div class="promo-slide__img">
+								<img src="img/promo/1.png" alt="">
+							</div>
+						</div>
+						<!-- //slide -->
+					</div>
+
+					<!-- Controls -->
+					<div class="slider-controls">
+						<div class="slider-navigation">
+							<button class="slider-navigation__btn slider-navigation__btn--prev js-promo-slider-btn-prev b-radius-7" type="button">
+								{% include '../btn-arrow.html' %}
+							</button>
+							<button class="slider-navigation__btn slider-navigation__btn--next js-promo-slider-btn-next b-radius-7" type="button">
+								{% include '../btn-arrow.html' %}
+							</button>
+						</div>
+
+						<div class="slider-pagination js-promo-slider-pagination"></div>
+					</div>
+					<!-- //Controls -->
+				</div>
+
+				<div class="promo-block__offer">
+
+					<div class="promo-products-cards-slider__wrapper">
+
+						<div class="promo-products-cards-slider js-promo-products-cards-slider slider-gutters">
+							{% include '../product-card.html' %}
+							{% include '../product-card.html' %}
+							{% include '../product-card.html' %}
+							{% include '../product-card.html' %}
+							{% include '../product-card.html' %}
+						</div>
+
+
+						<div class="slider-pagination js-promo-products-cards-slider-pagination"></div>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- //container -->
+</section>

@@ -156,6 +156,7 @@
 		flex none
 		border 1px solid $border-color
 		position relative
+		transition border-color .17s ease-in-out
 		border-radius 7px
 		svg
 			svg()
@@ -274,7 +275,7 @@
 				
 			&:hover
 				svg
-					fill $darkest-accent-color
+					fill $light-accent-color
 					
 			&.is-active
 				svg
@@ -368,7 +369,7 @@
 		height 45px
 		&:hover,
 		&.is-active
-			background-color $dark-accent-color
+			background-color $light-accent-color
 		svg
 			svg()
 			flex none
@@ -420,6 +421,26 @@
 			background-color $basic-white-color
 			svg
 				fill $accent-color
+				
+	&-clear
+		display inline-block
+		position relative
+		margin-top 20px
+		padding-left 22px
+		font 17px $Reg
+		svg
+			position absolute
+			left 0
+			vertical-center()
+			width 12px
+			height 12px
+			fill $text-color
+			transition fill .17s ease-in-out
+		&:hover
+			color $accent-color
+			svg
+				fill $accent-color
+			
 		
 		
 

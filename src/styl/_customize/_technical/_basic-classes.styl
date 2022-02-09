@@ -185,3 +185,37 @@
 
 .hidden-desktop
 	display none
+	
+
+
+.ul-list
+	li
+		position relative
+		padding-left 19px
+		margin-bottom 10px
+		&:last-child
+			margin-bottom 0
+		&:before
+			pseudo()
+			position absolute
+			top 8px
+			width 4px
+			height 4px
+			border-radius 50%
+			background-color $accent-color
+			left 0
+			
+.characteristics-list
+	.divider
+		height 1px
+		display none
+		border-bottom 1px dotted $border-color
+		margin-left 3px
+		margin-right 3px
+		flex 1
+	li
+		margin-bottom 10px
+		span
+			color $light-text-color
+		&:last-child
+			margin-bottom 0

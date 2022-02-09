@@ -1,0 +1,48 @@
+<div class="product-card-full card b-radius-10">
+	{% include 'product-card/product-card-labels.html' %}
+
+	<div class="row align-horisontal-between row-nowrap">
+		<div class="product-card-full__col">
+			<div class="product-card-full__information">
+				<a href="page-product.html" class="product-card__thumbnail ">
+					<img src="img/products/1.png" alt="">
+				</a>
+
+				<div class="product-card-full__title">
+					<h3 class="product-card__title">
+						<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный </a>
+					</h3>
+					{% include 'product-card/product-card-rating.html' %}
+
+					<ul class="ul-list">
+						<li>Бесплатная техническая поддержка</li>
+						<li>Шоурум для выбора и тестировани</li>
+						<li>Скидки для лояльных клиентов</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<!-- //col -->
+
+		<div class="product-card-full__col">
+			<ul class="characteristics-list">
+				<li><span class="label">Акселерометр:</span> <span class="divider"></span> Да</li>
+				<li><span class="label">Гироскоп:</span> <span class="divider"></span> Да</li>
+				<li><span class="label">Тип управления:</span> <span class="divider"></span> Bluetooth </li>
+				<li><span class="label">Максимальный угол обзора по вертикали:</span> <span class="divider"></span> 120*</li>
+				<li><span class="label">Максимальный угол обзора по горизонтали:</span> <span class="divider"></span> 120*</li>
+			</ul>
+		</div>
+		<!-- //col -->
+
+		<div class="product-card-full__col">
+			{% include 'product-card/product-card-rating.html' %}
+
+			{% include 'product-card/product-card-prices.html' %}
+
+			{% include 'product-card/product-card-btns.html' %}
+		</div>
+		<!-- //col -->
+	</div>
+</div>

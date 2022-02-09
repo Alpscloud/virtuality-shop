@@ -213,9 +213,95 @@ $(document).ready(function() {
 		group.removeClass('is-opened');
 		group.find('input').val(val).trigger('change');
 		group.find('.filter-group__field span').html(text);
-		
+
 		
 	});
+
+
+	$('.filter-group input:radio').on('change', function() {
+		var val = $(this).attr('data-text');
+
+		$(this).parents('.filter-group').removeClass('is-opened');
+		$(this).parents('.filter-group').find('.filter-group__field span').html(val);
+	});
+
+	$('.filter-brand__checkbox').on('change', function() {
+		var self = $(this);
+
+		var checked = $('.filter-brand__checkbox:checked');
+		var checkedCounter = checked.length;
+
+		var checkedCounterSpan = 	self.parents('.filter-group').find('.filter-group__field-counter');
+
+		var brandsBlock = $('.filter-brands');
+
+		if (checkedCounter > 0) {
+			checkedCounterSpan.html(checkedCounter);
+			checkedCounterSpan.removeClass('is-hidden');
+		} else {
+		
+			checkedCounterSpan.html('0');
+			checkedCounterSpan.addClass('is-hidden');
+			brandsBlock.empty().addClass('filter-brands-hidden');
+			
+		}
+
+		var brands = '';
+
+		checked.each(function() {
+			brands += '<span class="filter-brand" data-id="'+ $(this).attr('data-id') +'">' + $(this).attr('data-text') + '</span>';
+		});
+
+		brandsBlock.empty().append(brands).removeClass('filter-brands-hidden');
+	
+	});
+
+
+	$('.filter-brands').on('click', '.filter-brand', function(e) {
+		e.preventDefault();
+		
+		var checked = $('.filter-brand__checkbox:checked');
+
+		var id = $(this).attr('data-id');
+
+		if (checked.length < 1) {
+			$('.filter-brands').empty().addClass('filter-brands-hidden');
+		}
+
+		checked.each(function() {
+			var self = $(this);
+			if (self.attr('data-id') == id) {
+				self.prop('checked', false).trigger('change');
+			}
+
+			
+			
+		});
+	});
+
+
+	$('.js-toggle-filter-fields-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-toggled');
+
+		$(this).parents('.filter').find('.filter-group__col.is-hidden').stop().slideToggle(150);
+	});
+
+
+
+	$('.js-filter-price').slider({
+		animate: "slow",
+
+		range: true,
+		min: 100,
+		max: 1000,
+		values: [ 200, 800 ],
+		steps: 50
+	});
+
+	$('.form-select').selectmenu();
+
 
 	
 

@@ -184,7 +184,47 @@ input[type="search"]::-webkit-search-results-decoration
 	&__input
 		&:checked + .form-rating__star
 			background-image url('../img/icons/svg/rating-fill.svg')
-			
+
+
+.form-checkbox-toggle
+	position relative
+	padding-right 65px
+	display inline-block
+	height 30px
+	font-size 17px
+	line-height 30px
+	&:before
+		pseudo()
+		position absolute
+		right 0
+		width 50px
+		height 30px
+		border-radius 36.5px
+		background-color #C9CCD0
+		transition background-color .17s ease-in-out
+	&:after
+		pseudo()
+		width 26px
+		height 26px
+		border-radius 50%
+		background-color $basic-white-color
+		box-shadow  0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.01), 0px 3px 1px rgba(0, 0, 0, 0.03)
+		z-index 1
+		position absolute
+		right 22px
+		vertical-center()
+		transition all .17s ease-in-out
+	&:hover
+		cursor pointer
+	&__label
+		input
+			display none	
+			&:checked
+				~ span
+					&:before
+						background-color $accent-color
+					&:after
+						transform translate(20px, -50%)
 		
 		
 
@@ -349,3 +389,112 @@ input[type="search"]::-webkit-search-results-decoration
 		cursor pointer
 	input
 		display none
+		
+
+.form-range
+	height 20px
+	display flex
+	align-items center
+	margin-bottom 30px
+	&__input
+		height 5px
+		background-color $border-color
+		border-radius 5px
+		padding 0 !important
+		margin-top 0 !important
+		border none !important
+		width 100%
+		
+		.ui-slider-handle
+			width 20px
+			height 20px
+			border-radius 50%
+			background-color $basic-white-color
+			box-shadow 0px 3px 8px rgba(25, 28, 37, 0.13), 0px 1px 1px rgba(25, 28, 37, 0.13), 0px 3px 1px rgba(25, 28, 37, 0.04)
+			border 0.5px solid rgba(0, 0, 0, 0.04)
+			vertical-center()
+			&:nth-child(2)
+				margin-left 0
+			&:nth-child(3)
+				margin-left -20px
+
+			&:focus
+				border-color rgba(0, 0, 0, 0.04)
+				outline none
+		.ui-slider-range
+			background-color $accent-color
+			border-radius 5px
+			border none
+			height 5px
+			top 0
+			
+
+.ui-selectmenu-button
+	height 65px
+	border-radius 7px
+	background-color $basic-white-color
+	border 1px solid $border-color
+	display flex
+	align-items center
+	font 17px $Reg
+	font-weight normal
+	color $text-color
+	transition all .17s ease-in-out
+	&:hover
+		background-color $basic-white-color
+		border-color $accent-color
+	&.ui-button
+		width 100%
+		&:hover
+			.ui-selectmenu-icon.ui-icon
+				background-image url('../img/icons/svg/select-arrow.svg')
+				
+	&:focus
+		background-color $basic-white-color
+		border-color $accent-color
+		&.ui-button
+			.ui-selectmenu-icon.ui-icon
+				transform translateY(-50%) rotate(-180deg) 
+				background-image url('../img/icons/svg/select-arrow.svg')
+		
+.ui-selectmenu-icon.ui-icon
+	position absolute
+	vertical-center()
+	right 20px
+	width 9px
+	height 7px
+	background url('../img/icons/svg/select-arrow.svg') 50% no-repeat / contain !important
+	
+.ui-selectmenu-menu
+	padding-top 10px
+	transition all .2s ease-in-out
+	display block !important
+	opacity 0
+	visibility hidden
+	pointer-events none
+
+	&.ui-selectmenu-open
+		margin-top 0
+		opacity 1
+		visibility visible
+		pointer-events auto
+	.ui-menu
+		margin 0
+		padding 10px 0
+		
+	.ui-menu-item
+		padding 6px 20px
+		font 17px $Reg
+		font-weight normal
+		line-height 1
+		transition background-color .17s ease-in-out
+		margin 0 !important
+		.ui-menu-item-wrapper
+			padding 0
+			background-color transparent
+			border none
+			color $text-color
+			margin 0 !important
+		&:hover
+			background-color rgba($accent-color, .1)
+			cursor pointer

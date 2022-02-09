@@ -1,8 +1,44 @@
 .pagination
-	&__list
-		text-align center
-	&__item
+	&-list
+		display flex
+		flex-wrap nowrap
+		height 50px
+	&-item
 		display inline-block
 		margin-right 10px
+		
 		&:last-child
 			margin-right 0
+		&__prev
+			margin-right 30px
+		&__next
+			margin-left 20px
+			
+	&-link
+		flex-col-center()
+		height 50px
+		width 50px
+		border 1px solid $border-color
+		border-radius 10px
+		transition all .17s ease-in-out
+		color $text-color
+		font-size 17px
+		svg
+			display block
+			width 12px
+			height 8px
+			fill $text-color
+			transition fill .17s ease-in-out
+		&:hover
+			border-color $accent-color
+			
+		&.is-active
+			border-color $accent-color
+			
+span.pagination-link
+	&:hover
+		border-color $border-color
+		
+	&.is-active
+		&:hover
+			border-color $accent-color

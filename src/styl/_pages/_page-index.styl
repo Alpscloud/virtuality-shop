@@ -239,6 +239,11 @@
 		line-height 22px
 		margin-bottom 15px
 		flex 1
+		display -webkit-box
+		-webkit-line-camp 1
+		overflow hidden
+		text-overflow ellipsis
+		flex-direction column
 		a
 			color $text-color
 			&:hover
@@ -351,6 +356,70 @@ a.product-feedbacks
 		svg
 			transform translate(-50%, -50%) scaleX(-1)
 			
+.product-card-full
+	width 100%
+	padding 25px
+	position relative
+	&__col
+		padding-left 10px
+		padding-right 10px
+		&:first-child
+			width 100%
+			max-width 610px
+		&:nth-child(2)
+			width 100%
+			max-width 400px
+		&:last-child
+			width 260px
+			flex none
+			
+	.product-labels
+		position absolute
+		top 15px
+		left 15px
+		z-index 1
+		
+	.product-rating
+		margin-bottom 15px
+		
+	.product-prices
+		margin-bottom 15px
+		
+	&__information
+		display flex
+		align-items flex-start
+		
+		.product-rating
+			display none
+		
+
+
+		
+		.product-card__thumbnail
+			flex none
+			width 240px
+			margin-right 50px
+			height 150px
+			padding 0
+			padding-top 10px
+			margin-bottom 0
+			
+		.product-card
+			&__title
+				max-width 240px
+				margin-bottom 15px
+	
+.catalog-product-full
+	width 100%
+	margin-bottom 20px
+	
+
+.product-feedbacks
+	margin-left 10px
+	white-space nowrap
+	line-height 1
+	padding-top 2px
+				
 // Stocks
 .virtuality-wrapper
 	position relative	

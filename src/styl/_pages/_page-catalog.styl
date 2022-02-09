@@ -44,12 +44,16 @@
 
 
 .filter
+	position relative
+	z-index 2
+	border-bottom 1px solid $border-color
+	margin-bottom $gutter-bottom
 	&__row
-		margin-left -7.5px
-		margin-right -7.5px
+		margin-left -15px
+		margin-right -15px
 	&__col
-		padding-left 7.5px
-		padding-right 7.5px
+		padding-left 15px
+		padding-right 15px
 	
 	&-fields
 		&__col
@@ -62,10 +66,11 @@
 			
 	&-price
 		&__col
-			width 295px
+			width 310px
 			
 	&-group
 		position relative
+
 		&.is-opened
 			.filter-group__dropdown
 				margin-top 0
@@ -105,13 +110,13 @@
 			position absolute
 			top 100%
 			width 100%
+			min-width 280px
 			z-index 10
 			padding-top 10px
 			transition all .2s ease-in-out
-			// margin-top 15px
-			// opacity 0
-			// visibility hidden
-			// pointer-events none
+			opacity 0
+			visibility hidden
+			pointer-events none
 			&--content
 				background-color $basic-white-color
 				border-radius 10px
@@ -119,6 +124,7 @@
 				padding 20px
 				.form-checkbox__label
 					margin-bottom 15px
+					display block
 					&:last-child
 						margin-bottom 0
 				&_select
@@ -134,6 +140,9 @@
 		&__col
 			padding-left 7.5px
 			padding-right 7.5px
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
 			
 .filter-group__count
 	color $light-text-color
@@ -157,9 +166,220 @@
 	padding-left 45px
 	display flex
 	align-items center
+	font-size 17px
 	
 	&:before
 		width 25px
 		height 25px
 		vertical-center()
 		background-size 14px
+		
+
+.filter-color
+	display inline-block
+	flex none
+	width 20px
+	height 20px
+	border-radius 50%
+	position relative
+	margin-right 20px
+	&__border
+		border 1px solid $border-color
+	&:before
+		pseudo()
+		width 28px
+		height 28px
+		position absolute
+		position-center()
+		border-radius 50%
+		border 2px solid $accent-color
+		opacity 0
+		transition opacity .17s ease-in-out
+	&__label
+		margin-bottom 15px
+		display flex
+		flex-wrap nowrap
+		height 28px
+		align-items center
+		justify-content flex-start
+		font-size 17px
+		&:last-child
+			margin-bottom 0
+		
+		input
+			display none
+			&:checked
+				~ span.filter-color:before
+					opacity 1
+			
+
+
+.filter-brand
+	display inline-flex
+	align-items center
+	position relative
+	padding 13px 40px 13px 20px
+	height 50px
+	border 1px solid $border-color
+	background-color $basic-white-color
+	border-radius 7px
+	line-height 1
+	font-size 15px
+	transition all .17s ease-in-out
+	margin 0 10px 10px 0
+	&:after
+		pseudo()
+		position absolute
+		vertical-center()
+		width 9px
+		height 9px
+		background url('../img/icons/svg/close-sm.svg') no-repeat / contain
+		right 20px
+		pointer-events none
+	&:hover
+		cursor pointer
+		border-color $accent-color
+		background-color rgba(0, 149, 217, 0.05)
+		
+.filter-brands
+	margin-top 20px
+	width 100% !important
+	&-hidden
+		display none
+		
+
+.filter-rating
+	display flex
+	align-items center
+	justify-content flex-start
+	font 16px $Reg
+	color $text-color
+	position relative
+	padding-left 37px
+	img
+		display block
+		width 105px
+		margin-left 20px
+		margin-right 10px
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		left 0
+		border-radius 50%
+		border 2px solid $text-color
+		transition border-color .17s ease-in-out
+		width 17px
+		height 17px
+	&:after
+		pseudo()
+		position absolute
+		vertical-center()
+		width 8px
+		height 8px
+		border-radius 50%
+		background-color $accent-color
+		transition opacity .17s ease-in-out
+		opacity 0
+		left 4.5px
+	&__label
+		display block
+		height 26px
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+			
+		input
+			display none
+			&:checked
+				~ .filter-rating
+					&:before
+						border-color $accent-color
+					&:after
+						opacity 1
+	
+.filter-price__col
+	font-size 17px
+	p
+		margin-bottom 20px
+		
+	.btn
+		padding 18px 10px
+		
+
+.filter-prices
+	display flex
+	align-items center
+	flex-wrap nowrap
+	margin-bottom 20px
+	span
+		display inline-block
+		font-weight 500
+		color $light-text-color
+		margin-left 6px
+		margin-right 6px
+		
+	input
+		flex 1
+		height 55px
+		padding 14px 20px
+		
+
+.sorting
+	flex 1
+	display flex
+	justify-content flex-end
+	flex-wrap nowrap
+	&-form
+		max-width 600px
+		width 100%
+	.form-group
+		margin-bottom 0
+		
+.catalog-products__entering
+	margin-bottom 50px
+	p
+		b, span, strong
+			font-family $Reg
+			font-weight 700
+	.sect-title
+		margin-bottom 10px
+		
+	&--title
+		width 100%
+		flex 1
+		max-width 750px
+		
+
+
+
+.view-switcher
+	width 140px
+	display flex
+	flex-wrap nowrap
+	justify-content space-between
+	flex none
+	margin-left 30px
+	
+	.btn-ic
+		width 65px
+		height 65px
+		&.is-active
+			border-color $accent-color
+			background-color $basic-white-color
+			svg
+				fill $text-color
+				
+
+
+.catalog-products__row
+	margin-left -10px
+	margin-right -10px
+	
+.catalog-product-card
+	padding-left 10px
+	padding-right 10px
+	margin-bottom 20px
+	
+.catalog-products__block
+	padding-bottom 30px
