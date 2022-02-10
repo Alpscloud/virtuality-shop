@@ -236,14 +236,14 @@
 		flex-direction column
 	&__title
 		font 15px $Bold
-		line-height 22px
 		margin-bottom 15px
-		flex 1
-		display -webkit-box
-		-webkit-line-camp 1
 		overflow hidden
 		text-overflow ellipsis
-		flex-direction column
+		display -webkit-box
+		line-height 22px
+		max-height 66px
+		-webkit-line-clamp 3 
+		-webkit-box-orient vertical
 		a
 			color $text-color
 			&:hover

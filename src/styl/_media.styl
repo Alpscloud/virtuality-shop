@@ -119,6 +119,12 @@
 			
 +max-screen(1280px)
 
+	.btn-hidden-responsive-text
+		display none
+		
+	.compare-fixed__btns
+		max-width 260px
+
 	// homepage
 	.promo-slide
 		padding 35px
@@ -611,6 +617,12 @@
 		padding-right 25px
 		
 
+	.compare-fixed
+		.container
+			padding-left 0
+			padding-right 0
+		
+
 
 	.hidden-tablet
 		display none
@@ -618,6 +630,18 @@
 
 
 +max-screen(767px)
+
+	.compare-fixed__navigation
+		.slider-controls
+			.slider-navigation
+				display none
+		
+			.slider-pagination
+				position relative
+				transform none
+				left auto
+				top auto
+				margin-right 10px
 	// Header
 	.btn-catalog
 		height 30px
@@ -1251,6 +1275,9 @@
 			margin-top 5px
 			font-size 10px
 			line-height 14px
+			margin-left 0
+			padding-top 0
+			line-height 1
 			
 		.product-prices
 			font-size 16px
@@ -2508,8 +2535,70 @@
 				height 10px
 			
 				
+	.compare-fixed
+		&__navigation
+			padding 10px 15px
+		
+		&__btns
+			max-width 180px
+			.btn
+				padding 7px 10px
+				svg
+					margin-left 5px
+			
+		&-slider
+			margin-left -7.5px
+			margin-right -7.5px
+			.slick-slide
+				padding-left 7.5px
+				padding-right 7.5px
+			&__wrapper
+				padding 10px
+				
+		&-product
+			.btn-close
+				width 10px
+				height 10px
+			.product-card
+				&__thumbnail
+					width 45px
+					height 45px
+					margin-right 5px
+				&__title
+					font-size 8px
+					line-height 12px
+					max-height 36px
+					margin-bottom 5px
+					
+			.product-prices
+				font-size 10px
+				span
+					margin-right 5px
+					white-space nowrap
+				
+			.product-rating
+				flex-wrap wrap
+				
+			.product-feedbacks
+				width 100%
+				margin-left 0
+				margin-top 5px
+				font-size 8px
+				
+			&__header
+				margin-bottom 5px
+				padding-right 15px
+				
 
+	
 
+	.rating-star
+		width 12px
+		height 12px
+		
+	.rating-stars
+		width 60px
+		height 12px
 
 
 	.hidden-mobile-md

@@ -105,3 +105,121 @@
 		
 	.os-scrollbar-vertical
 		display none !important
+		
+
+.compare-fixed
+	transition all .2s ease-in-out
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 15
+	transform translateY(-105%)
+	&.is-visible
+		transform translateY(0)
+	&-content
+		background-color $basic-white-color
+		box-shadow 0px 4px 15px rgba(119, 129, 140, 0.25)
+		
+	&-slider
+		margin-left -15px
+		margin-right -15px
+		.slick-track
+			display flex
+			flex-wrap nowrap
+		.slick-slide
+			padding-left 15px
+			padding-right 15px
+			float none
+			height auto
+			> div
+				height 100%
+		&__wrapper
+			padding 15px
+			
+
+	
+				
+	&-product
+		position relative
+		height 100%
+		display flex !important
+		flex-direction column
+		justify-content space-between
+		.btn-close
+			position absolute
+			z-index 1
+			top 0
+			right 0
+			width 15px
+			height 15px
+			svg
+				width 100%
+				height 100%
+			
+		&__header
+			display flex
+			flex-wrap nowrap
+			justify-content flex-start
+			margin-bottom 7px
+			padding-right 20px
+			flex 1
+			
+		&__footer
+			display flex
+			flex-wrap nowrap
+			align-items center
+			justify-content space-between
+			
+		.product-card
+			&__thumbnail
+				width 80px
+				height 80px
+				padding 5px
+				margin-bottom 0
+				margin-right 12px
+			&__title
+				font-size 15px
+				line-height 22px
+				margin-bottom 20px
+				overflow hidden
+				text-overflow ellipsis
+				display -webkit-box
+				line-height 22px
+				max-height 66px
+				-webkit-line-clamp 3 
+				-webkit-box-orient vertical
+		
+		.product-prices
+			font-size 15px
+			span
+				font-size inherit
+			
+
+			
+		
+	&__navigation
+		box-shadow 7px -24px 23px -24px rgba(119, 129, 140, 0.23)
+		border-radius 0 0 10px 10px
+		padding 15px
+		background-color $basic-white-color
+		
+		.slider-controls
+			display flex
+			justify-content space-between
+			align-items center
+			flex-wrap nowrap
+			margin-top 0
+			
+	&__btns
+		display flex
+		flex-wrap nowrap
+		width 100%
+		max-width 430px
+		.btn
+			flex 1
+			padding 13px
+			margin-right 10px
+			
+			&:last-child
+				margin-right 0
