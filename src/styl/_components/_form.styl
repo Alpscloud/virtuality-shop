@@ -11,6 +11,13 @@ input[type="search"]::-webkit-search-results-decoration
 	backface-visibility hidden
 	transform translate3d(0,0,0)
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+	-webkit-appearance none
+	margin 0
+
+input[type=number]
+	-moz-appearance textfield
 
 
 
@@ -121,12 +128,18 @@ input[type="search"]::-webkit-search-results-decoration
 			background-repeat no-repeat
 			background-size 17px
 			
+		&__subtext
+			display block
+			color $light-text-color
+			margin-top 4px
+			padding-left 50px
+			
 		&__label
 			display inline-block
 			input
 				display none
 				&:checked
-					+ span
+					+ .form-checkbox
 						&:before
 							background-color $accent-color
 							border-color $accent-color

@@ -74,3 +74,37 @@
 	&.not-available
 		color $error-color
 		
+
+.product-quantity
+	width 130px
+	height 45px
+	border 1px solid $border-color
+	border-radius 10px
+	overflow hidden
+	display flex
+	flex-wrap nowrap
+	&__btn
+		width 40px
+		flex-col-center()
+		text-align center
+		position relative
+		svg
+			position absolute
+			position-center()
+			svg()
+			width 10px
+			height 10px
+			fill $light-text-color
+			pointer-events none
+		&:hover
+			svg
+				fill $text-color
+	&__input
+		display block
+		width 50px
+		text-align center
+		padding-left 5px
+		padding-right 5px
+		font 15px $Reg
+		font-weight 600
+		color $text-color

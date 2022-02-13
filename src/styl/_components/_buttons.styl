@@ -19,6 +19,10 @@
 		height 8px
 		fill $basic-white-color
 		margin-left 10px
+	&-ic-left
+		svg
+			margin-right 10px
+			margin-left 0
 	&:hover
 		border-color $light-accent-color
 		color $basic-white-color
@@ -316,6 +320,8 @@
 			svg
 				transform rotate(-180deg)
 				
+		
+				
 		&-triangle
 			width 7px
 			height 3px
@@ -332,6 +338,19 @@
 			svg
 				svg()
 				fill $text-color
+				
+	&-word-switcher
+		span
+			position relative
+			display inline-block
+			&:before
+				content attr(data-default-text)
+		&.is-toggled
+			span
+				&:before
+					content attr(data-active-text)
+			svg
+				transform rotate(-180deg)
 	
 		
 

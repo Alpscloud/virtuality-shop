@@ -18,6 +18,15 @@ $(document).ready(function() {
 	});
 
 
+	$('.js-smooth-scroll-link').on('click', function (e) {
+		e.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top;
+
+		$('html, body').animate({scrollTop: top}, 300);
+	});
+
+
 	// Popups
 	$('.js-open-callback-popup-btn').on('click',function(e) {
 		e.preventDefault();
@@ -296,6 +305,28 @@ $(document).ready(function() {
 		$(this).parents('.filter').find('.filter-group__col.is-hidden').stop().slideToggle(150);
 	});
 
+	$('.js-toggle-cart-additional-services-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-toggled');
+
+		$(this).parents('.cart-product').find('.additional-services').stop().slideToggle(150);
+	});
+
+	$('.js-toggle-cart-order-information-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-toggled');
+
+		$(this).parents('.cart-order-information').find('.hidden-responsive-list').stop().slideToggle(150);
+	});
+
+
+	
+
+
+	
+
 
 
 	$('.js-filter-price').slider({
@@ -309,6 +340,30 @@ $(document).ready(function() {
 	});
 
 	$('.form-select').selectmenu();
+
+
+	$('.js-product-quantity').on('click', function(event) {
+		var input = $(this).find('input[type=number]'),
+			value = input.val(),
+			target = $(event.target);
+
+
+		
+		if(target.attr('data-action') == 'plus') {
+			value++;
+			
+			input.val(value);
+		
+
+		} else if(target.attr('data-action') == 'minus') {	
+			if(input.val() <= 1) {return};
+			value--;	
+			
+			input.val(value);
+			
+		}
+
+	});
 
 
 	
@@ -834,6 +889,12 @@ $(document).ready(function() {
 
 
 		input.attr('type', input.attr('type') === 'password' ? 'text' : 'password');
+	});
+
+
+	$('.cart-content, .cart-aside').theiaStickySidebar({
+		'additionalMarginTop': 20,
+	
 	});
 
 

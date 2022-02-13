@@ -41,6 +41,35 @@
 
 	.product-card-full__information .product-card__thumbnail
 		margin-right 25px
+		
+	// Cart
+	.cart-aside
+		margin-left 25px
+		width 350px
+		
+	.cart-product__col:nth-child(3)
+		max-width 180px
+		
+	.cart-product__col:nth-child(2)
+		max-width 150px
+	
+	.cart-products__header
+		padding-right 15px
+		
+	.cart-product
+		padding-right 15px
+		.btn-close
+			top 10px
+			right 10px
+		
+	.additional-services
+		padding-left 15px	
+	.additional-service__col
+		&:nth-child(1)
+			padding-left 0
+		&:nth-child(3)
+			max-width 180px
+		
 
 +max-screen(1450px)
 	// Footer
@@ -115,6 +144,12 @@
 		.product-block__thumbnail
 			width 150px
 			height 110px
+			
+	// Cart
+	.cart-product__thumbnail
+		width 150px
+		height 100px
+		margin-right 15px
 	
 			
 +max-screen(1280px)
@@ -297,7 +332,46 @@
 		display flex
 
 
-	
+	.cart-aside
+		display none
+		
+	.cart-content
+		flex none
+		width 100%
+		
+		.cart-order-information
+			display block
+			margin-top 20px
+			&__btns
+				display flex
+				flex-wrap nowrap
+				.btn
+					margin-bottom 0
+					flex 1
+					margin-right 10px
+					&:last-child
+						margin-right 0
+
+	.cart-order-information
+		&__total
+			padding-top 30px
+			border-top 1px solid $border-color
+			margin-top 30px
+		.btn-toggle
+			display inline-flex
+			margin-bottom 0
+			
+		&__list
+			ul
+				margin-bottom 7px
+				&:last-child
+					margin-bottom 0
+			
+
+	.hidden-responsive-list
+		display none
+		padding-top 10px
+		
 			
 	// Footer
 	.footer-top
@@ -1107,6 +1181,55 @@
 			padding 30px
 		&__img
 			display none
+			
+	// Cart
+	.cart-products__header
+		display none
+		
+	.cart-product
+		.row
+			align-items center
+		&__col
+			&:nth-child(1)
+				width 100%
+				flex none
+				
+			&:nth-child(4)
+				order 2
+				margin-bottom 20px
+			&:nth-child(2)
+				order 3
+			&:nth-child(3)
+				order 4
+			
+				
+	.cart-product 
+		.cart-product__col:nth-child(2),
+		.cart-product__col:nth-child(3)
+			padding-top 0
+			
+	.additional-service
+		flex-wrap wrap
+		position relative
+		
+		&__col
+			&:nth-child(1)
+				padding-right 120px
+			&:nth-child(3)
+				position absolute
+				right 0
+				top 0
+				max-width none
+				width 110px
+			&:nth-child(2)
+				max-width 100%
+				
+				
+		&__price
+			text-align right
+			
+	.additional-service__options
+		margin-top 15px
 			
 
 	.hidden-mobile
@@ -2599,6 +2722,159 @@
 	.rating-stars
 		width 60px
 		height 12px
+		
+
+	// Cart
+	.cart-product
+		padding 20px
+		.btn-close
+			width 10px
+			height 10px
+			top 10px
+			right 10px
+			
+		&__thumbnail
+			width 100px
+			height 100px
+			margin-right 15px
+			
+		&-information
+			padding-bottom 50px
+			position relative
+			align-items stretch
+			&__text
+				display flex
+				flex-direction column
+				
+			.product-card__title
+				margin-bottom 0
+				flex 1
+				display flex
+				align-items center
+				
+			.product-articul
+				position absolute
+				bottom 0
+				left 0
+				margin-bottom 25px !important
+				
+			.btn-toggle
+				position absolute
+				bottom 0
+				left 0
+				
+	.cart-product__col
+		&:nth-child(2),
+		&:nth-child(3)
+			width 50%
+			max-width 50%
+			
+		.product-quantity
+			width 100%
+			height 35px
+			&__input
+				width calc(100% - 80px)
+
+
+		.product-prices
+			justify-content flex-end
+			white-space nowrap
+			
+	.cart-content 
+		.cart-order-information__btns
+			flex-wrap wrap
+			.btn
+				flex none
+				width 100%
+				margin-right 0
+				margin-bottom 10px
+				padding-top 14px
+				padding-bottom 14px
+	
+	.additional-services
+		padding-left 10px
+		padding-top 15px
+				
+	.additional-service
+		flex-wrap wrap
+		position relative
+		&__options
+			margin-left -10px
+		&__col
+			&:nth-child(1)
+				padding-right 85px
+			&:nth-child(3)
+				top 1px
+	
+		&__price
+			font-size 13px
+				
+		.form-checkbox
+			font-size 11px
+			&:before
+				top 0
+			&__subtext
+				margin-right -85px
+				
+	.form-checkbox__subtext
+		font-size 10px
+		margin-top 4px
+		padding-left 35px
+		
+	.block-title
+		font-size 16px
+		line-height 20px
+		
+	.cart-order-information__ul, 
+	.cart-order-information__list>.block-title
+		padding-bottom 15px
+		margin-bottom 15px
+		
+	.cart-order-information
+		
+		ul
+			margin-bottom 5px
+			&:last-child
+				margin-bottom 0
+		
+		margin-left -15px
+		margin-right -15px
+		&__btns
+			padding-left 15px
+			padding-right 15px
+			
+		&__list
+			padding 15px
+			ul
+				li
+					font-size 12px
+					&:first-child
+						font-size 14px
+			
+		&__price
+			font-size 16px
+			
+	.block-border-bottom
+		padding-bottom 40px
+		margin-bottom 40px
+		
+	.cart-products
+		border-bottom none
+		padding-bottom 0
+		
+	.sect__cart .advantages .sect-title
+		text-align center
+		margin-bottom 15px
+		
+	.sect__cart 
+		.advantage
+			min-height 80px
+			&__title
+				font-size 12px
+				
+	.cart-order-information__total
+		margin-top 15px
+		padding-top 15px
 
 
 	.hidden-mobile-md
