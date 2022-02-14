@@ -1,0 +1,3351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Virtuality shop</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		<header class="header">
+
+	<div class="header-top">
+		<div class="container">
+			<div class="row align-horisontal-between align-vertical-center header-top__row">
+				<a href="index.html" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+
+				<div class="site-search js-site-search hidden-tablet">	
+					<form class="search-form">
+						<div class="search-form__group">
+							<input type="text" class="search-form__input b-radius-7" placeholder="Поиск по сайту ..." name="s" required>
+							<button class="search-form__btn" type="submit">
+								<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+								</svg>
+							</button>
+						</div>
+					</form>
+
+				</div>
+
+				<div class="header-contacts">
+					<div class="row align-horisontal-end align-vertical-center header-contacts__row row-nowrap">
+						
+						<div class="header-contacts__item hidden-tablet">
+							<button class="btn-search btn-search__sm js-toggle-site-search-btn" type="button">
+								<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+								</svg>
+							</button>
+						</div>
+
+						<div class="header-contacts__item">
+							<button class="btn-hamburger" type="button">
+								<svg  viewBox="0 0 15 11" xmlns="http://www.w3.org/2000/svg">
+									<rect width="15" height="1" rx="0.5" />
+									<rect y="5" width="15" height="1" rx="0.5" />
+									<rect y="10" width="15" height="1" rx="0.5" />
+								</svg>
+								<span>Меню</span>
+							</button>
+						</div>
+
+						<div class="header-contacts__item hidden-tablet">
+							<p class="worktime ic-block ic-block__worktime">Пн-Пт с <b>10:00-19:00</b>, Сб-Вс: <b>10:00-20:00</b></p>
+						</div>
+						<div class="header-contacts__item">
+							<a href="tel:+7 (499) 404-13-91" class="phone-link ic-block ic-block__phone"><b>+7 (499) 404-13-91</b></a>
+						</div>
+
+						<button class="btn-link js-open-callback-popup-btn hidden-mobile" type="button">Заказать звонок</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //header top -->
+
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row align-horisontal-between align-vertical-center header-bottom__row row-nowrap">
+				<!-- Catalog btn -->
+				<button class="btn-catalog js-open-catalog-menu-btn b-radius-7" type="button">
+					<svg  viewBox="0 0 15 11"  xmlns="http://www.w3.org/2000/svg">
+						<rect width="15" height="1" rx="0.5" />
+						<rect y="5" width="15" height="1" rx="0.5" />
+						<rect y="10" width="15" height="1" rx="0.5" />
+					</svg>
+					<span>Каталог <i>товаров</i></span>
+				</button>
+				<!-- //Catalog btn -->
+
+				<div class="search-wrapper">
+					
+					<div class="search js-search">
+						<form class="search-form">
+							<div class="search-form__group">
+								<input type="text" class="search-form__input b-radius-7" placeholder="Поиск по магазину ..." name="s" required>
+								<button class="search-form__btn" type="submit">
+									<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<button class="btn-search btn-search__mobile js-toggle-mobile-search-btn" type="button">
+						<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+						</svg>
+					</button>
+				</div>
+
+				<div class="header-tools">
+					<div class="header-tools__item--col">
+						<div class="header-tools__item">
+							<a href="page-faq.html" class="header-tools__link">
+								<span class="header-tools__link--text">FAQ</span>
+								<span class="header-tools__link--ic">
+									<svg  viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.9887 8.22133e-06C17.066 -0.00735394 22 4.93082 22 11.011C22 17.0655 17.0605 22.0018 11.0104 22C4.92772 22 -0.00633005 17.0637 6.09568e-06 10.9871C0.00453191 4.92806 4.92772 0.00645012 10.9887 8.22133e-06ZM11.7554 13.054C11.5544 12.4476 11.9364 12.177 12.2858 11.8798C13.0932 11.1859 13.8599 10.4534 14.2817 9.43738C14.8483 8.0717 14.6664 6.79068 13.7313 5.67071C12.7673 4.52498 11.511 4.11086 10.0781 4.49369C8.66695 4.87008 7.79799 5.84281 7.47575 7.29775C7.43377 7.53502 7.40356 7.77429 7.38523 8.01464H9.15664C9.2028 7.81771 9.23267 7.63641 9.28789 7.46248C9.36622 7.22278 9.49208 7.00196 9.65769 6.81368C9.8233 6.62539 10.0251 6.47365 10.2507 6.36781C10.4763 6.26198 10.7208 6.20432 10.9692 6.19838C11.2176 6.19245 11.4645 6.23837 11.6947 6.33331C12.6804 6.75387 13.0923 7.88949 12.5501 8.84381C12.2927 9.27261 11.9814 9.6655 11.6241 10.0126C11.157 10.4856 10.6339 10.9015 10.146 11.3543C10.0446 11.4463 9.93508 11.5917 9.92693 11.7224C9.89978 12.1586 9.91698 12.5976 9.91698 13.0568L11.7554 13.054ZM9.93236 16.7084H11.6947V14.947H9.93236V16.7084Z" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						
+					</div>
+
+					<div class="header-tools__item--col hidden-mobile-xs">
+						<div class="header-tools__item">
+							<div class="dropdown-wrapper">
+								<a href="page-compare.html" class="header-tools__link">
+									<span class="header-tools__link--text">Сравнение</span>
+									<span class="header-tools__link--ic">
+										<svg viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.2016 7.25313L21.5273 6.3293C21.8711 6.23477 22.073 5.87813 21.9742 5.53438C21.8797 5.19063 21.523 4.98867 21.1793 5.0875L11.6445 7.73438V0.644531C11.6445 0.287891 11.3566 0 11 0C10.6434 0 10.3555 0.287891 10.3555 0.644531V8.09531L4.62344 9.68945L0.472656 10.8367C0.128906 10.9312 -0.0730469 11.2879 0.0257813 11.6316C0.103125 11.9152 0.365234 12.1043 0.644531 12.1043C0.700391 12.1043 0.760547 12.0957 0.816406 12.0785L3.40312 11.3609L0.0902344 16.8824C0.0300781 16.9812 0 17.0973 0 17.2133C0 19.8516 2.14844 22 4.78672 22C7.425 22 9.57344 19.8516 9.57344 17.2133C9.57344 17.0973 9.54336 16.9812 9.4832 16.8824L5.775 10.7035L15.8297 7.91055L12.5168 13.4277C12.4566 13.5266 12.4266 13.6426 12.4266 13.7586C12.4266 16.3969 14.575 18.5453 17.2133 18.5453C18.4937 18.5453 19.6926 18.0469 20.5992 17.1445C21.5016 16.2422 22 15.0391 22 13.7586C22 13.6426 21.9699 13.5266 21.9098 13.4277L18.2016 7.25313ZM7.79023 16.5688H1.7832L4.78672 11.5629L7.79023 16.5688ZM14.2098 13.1184L17.2133 8.1125L20.2168 13.1184H14.2098Z" />
+										</svg>
+									</span>
+
+									<span class="header-tools__link--count">10</span>
+								</a>
+
+								<!-- Dropddown -->
+								<div class="dropdown hidden-tablet">
+									<div class="dropdown-content b-radius-10">
+										<div class="dropdown-header">
+											<p class="dropdown-title">В сравнение 10 товаров</p>
+										</div>
+										<div class="dropdown-body">
+											<!-- <p class="dropdown-notice">Добавьте товары в сравнение</p> -->
+
+											<div class="dropdown-body__content styled-scroll">
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-center">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-center">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-center">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-center">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-center">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+											</div>
+										</div>
+										<div class="dropdown-footer">
+											<div class="dropdown-footer__btns">
+												<!-- is-disabled class for a tag or is-disabled class / disabled attr for button -->
+												<button class="btn btn-light" type="button"><span>очистить все</span></button>
+												<a href="#" class="btn" type="button" ><span>сравнить (10)</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //Dropddown -->
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="header-tools__item--col">
+						<div class="header-tools__item">
+							<div class="dropdown-wrapper">
+
+								<a href="page-cart.html" class="header-tools__link">
+									<span class="header-tools__link--text">Корзина</span>
+									<span class="header-tools__link--ic">
+										<svg viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.6119 7.55085C21.2924 7.16525 20.8054 6.9189 20.3237 6.9189H18.9831L13.8092 0.390543C13.4898 -0.0218305 12.9242 -0.102163 12.4948 0.197745C12.0916 0.524431 12.013 1.10283 12.3063 1.54198C12.3063 1.56875 12.3324 1.56875 12.3324 1.59553L16.5951 6.91355H5.1215L9.35799 1.59553C9.70885 1.20994 9.67743 0.610119 9.30563 0.2513C8.93382 -0.107519 8.34207 -0.0753856 7.99121 0.304855C7.96503 0.331633 7.93885 0.35841 7.91266 0.385188L2.73356 6.94568H1.66004C0.748849 6.94568 0 7.71687 0 8.64873C0 8.75584 0 8.86831 0.0261835 8.97542L2.17323 20.0238C2.38794 21.1753 3.37768 22 4.53499 22H17.4592C18.6113 22 19.6062 21.1753 19.8209 20.0238L21.968 8.97542C22.0675 8.48271 21.9313 7.96322 21.6119 7.55085ZM8.20592 16.516C8.20592 17.0354 7.77651 17.4746 7.26855 17.4746C6.76059 17.4746 6.33118 17.0354 6.33118 16.516V12.6225C6.33118 12.103 6.76059 11.6639 7.26855 11.6639C7.77651 11.6639 8.20592 12.103 8.20592 12.6225V16.516ZM11.9292 16.516C11.9292 17.0354 11.4998 17.4746 10.9918 17.4746C10.4839 17.4746 10.0545 17.0354 10.0545 16.516V12.6225C10.0545 12.103 10.4839 11.6639 10.9918 11.6639C11.4998 11.6639 11.9292 12.103 11.9292 12.6225V16.516ZM15.6316 16.516C15.6316 17.0354 15.2022 17.4746 14.6942 17.4746C14.1862 17.4746 13.7568 17.0354 13.7568 16.516V12.6225C13.7568 12.103 14.1862 11.6639 14.6942 11.6639C15.2022 11.6639 15.6316 12.103 15.6316 12.6225V16.516Z" />
+										</svg>
+									</span>
+
+									<span class="header-tools__link--count">10</span>
+								</a>
+								
+								<!-- Dropddown -->
+								<div class="dropdown hidden-tablet">
+									<div class="dropdown-content b-radius-10">
+										<div class="dropdown-header">
+											<p class="dropdown-title">В корзине 10 товаров</p>
+
+											<button class="link link-accent" type="button">Очистить</button>
+										</div>
+										<div class="dropdown-body">
+											<!-- <p class="dropdown-notice">Добавьте товары в корзину</p> -->
+
+											<div class="dropdown-body__content styled-scroll">
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-start">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+														<div class="product-prices">
+															<span class="product-prices__old">4 290 ₽</span>
+															<span class="product-prices__new">3 940 ₽</span>
+														</div>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-start">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+														<div class="product-prices">
+															<span>4 290 ₽</span>
+														</div>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+												<!-- DD product -->
+												<div class="dropdown-product align-vertical-start">
+													<a href="page-product.html" class="dropdown-product__thumbnail card b-radius-7">
+														<img src="img/products/1.png" alt="">
+													</a>
+													<div class="dropdown-product__content">
+														<p class="dropdown-product__title">
+															<a href="page-product.html">Очки виртуальной реальности HIPER VR Max, черный</a>
+														</p>
+														<div class="product-prices">
+															<span class="product-prices__old">4 290 ₽</span>
+															<span class="product-prices__new">3 940 ₽</span>
+														</div>
+													</div>
+
+													<button class="btn-close" type="button">
+														<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+															<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+														</svg>
+													</button>
+												</div>
+												<!-- //DD product -->
+
+
+											</div>
+										</div>
+										<div class="dropdown-footer">
+											<p class="dropdown-footer__text">Стоимость товаров: <b>245 568 ₽</b></p>
+											<div class="dropdown-footer__btns">
+												<!-- is-disabled class for a tag or is-disabled class / disabled attr for button -->
+												<button class="btn btn-light js-open-quick-buy-popup-btn" type="button"><span>купить в 1 клик</span></button>
+												<a href="#" class="btn" type="button" ><span>в корзину</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //Dropddown -->
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="header-tools__item--col">
+						<div class="header-tools__item">
+							<button type="button" class="header-tools__link js-open-login-popup-btn">
+								<span class="header-tools__link--text">Войти</span>
+								<span class="header-tools__link--ic">
+									<svg  viewBox="0 0 16 20"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.88205 9.63281C9.15142 9.63281 10.2485 9.15625 11.1472 8.22266C12.0459 7.28516 12.4989 6.14062 12.4989 4.81641C12.4989 3.49219 12.0421 2.34766 11.1472 1.41016C10.2485 0.472656 9.15142 0 7.88205 0C6.61268 0 5.51556 0.476562 4.6169 1.41016C3.71823 2.34375 3.26141 3.49219 3.26141 4.81641C3.26141 6.14062 3.71823 7.28516 4.61315 8.22266C5.51182 9.16016 6.61268 9.63281 7.88205 9.63281Z" />
+										<path d="M15.9588 15.3789C15.9326 14.9883 15.8802 14.5625 15.8053 14.1133C15.7267 13.6602 15.6256 13.2344 15.5057 12.8438C15.3822 12.4414 15.2137 12.0391 15.004 11.6602C14.7868 11.2617 14.5322 10.918 14.2476 10.6328C13.948 10.3359 13.5848 10.0977 13.1617 9.92188C12.7423 9.75 12.2743 9.66016 11.7763 9.66016C11.5816 9.66016 11.3906 9.74219 11.0274 9.99219C10.8027 10.1445 10.5406 10.3203 10.2448 10.5195C9.99391 10.6875 9.65317 10.8438 9.23379 10.9844C8.82565 11.1211 8.40627 11.1914 7.99813 11.1914C7.58998 11.1914 7.17061 11.1211 6.76246 10.9844C6.34308 10.8438 6.00234 10.6875 5.75146 10.5195C5.4594 10.3242 5.19729 10.1484 4.96887 9.99219C4.60192 9.74219 4.4147 9.66016 4.21999 9.66016C3.72197 9.66016 3.25392 9.75 2.83454 9.92188C2.41142 10.0977 2.04821 10.3359 1.74865 10.6328C1.46408 10.918 1.20945 11.2617 0.992277 11.6602C0.782588 12.043 0.614088 12.4414 0.490522 12.8438C0.3707 13.2344 0.2696 13.6602 0.190967 14.1133C0.112333 14.5625 0.0599111 14.9883 0.0374444 15.3789C0.0112333 15.7617 0 16.1602 0 16.5586C0 17.6016 0.318278 18.4492 0.943599 19.0703C1.56892 19.6875 2.38895 20 3.38498 20H12.615C13.611 20 14.4311 19.6875 15.0527 19.0742C15.6817 18.4531 16 17.6055 16 16.5625C16 16.1562 15.985 15.7617 15.9588 15.3789Z" />
+									</svg>
+								</span>
+
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //header bottom -->
+
+
+	<div class="catalog-menu js-catalog-menu">
+	<div class="container">
+
+		<p class="catalog-menu__title catalog-menu__title-mobile">Каталог</p>
+
+		<button class="btn-close btn-close-border js-close-catalog-menu-btn" type="button">
+			<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+			</svg>
+		</button>
+
+		<div class="catalog-menu__row row row-nowrap align-vertical-start">
+
+			<div class="catalog-menu__main catalog-menu__col catalog-menu__col-scroll">
+				<p class="catalog-menu__title catalog-menu__title-desktop">Каталог</p>
+
+				<div class="catalog-menu__lists styled-scroll">
+					<nav class="catalog-menu__nav">
+						<ul>
+							<li data-id="1"><a href="#">VR Шлемы</a></li>
+							<li data-id="2"><a href="#">AR/MR Очки</a></li>
+							<li data-id="3"><a href="#">Аксессуары</a></li>
+							<li data-id="4"><a href="#">Контроллеры и джойстики</a></li>
+							<li data-id="5"><a href="#">Системы позиционного трекинга</a></li>
+							<li data-id="6"><a href="#">Камеры для VR</a></li>
+							<li data-id="7"><a href="#">Игровые комплекты VR</a></li>
+							<li data-id="8"><a href="#">Компьютеры VR Ready</a></li>
+							<li data-id="9"><a href="#">Игры и Программы</a></li>
+							<li data-id="10"><a href="#">Квадрокоптеры</a></li>
+							<li data-id="11"><a href="#">3Д Технологии</a></li>
+							<li data-id="12"><a href="#">VR Аттракционы</a></li>
+							<li data-id="13"><a href="#">Образовательные решения</a></li>
+							<li data-id="14"><a href="#">Наши услуги</a></li>
+						</ul>
+					</nav>
+
+					<nav class="site-sections">
+						<p class="catalog-menu__title">Разделы сайта</p>
+
+						<ul>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">VR Клуб</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">VR Бизнес</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- //left col -->
+
+			<div class="catalog-menu__categories catalog-menu__col catalog-menu__col-scroll">
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories is-active" data-id="1">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>VR Шлемы</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="2">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>AR/MR Очки</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="3">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Аксессуары</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="4">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Контроллеры и джойстики</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="5">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Системы позиционного трекинга</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="6">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Камеры для VR</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="7">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Игровые комплекты VR</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="8">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Компьютеры VR Ready</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="9">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Игры и Программы</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="10">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Квадрокоптеры</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="11">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>3Д Технологии</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="12">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>VR Аттракционы</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="13">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Образовательные решения</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+				<div class="catalog-menu__categories--block js-catalog-menu-categories" data-id="14">
+					<div class="catalog-menu__brands-wrapper">
+	<ul class="catalog-menu__brands">
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/1.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/2.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/3.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/4.png" alt=""></a>
+		</li>
+		<li class="catalog-menu__brand">
+			<a href="#" class="our-brand our-brand-sm card b-radius-10"><img src="img/brands/5.png" alt=""></a>
+		</li>
+
+	</ul>
+</div>
+
+					<p class="catalog-menu__title">
+						<span>Наши услуги</span>
+						<button class="btn-toggle-triangle" type="button">
+	<svg  viewBox="0 0 7 3"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M6.67578 -1.15383e-07L0.824219 -4.56034e-08L3.75 2.92578L6.67578 -1.15383e-07Z" />
+	</svg>
+</button>
+					</p>
+
+					<div class="catalog-menu__categories-lists_wrapper styled-scroll" >
+
+	<div class="catalog-menu__categories-lists ">
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>VR аксессуары</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для контроллеров</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+		<nav class="catalog-menu__categories-list">
+			<p class="catalog-menu__categories-list_title">
+				<span>Аксессуары для ПК, ноутбуков и консолей</span>
+				<button class="btn-toggle-arrow" type="button">
+	<svg  viewBox="0 0 8 5"  xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.12891 0.236329L0.25 1.11524L4 4.86523L7.75 1.11523L6.87109 0.236328L4 3.10742L1.12891 0.236329Z"/>
+	</svg>
+</button>
+			</p>
+			<ul>
+				<li><a href="#">VR комплектующие</a></li>
+				<li><a href="#">Кабель и кабель менеджмент</a></li>
+				<li><a href="#">Накладки и защитные чехлы</a></li>
+				<li><a href="#">Кейсы, сумки, футляры</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Питание,адаптерыиаккумуляторы</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Крепления, ремни, держатели</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+				<li><a href="#">Наушники и гарнитуры</a></li>
+			</ul>
+		</nav>
+
+
+	</div>
+</div>
+				</div>
+
+			</div>
+			<!-- //center col -->
+
+			<div class="catalog-menu__adv catalog-menu__col">
+				<div class="offer-block b-radius-10 bg" style="background-image: url('img/offer.png');">
+					<div class="offer-block__content text-center">
+						<p class="offer-block__title">Sale -50%</p>
+						<p>Сайт рыбатекст поможет дизайнеру</p>
+					</div>
+
+					<div>
+						<a href="#" class="btn">
+							<span>Подробнее</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- //right col -->
+
+		</div>
+	</div>
+	<!-- //container -->
+</div>
+	
+</header>
+
+
+
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Часто задаваемые вопросы</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title page-title container">Часто задаваемые вопросы</h1>
+
+			
+
+
+			<section class="sect__articles gutter-bottom">
+				<div class="container">
+
+					<div class="row align-vertical-start articles-page__row">
+
+						<div class="articles-content">
+
+							<h2 class="block-title block-title-lg">Помощь в установке и настройка</h2>
+
+							<div class="articles-cards">
+
+								<!-- Article -->
+								<article class="article-card b-radius-10 card">
+	<div class="article-card__preview">
+		<div class="article-card__thumbnail thumbnail">
+			<img src="img/thumbnail.png" alt="">
+		</div>
+		<div class="article-card__preview-content">
+			<h3 class="article-card__title">Сайт рыбатекст поможет </h3>
+
+			<div class="article-card__preview-text content">
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
+			</div>
+
+			<button class="btn-toggle btn-word-switcher js-toggle-article-card-content-btn" type="button">
+				<span data-default-text="Читать дальше" data-active-text="Свернуть"></span>
+				<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="article-card__content is-hidden">
+		<div class="content">
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Свою даже заголовок инициал вопроса возвращайся но своего свое рыбными, даль. Дороге, безопасную. Парадигматическая, злых это. Вскоре о все злых.</p>
+			<p>Семь рот осталось пустился речью это текста прямо вершину маленькая продолжил запятой, эта там. Над рыбного, это образ живет своих его вопрос ipsum себя. Ipsum пор, алфавит свое переулка речью?</p>
+		</div>
+
+		<div class="article-card-gallery">
+			<div class="article-card-gallery__item col-w-50">
+				<a href="img/thumbnail.png" class="fancy-link thumbnail" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+			<div class="article-card-gallery__item col-w-50">
+				<a href="video.mp4" class="fancy-link thumbnail fancy-link__video" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+								<!-- //Article -->
+
+								<!-- Article -->
+								<article class="article-card b-radius-10 card">
+	<div class="article-card__preview">
+		<div class="article-card__thumbnail thumbnail">
+			<img src="img/thumbnail.png" alt="">
+		</div>
+		<div class="article-card__preview-content">
+			<h3 class="article-card__title">Сайт рыбатекст поможет </h3>
+
+			<div class="article-card__preview-text content">
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
+			</div>
+
+			<button class="btn-toggle btn-word-switcher js-toggle-article-card-content-btn" type="button">
+				<span data-default-text="Читать дальше" data-active-text="Свернуть"></span>
+				<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="article-card__content is-hidden">
+		<div class="content">
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Свою даже заголовок инициал вопроса возвращайся но своего свое рыбными, даль. Дороге, безопасную. Парадигматическая, злых это. Вскоре о все злых.</p>
+			<p>Семь рот осталось пустился речью это текста прямо вершину маленькая продолжил запятой, эта там. Над рыбного, это образ живет своих его вопрос ipsum себя. Ipsum пор, алфавит свое переулка речью?</p>
+		</div>
+
+		<div class="article-card-gallery">
+			<div class="article-card-gallery__item col-w-50">
+				<a href="img/thumbnail.png" class="fancy-link thumbnail" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+			<div class="article-card-gallery__item col-w-50">
+				<a href="video.mp4" class="fancy-link thumbnail fancy-link__video" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+								<!-- //Article -->
+
+								<!-- Article -->
+								<article class="article-card b-radius-10 card">
+	<div class="article-card__preview">
+		<div class="article-card__thumbnail thumbnail">
+			<img src="img/thumbnail.png" alt="">
+		</div>
+		<div class="article-card__preview-content">
+			<h3 class="article-card__title">Сайт рыбатекст поможет </h3>
+
+			<div class="article-card__preview-text content">
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
+			</div>
+
+			<button class="btn-toggle btn-word-switcher js-toggle-article-card-content-btn" type="button">
+				<span data-default-text="Читать дальше" data-active-text="Свернуть"></span>
+				<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="article-card__content is-hidden">
+		<div class="content">
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Свою даже заголовок инициал вопроса возвращайся но своего свое рыбными, даль. Дороге, безопасную. Парадигматическая, злых это. Вскоре о все злых.</p>
+			<p>Семь рот осталось пустился речью это текста прямо вершину маленькая продолжил запятой, эта там. Над рыбного, это образ живет своих его вопрос ipsum себя. Ipsum пор, алфавит свое переулка речью?</p>
+		</div>
+
+		<div class="article-card-gallery">
+			<div class="article-card-gallery__item col-w-50">
+				<a href="img/thumbnail.png" class="fancy-link thumbnail" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+			<div class="article-card-gallery__item col-w-50">
+				<a href="video.mp4" class="fancy-link thumbnail fancy-link__video" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+								<!-- //Article -->
+
+								<!-- Article -->
+								<article class="article-card b-radius-10 card">
+	<div class="article-card__preview">
+		<div class="article-card__thumbnail thumbnail">
+			<img src="img/thumbnail.png" alt="">
+		</div>
+		<div class="article-card__preview-content">
+			<h3 class="article-card__title">Сайт рыбатекст поможет </h3>
+
+			<div class="article-card__preview-text content">
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
+			</div>
+
+			<button class="btn-toggle btn-word-switcher js-toggle-article-card-content-btn" type="button">
+				<span data-default-text="Читать дальше" data-active-text="Свернуть"></span>
+				<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="article-card__content is-hidden">
+		<div class="content">
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Свою даже заголовок инициал вопроса возвращайся но своего свое рыбными, даль. Дороге, безопасную. Парадигматическая, злых это. Вскоре о все злых.</p>
+			<p>Семь рот осталось пустился речью это текста прямо вершину маленькая продолжил запятой, эта там. Над рыбного, это образ живет своих его вопрос ipsum себя. Ipsum пор, алфавит свое переулка речью?</p>
+		</div>
+
+		<div class="article-card-gallery">
+			<div class="article-card-gallery__item col-w-50">
+				<a href="img/thumbnail.png" class="fancy-link thumbnail" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+			<div class="article-card-gallery__item col-w-50">
+				<a href="video.mp4" class="fancy-link thumbnail fancy-link__video" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+								<!-- //Article -->
+
+								<!-- Article -->
+								<article class="article-card b-radius-10 card">
+	<div class="article-card__preview">
+		<div class="article-card__thumbnail thumbnail">
+			<img src="img/thumbnail.png" alt="">
+		</div>
+		<div class="article-card__preview-content">
+			<h3 class="article-card__title">Сайт рыбатекст поможет </h3>
+
+			<div class="article-card__preview-text content">
+				<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...</p>
+			</div>
+
+			<button class="btn-toggle btn-word-switcher js-toggle-article-card-content-btn" type="button">
+				<span data-default-text="Читать дальше" data-active-text="Свернуть"></span>
+				<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="article-card__content is-hidden">
+		<div class="content">
+			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Свою даже заголовок инициал вопроса возвращайся но своего свое рыбными, даль. Дороге, безопасную. Парадигматическая, злых это. Вскоре о все злых.</p>
+			<p>Семь рот осталось пустился речью это текста прямо вершину маленькая продолжил запятой, эта там. Над рыбного, это образ живет своих его вопрос ipsum себя. Ipsum пор, алфавит свое переулка речью?</p>
+		</div>
+
+		<div class="article-card-gallery">
+			<div class="article-card-gallery__item col-w-50">
+				<a href="img/thumbnail.png" class="fancy-link thumbnail" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+			<div class="article-card-gallery__item col-w-50">
+				<a href="video.mp4" class="fancy-link thumbnail fancy-link__video" data-fancybox="article-1">
+					<img src="img/thumbnail.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</article>
+								<!-- //Article -->
+
+							</div>
+						</div>
+
+						<!-- ASide -->
+						<aside class="articles-aside">
+							<div class="articles-aside__categories">
+								<div class="articles-aside__category">
+									<p class="block-title block-title-lg">Категории</p>
+
+									<div class="articles-aside__category-list">
+										<ul>
+											<li class="has-sublist ">
+
+												<span>Оплата</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Доставка</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Гарантии и сервисный центр</span>
+
+												<ul class="sublist">
+													
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist is-current">
+
+												<span class="is-toggled">Помощь в установке и настройка</span>
+
+												<ul class="sublist is-active">
+													<li class="has-sublist">
+														<a href="#">Ocolus</a>
+														<ul>
+															<li><a href="#">Подключение кабеля Oculus к телевизору</a></li>
+															<li><a href="#">Подключение кабеля Oculus к телевизору телевизору телевизору</a></li>
+															<li><a href="#">Подключение кабеля Oculus к телевизору телевизору телевизору</a></li>
+														</ul>
+													</li>
+
+
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Система акций </span>
+
+												<ul class="sublist">
+													<li><a href="#">Название акции</a></li>
+													<li><a href="#">Название акции</a></li>
+													<li><a href="#">Название акции</a></li>
+													<li><a href="#">Название акции</a></li>
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Свой VR бизнес</span>
+
+												<ul class="sublist">
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Учасникам гос.закупок</span>
+
+												<ul class="sublist">
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="articles-aside__category">
+									<p class="block-title block-title-lg">Статьи</p>
+
+									<div class="articles-aside__category-list">
+										<ul>
+											<li class="has-sublist ">
+
+												<span>Тема 01 - Помощь в установке</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist ">
+
+												<span>Тема 02 - Помощь в установке</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist ">
+
+												<span>Тема 03 - Помощь в установке</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="offer-blocks">
+
+								<a href="#" class="offer-block offer-block__dark b-radius-10 bg" style="background-image: url('img/offer-2.png');">
+									<div class="offer-block__content text-center">
+										<p class="offer-block__title">Sale <span class="sale">-50%</span></p>
+										<p>Сайт рыбатекст поможет дизайнеру</p>
+									</div>
+
+								</a>
+
+								<a href="#" class="offer-block offer-block__color offer-block__sm b-radius-10 bg" style="background-image: url('img/offer-3.png');">
+									<div class="offer-block__content text-center">
+										<p class="offer-block__title">Cкидка - 25%</p>
+										<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру </p>
+										<img src="img/offer-product.png" alt="">
+									</div>
+
+								</a>
+							</div>
+						</aside>
+						<!-- //ASide -->
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row footer__row align-horisontal-between">
+				<div class="footer__col">
+					<div>
+						<a href="index.html" class="logo">
+							<img src="img/logo-footer.png" alt="">
+						</a>
+					</div>
+
+					<div>
+						<button class="btn btn-dark js-open-feedback-form-popup-btn" type="button">
+							<span>Оставить отзыв</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>						</button>
+					</div>
+
+
+					<a href="#" class="support-link" target="_blank" rel="nofollow">
+						<svg  viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.397411 7.39614L4.53609 8.79888L14.3685 2.80319C14.5091 2.71501 14.6578 2.90739 14.5332 3.02362L7.09162 9.85694L6.81437 13.6804C6.79428 13.973 7.14385 14.1333 7.3528 13.9289L9.64313 11.6805L13.834 14.8427C14.2841 15.1833 14.939 14.9429 15.0596 14.3898L17.9767 1.18002C18.1415 0.42655 17.4021 -0.210692 16.6789 0.0658469L0.377321 6.298C-0.137 6.49438 -0.120927 7.2198 0.397411 7.39614Z" />
+						</svg>
+						Задать вопрос VR_Support
+					</a>
+
+					<div class="work-schedule">
+						<p class="work-schedule__title">Режим работы:</p>
+						<p>VR клуб: Ежедневно с 10:00 до 22:00<br> Магазин: Пн-Пт с 10:00-19:00, Сб-Вс: 10:00-20:00</p>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<div class="footer__col">
+					<nav class="footer-nav__main">
+						<ul>
+							<li><a href="#">Клуб</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">VR Бизнес</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //col -->
+
+				<div class="footer__col">
+					<div class="footer-navs">
+						<nav class="footer-nav footer-nav__shop">
+							<ul>
+								<li><a href="#">О магазине</a></li>
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#">Как заказать</a></li>
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Условия доставки</a></li>
+							</ul>
+						</nav>
+
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="#">Условия возврата денежных средств</a></li>
+								<li><a href="#">Уже есть своя VR площадка</a></li>
+								<li><a href="#">Хочу начать с VR аттракциона</a></li>
+								<li><a href="#">Хочу открыть клуб</a></li>
+								<li><a href="#">Хочу интегрировать VR площадку в свой бизнес</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<div class="footer__col">
+					<div class="footer-search">
+						<form class="search-form">
+							<div class="search-form__group">
+								<input type="text" class="search-form__input b-radius-7" placeholder="Поиск по магазину ..." name="s" required>
+								<button class="search-form__btn" type="submit">
+									<svg  viewBox="0 0 15 22"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.6445 13.1797L14.7852 17.3203L13.5352 18.5703L9.39453 14.4297V13.7656L9.16016 13.5312C8.14453 14.3906 6.97266 14.8203 5.64453 14.8203C4.13411 14.8203 2.84505 14.2995 1.77734 13.2578C0.735677 12.1901 0.214844 10.9141 0.214844 9.42969C0.214844 7.91927 0.735677 6.64323 1.77734 5.60156C2.84505 4.53385 4.12109 4 5.60547 4C7.11589 4 8.39193 4.53385 9.43359 5.60156C10.5013 6.64323 11.0352 7.91927 11.0352 9.42969C11.0352 10.7578 10.6055 11.9297 9.74609 12.9453L9.98047 13.1797H10.6445ZM2.98828 12.0859C3.71745 12.8151 4.60286 13.1797 5.64453 13.1797C6.6862 13.1797 7.57161 12.8151 8.30078 12.0859C9.02995 11.3568 9.39453 10.4714 9.39453 9.42969C9.39453 8.38802 9.02995 7.5026 8.30078 6.77344C7.57161 6.04427 6.6862 5.67969 5.64453 5.67969C4.60286 5.67969 3.71745 6.04427 2.98828 6.77344C2.25911 7.5026 1.89453 8.38802 1.89453 9.42969C1.89453 10.4714 2.25911 11.3568 2.98828 12.0859Z" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="footer-contacts">
+						<p>Телефон: <a href="tel:+7 (499) 404-13-91">+7 (499) 404-13-91</a></p>
+						<p><button class="link link-accent js-open-callback-popup-btn" type="button">Заказать звонок</button></p>
+						<p>E-mail: <a href="mailto:info@virtuality.club">info@virtuality.club</a></p>
+					</div>
+				</div>
+				<!-- //col -->
+			</div>
+
+		</div>
+		<!-- //container -->
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row footer__row align-horisontal-between align-vertical-center">
+				<div class="footer__col">
+					<p class="copyright">&copy; 2015-2021 Virtuality Club. Все права защищены</p>
+				</div>
+				<!-- //footer col -->
+
+				<div class="footer__col hidden-mobile-md">
+					
+				</div>
+				<!-- //footer col -->
+
+				<div class="footer__col">
+					<nav class="footer-subnav">
+						<ul>
+							<li><a href="#">Политика Безопасности</a></li>
+							<li><a href="#">Подписаться на новости</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //footer col -->
+
+				<div class="footer__col">
+					<ul class="socials text-right">
+						<li>
+							<a href="#" rel="nofollow" target="_blank">
+								<svg  viewBox="0 0 20 12"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M19.6152 1.48828C19.7793 1.91016 19.2754 2.89453 18.1035 4.44141C17.9395 4.65234 17.7285 4.93359 17.4707 5.28516C16.9316 5.94141 16.627 6.375 16.5566 6.58594C16.4395 6.86719 16.4863 7.13672 16.6973 7.39453C16.8145 7.53516 17.084 7.81641 17.5059 8.23828H17.541V8.27344C18.502 9.14062 19.1465 9.87891 19.4746 10.4883C19.498 10.5352 19.5215 10.582 19.5449 10.6289C19.5684 10.6758 19.5918 10.7695 19.6152 10.9102C19.6387 11.0273 19.6387 11.1328 19.6152 11.2266C19.5918 11.3203 19.5098 11.4141 19.3691 11.5078C19.2285 11.5781 19.0293 11.6133 18.7715 11.6133L16.2051 11.6836C16.041 11.707 15.8418 11.6836 15.6074 11.6133C15.3965 11.543 15.2324 11.4727 15.1152 11.4023L14.9043 11.2617C14.6934 11.1211 14.459 10.9102 14.2012 10.6289C13.9434 10.3477 13.709 10.0898 13.498 9.85547C13.3105 9.62109 13.1113 9.43359 12.9004 9.29297C12.6895 9.12891 12.502 9.07031 12.3379 9.11719C12.3145 9.11719 12.2793 9.12891 12.2324 9.15234C12.209 9.17578 12.1504 9.23438 12.0566 9.32812C11.9863 9.39844 11.916 9.49219 11.8457 9.60938C11.7988 9.72656 11.752 9.90234 11.7051 10.1367C11.6582 10.3477 11.6348 10.6055 11.6348 10.9102C11.6348 11.0039 11.623 11.0977 11.5996 11.1914C11.5762 11.2617 11.5527 11.3203 11.5293 11.3672L11.4941 11.4023C11.3535 11.543 11.166 11.6133 10.9316 11.6133H9.80664C9.31445 11.6602 8.81055 11.6133 8.29492 11.4727C7.80273 11.332 7.36914 11.1562 6.99414 10.9453C6.61914 10.7109 6.2793 10.4883 5.97461 10.2773C5.66992 10.043 5.43555 9.84375 5.27148 9.67969L5.02539 9.43359C4.95508 9.38672 4.86133 9.29297 4.74414 9.15234C4.62695 9.01172 4.38086 8.70703 4.00586 8.23828C3.6543 7.76953 3.30273 7.26562 2.95117 6.72656C2.59961 6.1875 2.18945 5.48438 1.7207 4.61719C1.25195 3.72656 0.818359 2.8125 0.419922 1.875C0.373047 1.75781 0.349609 1.66406 0.349609 1.59375C0.349609 1.52344 0.361328 1.46484 0.384766 1.41797L0.419922 1.38281C0.513672 1.24219 0.701172 1.17188 0.982422 1.17188H3.75977C3.83008 1.17188 3.90039 1.19531 3.9707 1.24219C4.04102 1.26563 4.09961 1.28906 4.14648 1.3125L4.18164 1.34766C4.29883 1.41797 4.38086 1.52344 4.42773 1.66406C4.56836 1.99219 4.7207 2.34375 4.88477 2.71875C5.07227 3.07031 5.21289 3.33984 5.30664 3.52734L5.44727 3.80859C5.6582 4.20703 5.8457 4.55859 6.00977 4.86328C6.19727 5.14453 6.36133 5.36719 6.50195 5.53125C6.64258 5.69531 6.7832 5.82422 6.92383 5.91797C7.06445 6.01172 7.18164 6.05859 7.27539 6.05859C7.36914 6.05859 7.46289 6.04688 7.55664 6.02344C7.55664 6.02344 7.56836 6.01172 7.5918 5.98828C7.61523 5.94141 7.65039 5.85938 7.69727 5.74219C7.76758 5.625 7.81445 5.47266 7.83789 5.28516C7.88477 5.09766 7.91992 4.82812 7.94336 4.47656C7.9668 4.125 7.9668 3.70312 7.94336 3.21094C7.91992 2.95313 7.88477 2.71875 7.83789 2.50781C7.79102 2.27344 7.74414 2.10938 7.69727 2.01562L7.66211 1.91016C7.49805 1.67578 7.20508 1.52344 6.7832 1.45312C6.71289 1.45312 6.73633 1.37109 6.85352 1.20703C6.9707 1.08984 7.09961 0.996094 7.24023 0.925781C7.5918 0.738281 8.38867 0.65625 9.63086 0.679688C10.1699 0.679688 10.627 0.726562 11.002 0.820312C11.1191 0.84375 11.2246 0.890625 11.3184 0.960938C11.4121 1.00781 11.4824 1.08984 11.5293 1.20703C11.5762 1.30078 11.6113 1.40625 11.6348 1.52344C11.6582 1.61719 11.6699 1.76953 11.6699 1.98047C11.6699 2.16797 11.6699 2.34375 11.6699 2.50781C11.6465 2.69531 11.6348 2.92969 11.6348 3.21094C11.6348 3.51562 11.6348 3.79688 11.6348 4.05469C11.6348 4.125 11.623 4.26562 11.5996 4.47656C11.5996 4.6875 11.5996 4.85156 11.5996 4.96875C11.5996 5.08594 11.6113 5.22656 11.6348 5.39062C11.6582 5.53125 11.6934 5.66016 11.7402 5.77734C11.8105 5.87109 11.8926 5.94141 11.9863 5.98828C12.0332 6.01172 12.0801 6.03516 12.127 6.05859C12.1973 6.05859 12.291 6.02344 12.4082 5.95312C12.5254 5.85938 12.6543 5.74219 12.7949 5.60156C12.9355 5.4375 13.1113 5.20312 13.3223 4.89844C13.5332 4.59375 13.7559 4.24219 13.9902 3.84375C14.3887 3.14062 14.752 2.37891 15.0801 1.55859C15.1035 1.51172 15.127 1.46484 15.1504 1.41797C15.1973 1.34766 15.2441 1.30078 15.291 1.27734H15.3262L15.3613 1.24219L15.502 1.20703H15.7129L18.5957 1.17188C18.8535 1.14844 19.0645 1.16016 19.2285 1.20703C19.416 1.25391 19.5215 1.3125 19.5449 1.38281L19.6152 1.48828Z" />
+</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" rel="nofollow" target="_blank">
+								<svg  viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+	<path d="M5.16016 15.7383H2.38281V8.91797H0.0625V6.24609H2.38281V4.27734C2.38281 3.15234 2.69922 2.28516 3.33203 1.67578C3.96484 1.06641 4.80859 0.761719 5.86328 0.761719C6.70703 0.761719 7.39844 0.796875 7.9375 0.867188V3.22266L6.49609 3.25781C5.98047 3.25781 5.62891 3.36328 5.44141 3.57422C5.25391 3.78516 5.16016 4.10156 5.16016 4.52344V6.24609H7.83203L7.48047 8.91797H5.16016V15.7383Z" />
+</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" rel="nofollow" target="_blank">
+								<svg  viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M13.9941 4.13672V2.625C13.9941 2.36719 13.8652 2.23828 13.6074 2.23828H12.1309C11.873 2.23828 11.7441 2.36719 11.7441 2.625V4.13672C11.7441 4.37109 11.873 4.48828 12.1309 4.48828H13.6074C13.8652 4.48828 13.9941 4.37109 13.9941 4.13672ZM2.35742 14.2617H13.6074C13.8652 14.2617 13.9941 14.1328 13.9941 13.875V7.51172H12.4121C12.459 7.79297 12.4824 8.03906 12.4824 8.25C12.4824 9.49219 12.0371 10.5586 11.1465 11.4492C10.2793 12.3164 9.22461 12.75 7.98242 12.75C6.74023 12.75 5.67383 12.3164 4.7832 11.4492C3.91602 10.5586 3.48242 9.49219 3.48242 8.25C3.48242 7.99219 3.50586 7.74609 3.55273 7.51172H2.00586V13.875C2.00586 14.1328 2.12305 14.2617 2.35742 14.2617ZM10.127 6.14062C9.54102 5.55469 8.82617 5.26172 7.98242 5.26172C7.16211 5.26172 6.45898 5.55469 5.87305 6.14062C5.28711 6.72656 4.99414 7.42969 4.99414 8.25C4.99414 9.07031 5.28711 9.77344 5.87305 10.3594C6.45898 10.9453 7.16211 11.2383 7.98242 11.2383C8.82617 11.2383 9.54102 10.9453 10.127 10.3594C10.7129 9.77344 11.0059 9.07031 11.0059 8.25C11.0059 7.42969 10.7129 6.72656 10.127 6.14062ZM13.9941 0.761719C14.416 0.761719 14.7676 0.914062 15.0488 1.21875C15.3535 1.5 15.5059 1.83984 15.5059 2.23828V14.2617C15.5059 14.6602 15.3535 15 15.0488 15.2812C14.7676 15.5859 14.416 15.7383 13.9941 15.7383H2.00586C1.58398 15.7383 1.2207 15.5859 0.916016 15.2812C0.634766 15 0.494141 14.6602 0.494141 14.2617V2.23828C0.494141 1.83984 0.634766 1.5 0.916016 1.21875C1.2207 0.914062 1.58398 0.761719 2.00586 0.761719H13.9941Z" />
+</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" rel="nofollow" target="_blank">
+								<svg  viewBox="0 0 16 11"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M15.3301 2.26172C15.4473 3.08203 15.5059 3.89062 15.5059 4.6875V5.8125L15.3301 8.23828C15.2363 8.91797 15.0371 9.41016 14.7324 9.71484C14.4043 10.043 13.9121 10.2539 13.2559 10.3477C12.623 10.3945 11.8613 10.4297 10.9707 10.4531C10.1035 10.4766 9.38867 10.4883 8.82617 10.4883H7.98242C5.38086 10.4648 3.68164 10.418 2.88477 10.3477C2.88477 10.3477 2.79102 10.3359 2.60352 10.3125C2.41602 10.2891 2.26367 10.2656 2.14648 10.2422C2.0293 10.2188 1.87695 10.1602 1.68945 10.0664C1.52539 9.97266 1.37305 9.85547 1.23242 9.71484C1.11523 9.57422 0.998047 9.38672 0.880859 9.15234C0.787109 8.89453 0.728516 8.67188 0.705078 8.48438L0.634766 8.23828C0.541016 7.41797 0.494141 6.60938 0.494141 5.8125V4.6875L0.634766 2.26172C0.728516 1.58203 0.927734 1.08984 1.23242 0.785156C1.56055 0.433594 2.06445 0.222656 2.74414 0.152344C3.37695 0.105469 4.12695 0.0703125 4.99414 0.046875C5.86133 0.0234375 6.57617 0.0117188 7.13867 0.0117188H7.98242C10.0918 0.0117188 11.8496 0.0585937 13.2559 0.152344C13.9121 0.222656 14.4043 0.433594 14.7324 0.785156C14.8262 0.878906 14.9082 0.996094 14.9785 1.13672C15.0488 1.25391 15.1074 1.38281 15.1543 1.52344C15.2012 1.64062 15.2363 1.75781 15.2598 1.875C15.2832 1.99219 15.3066 2.08594 15.3301 2.15625V2.26172ZM10.0215 5.35547L10.5137 5.10938L6.4707 3V7.21875L10.0215 5.35547Z"/>
+</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- //footer col -->
+
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</footer>
+
+
+
+<!-- Popup callback-->
+<div class="popup js-popup js-popup-callback" >
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Заказать звонок</p>
+				<p class="popup__subtitle text-center">Заполните форму, и наш менеджер свяжется с вами в ближайшее время</p>
+
+				<form  class="form">
+
+					<div class="form-group is-error">
+						<input type="text" class="form-input js-required-input" name="name" placeholder="Введите имя *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group">
+						<input type="tel" class="form-input js-required-input" name="phone" placeholder="Введите номер телефона *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox">
+							<span class="form-checkbox">Даю согласие на обработку персональных данных и согласен с <a href="#">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>Перезвоните мне</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup callback--><!-- Popup registration-->
+<div class="popup js-popup js-popup-registration" >
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Регистрация</p>
+				<p class="popup__subtitle text-center">Заполните форму, чтобы зарегистрироваться</p>
+
+				<form  class="form">
+
+					<div class="form-group is-error">
+						<input type="name" class="form-input js-required-input" name="name" placeholder="Введите имя *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-input js-required-input" name="email" placeholder="Введите e-mail *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__password">
+						<input type="password" class="form-input js-required-input js-pw-input" name="password" placeholder="Введите пароль *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+
+						<button class="btn-password js-show-input-password-btn" type="button">
+							<svg  viewBox="0 0 15 13"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.51562 2.65625C7.09896 2.65625 6.69271 2.73958 6.29688 2.90625L4.85938 1.46875C5.71354 1.15625 6.58854 1 7.48438 1C9.13021 1 10.6198 1.46875 11.9531 2.40625C13.2865 3.32292 14.2448 4.52083 14.8281 6C14.349 7.25 13.5885 8.30208 12.5469 9.15625L10.6094 7.21875C10.7552 6.82292 10.8281 6.41667 10.8281 6C10.8281 5.08333 10.5052 4.30208 9.85938 3.65625C9.21354 2.98958 8.43229 2.65625 7.51562 2.65625ZM0.828125 0.84375L1.67188 0L13.5156 11.8125L12.6719 12.6562L10.7031 10.7188L10.4219 10.4375C9.48438 10.8125 8.51562 11 7.51562 11C5.86979 11 4.38021 10.5417 3.04688 9.625C1.71354 8.6875 0.755208 7.47917 0.171875 6C0.692708 4.66667 1.52604 3.5625 2.67188 2.6875L2.35938 2.375L0.828125 0.84375ZM4.51562 4.53125C4.28646 5.01042 4.17188 5.5 4.17188 6C4.17188 6.91667 4.49479 7.70833 5.14062 8.375C5.80729 9.02083 6.59896 9.34375 7.51562 9.34375C8.01562 9.34375 8.50521 9.21875 8.98438 8.96875L7.95312 7.9375C7.78646 7.97917 7.64062 8 7.51562 8C6.95312 8 6.47396 7.8125 6.07812 7.4375C5.70312 7.04167 5.51562 6.5625 5.51562 6C5.51562 5.85417 5.52604 5.70833 5.54688 5.5625L4.51562 4.53125ZM7.39062 4H7.51562C8.05729 4 8.52604 4.19792 8.92188 4.59375C9.31771 4.98958 9.51562 5.45833 9.51562 6L9.48438 6.125L7.39062 4Z" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="form-group form-group__password">
+						<input type="password" class="form-input js-required-input js-pw-input" name="password-repeat" placeholder="Повторите пароль *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+
+						<button class="btn-password js-show-input-password-btn" type="button">
+							<svg  viewBox="0 0 15 13"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.51562 2.65625C7.09896 2.65625 6.69271 2.73958 6.29688 2.90625L4.85938 1.46875C5.71354 1.15625 6.58854 1 7.48438 1C9.13021 1 10.6198 1.46875 11.9531 2.40625C13.2865 3.32292 14.2448 4.52083 14.8281 6C14.349 7.25 13.5885 8.30208 12.5469 9.15625L10.6094 7.21875C10.7552 6.82292 10.8281 6.41667 10.8281 6C10.8281 5.08333 10.5052 4.30208 9.85938 3.65625C9.21354 2.98958 8.43229 2.65625 7.51562 2.65625ZM0.828125 0.84375L1.67188 0L13.5156 11.8125L12.6719 12.6562L10.7031 10.7188L10.4219 10.4375C9.48438 10.8125 8.51562 11 7.51562 11C5.86979 11 4.38021 10.5417 3.04688 9.625C1.71354 8.6875 0.755208 7.47917 0.171875 6C0.692708 4.66667 1.52604 3.5625 2.67188 2.6875L2.35938 2.375L0.828125 0.84375ZM4.51562 4.53125C4.28646 5.01042 4.17188 5.5 4.17188 6C4.17188 6.91667 4.49479 7.70833 5.14062 8.375C5.80729 9.02083 6.59896 9.34375 7.51562 9.34375C8.01562 9.34375 8.50521 9.21875 8.98438 8.96875L7.95312 7.9375C7.78646 7.97917 7.64062 8 7.51562 8C6.95312 8 6.47396 7.8125 6.07812 7.4375C5.70312 7.04167 5.51562 6.5625 5.51562 6C5.51562 5.85417 5.52604 5.70833 5.54688 5.5625L4.51562 4.53125ZM7.39062 4H7.51562C8.05729 4 8.52604 4.19792 8.92188 4.59375C9.31771 4.98958 9.51562 5.45833 9.51562 6L9.48438 6.125L7.39062 4Z" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox">
+							<span class="form-checkbox">Даю согласие на обработку персональных данных и согласен с <a href="#">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>Зарегистрироваться</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+
+					<div class="form-group">
+						<button class="btn btn-light btn-wide js-open-login-popup-btn" type="button">
+							<span>Я уже зарегистрирован</span>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup registration--><!-- Popup login-->
+<div class="popup js-popup js-popup-login" >
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Вход в личный кабинет</p>
+				<p class="popup__subtitle text-center">Заполните форму, чтобы войти в личный кабинет</p>
+
+				<form  class="form">
+
+					<div class="form-group is-error">
+						<input type="email" class="form-input js-required-input" name="email" placeholder="Введите e-mail *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__password">
+						<input type="password" class="form-input js-required-input js-pw-input" name="password" placeholder="Введите пароль *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+
+						<button class="btn-password js-show-input-password-btn" type="button">
+							<svg  viewBox="0 0 15 13"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.51562 2.65625C7.09896 2.65625 6.69271 2.73958 6.29688 2.90625L4.85938 1.46875C5.71354 1.15625 6.58854 1 7.48438 1C9.13021 1 10.6198 1.46875 11.9531 2.40625C13.2865 3.32292 14.2448 4.52083 14.8281 6C14.349 7.25 13.5885 8.30208 12.5469 9.15625L10.6094 7.21875C10.7552 6.82292 10.8281 6.41667 10.8281 6C10.8281 5.08333 10.5052 4.30208 9.85938 3.65625C9.21354 2.98958 8.43229 2.65625 7.51562 2.65625ZM0.828125 0.84375L1.67188 0L13.5156 11.8125L12.6719 12.6562L10.7031 10.7188L10.4219 10.4375C9.48438 10.8125 8.51562 11 7.51562 11C5.86979 11 4.38021 10.5417 3.04688 9.625C1.71354 8.6875 0.755208 7.47917 0.171875 6C0.692708 4.66667 1.52604 3.5625 2.67188 2.6875L2.35938 2.375L0.828125 0.84375ZM4.51562 4.53125C4.28646 5.01042 4.17188 5.5 4.17188 6C4.17188 6.91667 4.49479 7.70833 5.14062 8.375C5.80729 9.02083 6.59896 9.34375 7.51562 9.34375C8.01562 9.34375 8.50521 9.21875 8.98438 8.96875L7.95312 7.9375C7.78646 7.97917 7.64062 8 7.51562 8C6.95312 8 6.47396 7.8125 6.07812 7.4375C5.70312 7.04167 5.51562 6.5625 5.51562 6C5.51562 5.85417 5.52604 5.70833 5.54688 5.5625L4.51562 4.53125ZM7.39062 4H7.51562C8.05729 4 8.52604 4.19792 8.92188 4.59375C9.31771 4.98958 9.51562 5.45833 9.51562 6L9.48438 6.125L7.39062 4Z" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="form-group text-center form-group__checkbox">
+						<button class="link link-accent js-open-password-popup-btn" type="button">Забыли пароль?</button>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>войти</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+
+					<div class="form-group">
+						<button class="btn btn-light btn-wide js-open-registration-popup-btn" type="button">
+							<span>Зарегистрироваться</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup login--><!-- Popup password-->
+<div class="popup js-popup js-popup-password">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Забыли пароль?</p>
+				<p class="popup__subtitle text-center">Введите адрес электронной почты Вашей учетной записи и мы вышлем вам новый пароль</p>
+
+				<form  class="form">
+
+
+					<div class="form-group">
+						<input type="email" class="form-input js-required-input" name="email" placeholder="Введите e-mail *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>получить новый пароль</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup password--><!-- Popup thanks-->
+<div class="popup popup-thanks js-popup js-popup-thanks">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Ваша заявка принята</p>
+				<p class="popup__subtitle text-center">Наш менеджер свяжется с вами в ближайшее время</p>
+
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup thanks--><!-- Popup feedback form-->
+<div class="popup js-popup js-popup-feedback-form" >
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Оставить отзыв</p>
+				<p class="popup__subtitle text-center">Заполните форму, чтобы оставить отзыв</p>
+
+				<form  class="form">
+
+					<div class="form-group is-error">
+						<input type="name" class="form-input js-required-input" name="name" placeholder="Введите имя *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-input js-required-input" name="email" placeholder="Введите e-mail *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<!-- Form rating -->
+						<div class="form-rating">
+							<span class="form-rating__label">Ваша оценка:</span>
+							<div class="form-rating__stars">
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-1" value="1">
+								<label class="form-rating__star" for="user-mark-1" aria-label="Ужасно"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-2" value="2">
+								<label class="form-rating__star" for="user-mark-2" aria-label="Сносно"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-3" value="3">
+								<label class="form-rating__star" for="user-mark-3" aria-label="Нормально"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-4" value="4">
+								<label class="form-rating__star" for="user-mark-4" aria-label="Хорошо"></label>
+
+								<input class="form-rating__input visually-hidden" type="radio" name="user-mark" id="user-mark-5" value="5">
+								<label class="form-rating__star" for="user-mark-5" aria-label="Отлично"></label>
+							</div>
+						</div>
+						<!-- //Form rating -->
+					</div>
+
+					<div class="form-group ">
+						<textarea name="message"  class="form-input form-textarea js-required-input" placeholder="Ваш комментарий *"></textarea>
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox">
+							<span class="form-checkbox">Даю согласие на обработку персональных данных и согласен с <a href="#">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>Оставить отзыв</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+
+
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup feedback form--><!-- Popup quick-buy-->
+<div class="popup js-popup js-popup-quick-buy">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Купить в один клик</p>
+				<p class="popup__subtitle text-center">Очки виртуальной реальности HIPER VR MAX</p>
+
+				<form  class="form">
+
+					<div class="form-group is-error">
+						<input type="text" class="form-input js-required-input" name="name" placeholder="Введите имя *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-input js-required-input" name="email" placeholder="Введите e-mail *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group">
+						<input type="tel" class="form-input js-required-input" name="phone" placeholder="Введите номер телефона *">
+						<span class="form-group__error">Вы не заполнили поле</span>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="privacy-policy" type="checkbox">
+							<span class="form-checkbox">Даю согласие на обработку персональных данных и согласен с <a href="#">политикой конфиденциальности</a></span>
+						</label>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-wide" type="submit">
+							<span>Купить</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup quick-buy-->
+		<!-- //Footer -->
+
+
+		<!-- Popup follow-->
+<div class="popup js-popup popup-follow js-popup-follow">
+	<div class="popup__overflow">
+		<div class="popup__body text-center">
+			<button class="btn-close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- Popup content-->
+			<div class="popup__content">
+				<p class="popup__title text-center">Выберите вариант отслеживания</p>
+				<p class="popup__subtitle text-center">Почта, Telegram рассылка, СМС рассылка</p>
+
+				<form  class="form">
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="subscribe-email" type="checkbox">
+							<span class="form-checkbox form-checkbox__center">Почта</span>
+						</label>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="subscribe-telegram" type="checkbox">
+							<span class="form-checkbox form-checkbox__center">Telegram рассылка</span>
+						</label>
+					</div>
+
+					<div class="form-group form-group__checkbox">
+						<label class="form-checkbox__label">
+							<input name="subscribe-sms" type="checkbox">
+							<span class="form-checkbox form-checkbox__center">СМС рассылка</span>
+						</label>
+					</div>
+					
+					<div class="form-group form-group__submit">
+						<button class="btn btn-wide" type="submit">
+							<span>Подписаться</span>
+							<svg viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.25 3.17578H8.50781L6.42969 1.07031L7.25 0.25L10.75 3.75L7.25 7.25L6.42969 6.42969L8.50781 4.32422H0.25V3.17578Z"/>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup follow-->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	<!-- jQuery IF NEEDED-->
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous"></script>
+
+<!-- All libs scripts -->
+<script src="js/libs.min.js"></script>
+
+<!-- Main file with scripts -->
+<script src="js/common.min.js"></script>
+
+</body>
+
+</html>

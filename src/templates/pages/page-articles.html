@@ -1,0 +1,354 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main page-gutter-top">
+
+			
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<nav  class="container" aria-label="Breadcrumbs" itemprop="breadcrumb">
+					<ul class="breadcrumbs__list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="1" itemprop="position">
+							<a href="index.html" rel="home" aria-label="Главная" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Главная</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="2" itemprop="position">
+							<a href="index.html" aria-label="Интернет-магазин" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">
+									<span>Интернет-магазин</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+							<meta content="3" itemprop="position">
+							<span class="is-active" itemtype="https://schema.org/Thing" itemprop="item">
+								<span itemprop="name">Статьи</span>
+							</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- //Breadcrumbs -->
+
+
+			<h1 class="sect-title page-title container">Статьи</h1>
+
+			
+
+
+			<section class="sect__articles gutter-bottom">
+				<div class="container">
+
+					<div class="row align-vertical-start articles-page__row">
+
+						<div class="articles-content">
+
+							<h2 class="block-title block-title-lg">Тема 01 - Далеко-далеко за словесными горами в стране.</h2>
+
+							<div class="articles-cards">
+
+								
+								{% include '../parts/components/article-card.html' %}
+								{% include '../parts/components/article-card.html' %}
+								{% include '../parts/components/article-card.html' %}
+								{% include '../parts/components/article-card.html' %}
+								{% include '../parts/components/article-card.html' %}
+								{% include '../parts/components/article-card.html' %}
+								{% include '../parts/components/article-card.html' %}
+						
+
+
+							</div>
+						</div>
+
+						<!-- ASide -->
+						<aside class="articles-aside">
+							<div class="articles-aside__categories">
+								<div class="articles-aside__category">
+									<p class="block-title block-title-lg">Категории</p>
+
+									<div class="articles-aside__category-list">
+										<ul>
+											<li class="has-sublist ">
+
+												<span>Оплата</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Доставка</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Гарантии и сервисный центр</span>
+
+												<ul class="sublist">
+													
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist ">
+
+												<span class="is-toggled">Помощь в установке и настройка</span>
+
+												<ul class="sublist is-active">
+													<li class="has-sublist">
+														<a href="#">Ocolus</a>
+														<ul>
+															<li><a href="#">Подключение кабеля Oculus к телевизору</a></li>
+															<li><a href="#">Подключение кабеля Oculus к телевизору телевизору телевизору</a></li>
+															<li><a href="#">Подключение кабеля Oculus к телевизору телевизору телевизору</a></li>
+														</ul>
+													</li>
+
+
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Система акций </span>
+
+												<ul class="sublist">
+													<li><a href="#">Название акции</a></li>
+													<li><a href="#">Название акции</a></li>
+													<li><a href="#">Название акции</a></li>
+													<li><a href="#">Название акции</a></li>
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Свой VR бизнес</span>
+
+												<ul class="sublist">
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+												</ul>
+											</li>
+
+											<li class="has-sublist">
+
+												<span>Учасникам гос.закупок</span>
+
+												<ul class="sublist">
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+													<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="articles-aside__category">
+									<p class="block-title block-title-lg">Статьи</p>
+
+									<div class="articles-aside__category-list">
+										<ul>
+											<li class="has-sublist ">
+
+												<span>Тема 01 - Помощь в установке</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist is-current">
+
+												<span>Тема 02 - Помощь в установке</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist ">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li class="has-sublist ">
+
+												<span>Тема 03 - Помощь в установке</span>
+
+												<ul class="sublist">
+													<li class="has-sublist">
+														<a href="#">Категория</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+
+														</ul>
+													</li>
+
+													<li class="has-sublist">
+														<a href="#">Категория 2</a>
+														<ul>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+															<li><a href="#">Далеко-далеко за словесными горами в стране.</a></li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="offer-blocks">
+
+								<a href="#" class="offer-block offer-block__dark b-radius-10 bg" style="background-image: url('img/offer-2.png');">
+									<div class="offer-block__content text-center">
+										<p class="offer-block__title">Sale <span class="sale">-50%</span></p>
+										<p>Сайт рыбатекст поможет дизайнеру</p>
+									</div>
+
+								</a>
+
+								<a href="#" class="offer-block offer-block__color offer-block__sm b-radius-10 bg" style="background-image: url('img/offer-3.png');">
+									<div class="offer-block__content text-center">
+										<p class="offer-block__title">Cкидка - 25%</p>
+										<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру </p>
+										<img src="img/offer-product.png" alt="">
+									</div>
+
+								</a>
+							</div>
+						</aside>
+						<!-- //ASide -->
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+		{% include '../parts/components/popups/popup-follow.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
