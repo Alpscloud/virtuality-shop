@@ -219,3 +219,375 @@
 		&:hover
 			cursor pointer
 			border-color $accent-color
+			
+// Cart ordering
+.cart-ordering-step
+	margin-bottom 20px
+	overflow hidden
+	&.is-disabled
+		.cart-ordering-step
+			pointer-events none
+			&__header
+				background-color transparent
+				color $light-text-color
+			&__body
+				display none !important
+		&:hover
+			border-color $border-color
+	&.is-validate
+		border-color $accent-color
+		&:hover
+			cursor pointer
+			.cart-ordering-step__header
+				background-color $color-bg
+				
+		.cart-ordering-step__header
+			color $accent-color
+			background-color transparent
+			&:after
+				opacity 1
+		.cart-ordering-step__body
+			display none
+			
+	&:last-child
+		margin-bottom 0
+		
+	&__header
+		padding 35px
+		background-color $color-bg
+		transition all .17s ease-in-out
+		position relative
+		&:after
+			pseudo()
+			position absolute
+			vertical-center()
+			right 35px
+			width 40px
+			height 40px
+			border-radius 50%
+			background $accent-color url('../img/icons/svg/checkbox-ic.svg') 50% no-repeat / 17px 17px
+			pointer-events none
+			transition opacity .17s ease-in-out
+			opacity 0
+		.block-title
+			color inherit
+		
+	&__body
+		padding 30px 35px
+		
+
+	.tab-controls
+		margin-bottom 30px
+		
+.cart-ordering-delivery
+	.search-form
+		&__input
+			height 65px
+		&__btn
+			width 45px
+			height 45px
+			right 10px
+	&__information
+		padding-top 30px
+		&.is-hidden
+			display none
+			
+	&__comment
+		margin-top 30px
+		
+		.form-textarea
+			margin-bottom 30px
+			
+
+.delivery-companies__header
+	margin-bottom 15px
+	padding-left 10px
+	.row
+		margin-left -10px
+		margin-right -10px
+		
+	.delivery-company__col
+		text-align center
+		&:first-child
+			text-align left
+
+	
+.delivery-company
+	margin-bottom 20px
+	padding 20px
+	position relative
+	.row
+		margin-left -10px
+		margin-right -10px
+		position relative	
+	&:last-child
+		margin-bottom 0
+		
+.delivery-company__col
+	padding-left 10px
+	padding-right 10px
+	&:nth-child(1)
+		width 100%
+		max-width 320px
+	&:nth-child(3)
+		width 170px
+		
+
+
+.delivery-company
+	font-size 15px
+	font-weight 700
+	&:hover
+		z-index 10
+	&__label
+		display block
+		position absolute
+		fullSize()
+		z-index 1
+		input
+			display none
+			&:checked + span
+				border-color $accent-color
+				&:before
+					opacity 1
+	&__radio
+		width 18px
+		height 18px
+		border-radius 50%
+		border 2px solid $text-color
+		display inline-block
+		position absolute
+		vertical-center()
+		left 10px
+		transition border-color .17s ease-in-out
+		&:before
+			pseudo()
+			position absolute
+			position-center()
+			width 9px
+			height 9px
+			border-radius 50%
+			background-color $accent-color
+			transition opacity .17s ease-in-out
+			opacity 0
+	&__name
+		display flex
+		flex-wrap nowrap
+		align-items center
+		justify-content space-between
+		font-size 17px
+		padding-left 37px
+		&-logo
+			flex-col-center()
+			padding 5px
+			width 110px
+			height 40px
+			border 1px solid $border-color
+			border-radius 7px
+			flex none
+			margin-left 15px
+			img
+				@extends .content-img
+				
+
+.delivery-company__terms
+	position relative
+	z-index 2
+	font-weight 700
+	text-align center
+	&-address
+		font-weight normal
+		color $light-text-color
+	span
+		display inline-block
+		margin-right 5px
+		&:last-child
+			margin-right 0
+	&-link
+		color $accent-color
+		display inline-block
+		font-family $Reg
+		font-size inherit
+		text-decoration underline
+		&:hover
+			color $text-color
+p.delivery-company__terms-address
+	margin-top 5px
+			
+.delivery-company__price
+	display flex
+	align-items center
+	justify-content flex-end
+	> span
+		white-space nowrap
+		display inline-block
+		margin-right 5px
+		
+.delivery-company__price--tooltip
+	width 40px
+	height 40px
+	flex none
+	position relative
+	z-index 3
+	&:hover
+		cursor pointer
+		svg
+			fill $basic-white-color !important
+		.delivery-company__price--tooltip_ic
+			background-color $accent-color
+			&.is-sale
+				background-color $sale-color
+		.delivery-company__price--tooltip_content
+			opacity 1
+			visibility visible
+			
+	&_ic
+		width 100%
+		height 100%
+		flex-col-center()
+		border-radius 50%
+		border 1px solid $accent-color
+		transition border-color .17s ease-in-out
+		svg
+			position absolute
+			position-center()
+			svg()
+			width 20px
+			height 20px
+			fill $accent-color
+		
+		&.is-sale
+			border-color $sale-color
+			svg
+				fill $sale-color
+				
+	&_content
+		position absolute
+		right -10px
+		top 100%
+		margin-top 15px
+		z-index 5
+		min-width 145px
+		padding 20px
+		border-radius 10px
+		background-color $basic-white-color
+		font-size 13px
+		font-weight normal
+		box-shadow 7px 6px 13px rgba(28, 26, 26, 0.05), 8px 8px 30px rgba(28, 26, 26, 0.1)
+		transition all .17s ease-in-out
+		opacity 0
+		visibility hidden
+		pointer-events none
+		&-label
+			margin-bottom 6px
+			display block
+			font-weight 700
+		&:before
+			pseudo()
+			position absolute
+			width 12px
+			height 12px
+			background-color $basic-white-color
+			border-radius 4px
+			transform rotate(45deg)
+			top -5px
+			right 24px
+		
+
+.delivery-company__map
+	padding-top 30px
+	display none
+	img
+		display block
+		width 100%
+	iframe
+		display block
+		width 100%
+		height 400px
+	&.is-visible
+		display block
+		
+.delivery-delivery__address
+	margin-top 	30px
+	
+.payment-methods
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	margin 0 -10px -10px -10px
+	
+.payment-method
+	display flex
+	flex-wrap nowrap
+	align-items center
+	justify-content space-between
+	border 1px solid $border-color
+	transition border-color .17s ease-in-out
+	background-color $basic-white-color
+	height 60px
+	border-radius 10px
+	padding 20px
+	&:hover
+		cursor pointer
+		border-color $accent-color
+	&__ic
+		display inline-block
+		width 35px
+		height 35px
+		background-size contain
+		background-position 50% 50%
+		background-repeat no-repeat
+		flex none
+	&__col
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	&__radio
+		position relative
+		padding-left 37px
+		font-weight 700
+		font-size 17px
+		&:before
+			pseudo()
+			position absolute
+			vertical-center()
+			width 17px
+			height 17px
+			border 1px solid $text-color
+			transition border-color .17s ease-in-out
+			border-radius 50%
+			left 0
+		&:after
+			pseudo()
+			position absolute
+			vertical-center()
+			left 4px
+			width 9px
+			height 9px
+			border-radius 50%
+			background-color $accent-color
+			transition opacity .17s ease-in-out
+			opacity 0 
+	input
+		display none
+		&:checked
+			+ .payment-method__radio
+				&:before
+					border-color $accent-color
+				&:after
+					opacity 1
+					
+.cart-ordering__submit
+	margin-top 30px
+	
+	&-btns
+		display flex
+		max-width 675px
+		margin-top 30px
+		.btn
+			flex 1
+			margin-right 10px
+			padding-left 10px
+			padding-right 10px
+			&:last-child
+				margin-right 0

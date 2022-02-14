@@ -321,6 +321,22 @@ $(document).ready(function() {
 		$(this).parents('.cart-order-information').find('.hidden-responsive-list').stop().slideToggle(150);
 	});
 
+	$('.cart-ordering-step.is-validate').on('click', '.cart-ordering-step__header', function(e) {
+		e.preventDefault();
+
+
+		$(this).parents('.cart-ordering-step.is-validate').find('.cart-ordering-step__body').stop().slideToggle(250);
+	});
+
+	$('.delivery-company__terms-link').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).parents('.delivery-company').find('.delivery-company__map').stop().slideToggle(250);
+	});
+
+
+	
+
 
 	
 
@@ -362,6 +378,28 @@ $(document).ready(function() {
 			input.val(value);
 			
 		}
+
+	});
+
+
+
+	$('.js-tab-btn').each(function() {
+
+		$(this).on('click', function(e) {
+			e.preventDefault();
+
+			var tabs = $(this).parents('.tabs');
+
+			if($(this).hasClass('is-active')) {
+				tabs.find('.js-tab-btn').removeClass('is-active');
+				$(this).addClass('is-active');
+			} else {
+				tabs.find('.js-tab-btn').removeClass('is-active');
+				$(this).addClass('is-active');
+			}
+
+			tabs.find('.js-tab-content').hide().eq($(this).index()).fadeIn();
+		});
 
 	});
 

@@ -1,0 +1,35 @@
+	<aside class="cart-aside">
+		<div class="cart-order-information">
+			<div class="cart-order-information__btns">
+				<button class="btn btn-ic-left btn-light btn-wide" type="button">
+					<svg  viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.75 3.17578V4.32422H2.49219L4.57031 6.42969L3.75 7.25L0.25 3.75L3.75 0.25L4.57031 1.07031L2.49219 3.17578H10.75Z"/>
+					</svg>
+					<span>Продолжить покупки</span>
+				</button>
+
+				<a href="#ordering" class="btn btn-wide js-smooth-scroll-link" >
+					<span>Перейти к оформлению</span>
+					{% include '../btn-arrow.html' %}
+				</a>
+			</div>
+			<div class="cart-order-information__list b-radius-10">
+				<p class="block-title">Информация о заказе</p>
+
+				<div class="cart-order-information__ul">
+					<ul>
+						<li>Сумма за товар <span></span> <b>80 989 ₽</b></li>
+						<li>Способ оплаты <span></span> <b>Картой на сайте</b></li>
+						<li>Способ доставки <span></span> <b>СДЭК: Посылка</b></li>
+						<li>Стоимость доставки <span></span> <b>795 руб.</b></li>
+						<li>Срок доставки <span></span> <b>2 рабочих дня</b></li>
+					</ul>
+				</div>
+
+				<div class="cart-order-information__total">
+					<span class="block-title">Итог за заказ:</span>
+					<span class="cart-order-information__price">81 718 ₽</span>
+				</div>
+			</div>
+		</div>
+	</aside>

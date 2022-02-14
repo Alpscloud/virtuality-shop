@@ -1,0 +1,334 @@
+<div class="cart-products block-border-bottom">
+	<div class="cart-products__header row  align-horisontal-between">
+		<div class="cart-product__col">
+			<p>Товар</p>
+		</div>
+		<div class="cart-product__col text-center">
+			<p>Количество</p>
+		</div>
+		<div class="cart-product__col text-center">
+			<p>Сумма</p>
+		</div>
+	</div>
+
+	<div class="cart-products__list">
+		<!-- Product block -->
+		<div class="cart-product card b-radius-10">
+			<div class="row align-horisontal-between">
+
+				<!-- Product information -->
+				<div class="cart-product__col">
+					<div class="cart-product-information">
+						<a href="page-product.html" class="cart-product__thumbnail card b-radius-10">
+							<img src="img/products/1.png" alt="">
+						</a>
+						<div class="cart-product-information__text">
+							<p class="product-status">В наличии</p>
+							<h3 class="product-card__title">
+								<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
+							</h3>
+							<p class="product-articul">Артикул: 1639346</p>
+
+							<button class="btn-toggle js-toggle-cart-additional-services-btn" type="button">
+								<span>Дополнительные услуги</span>
+								<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<!-- Product quantity -->
+				<div class="cart-product__col">
+					<div class="product-quantity js-product-quantity">
+
+						<button type="button" class="product-quantity__btn" data-action="minus">
+							<svg viewBox="0 0 10 3"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.96387 2.32227H0.0361328V0.927734H9.96387V2.32227Z"/>
+							</svg>
+
+						</button>
+
+						<input type="number" name="quantity" class="product-quantity__input" value="1" min="1" placeholder="0">
+
+						<button type="button" class="product-quantity__btn" data-action="plus">
+							<svg viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.96387 6.32227H5.71387V10.5723H4.28613V6.32227H0.0361328V4.92773H4.28613V0.677734H5.71387V4.92773H9.96387V6.32227Z" />
+							</svg>
+
+						</button>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<!-- Product Prices -->
+				<div class="cart-product__col">
+					<div class="product-prices">
+						<span class="product-prices__old">4 290 ₽</span>
+						<span class="product-prices__new">3 940 ₽</span>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<!-- Additional services -->
+				<div class="cart-product__col">
+					<div class="additional-services">
+						<div class="additional-service">
+							<div class="additional-service__col">
+								<label class="form-checkbox__label additional-service__check">
+									<input name="service" type="checkbox">
+									<span class="form-checkbox">Дополнительная услуга 1</span>
+									<span class="form-checkbox__subtext">Краткое описание услуги - cайт рыбатекст</span>
+								</label>
+							</div>
+							<div class="additional-service__col">
+
+							</div>
+							<div class="additional-service__col">
+								<p class="additional-service__price">от 250 ₽</p>
+							</div>
+						</div>
+
+						<div class="additional-service">
+							<div class="additional-service__col">
+								<label class="form-checkbox__label additional-service__check">
+									<input name="service" type="checkbox">
+									<span class="form-checkbox">Дополнительная услуга 1</span>
+									<span class="form-checkbox__subtext">Краткое описание услуги - cайт рыбатекст</span>
+								</label>
+							</div>
+							<div class="additional-service__col">
+								<div class="additional-service__options">
+									<label class="additional-service__option-label">
+										<input type="radio" name="term">
+										<span>1 год</span>
+									</label>
+									<label class="additional-service__option-label">
+										<input type="radio" name="term">
+										<span>2 года</span>
+									</label>
+									<label class="additional-service__option-label">
+										<input type="radio" name="term">
+										<span>12 мес</span>
+									</label>
+								</div>
+							</div>
+							<div class="additional-service__col">
+								<p class="additional-service__price">от 250 ₽</p>
+							</div>
+						</div>
+
+						<div class="additional-service">
+							<div class="additional-service__col">
+								<label class="form-checkbox__label additional-service__check">
+									<input name="service" type="checkbox">
+									<span class="form-checkbox">Дополнительная услуга 1</span>
+									<span class="form-checkbox__subtext">Краткое описание услуги - cайт рыбатекст</span>
+								</label>
+							</div>
+							<div class="additional-service__col">
+
+							</div>
+							<div class="additional-service__col">
+								<p class="additional-service__price">от 10 	250 ₽</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //col -->
+			</div>
+
+			<!-- Remove  -->
+			<button class="btn-close" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- //Remove  -->
+		</div>
+		<!-- //Product block -->
+
+		<!-- Product block -->
+		<div class="cart-product card b-radius-10">
+			<div class="row align-horisontal-between">
+
+				<!-- Product information -->
+				<div class="cart-product__col">
+					<div class="cart-product-information">
+						<a href="page-product.html" class="cart-product__thumbnail card b-radius-10">
+							<img src="img/products/1.png" alt="">
+						</a>
+						<div class="cart-product-information__text">
+							<p class="product-status not-available">Нет в наличии</p>
+							<h3 class="product-card__title">
+								<a href="page-product.html">Шлем виртуальной реальности HTC Vive Pro 2 HMD, черный [99hasw004-00]</a>
+							</h3>
+							<p class="product-articul">Артикул: 1639346</p>
+
+							<button class="btn-toggle js-toggle-cart-additional-services-btn" type="button">
+								<span>Дополнительные услуги</span>
+								<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<!-- Product quantity -->
+				<div class="cart-product__col">
+					<div class="product-quantity js-product-quantity">
+
+						<button type="button" class="product-quantity__btn" data-action="minus">
+							<svg viewBox="0 0 10 3"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.96387 2.32227H0.0361328V0.927734H9.96387V2.32227Z"/>
+							</svg>
+
+						</button>
+
+						<input type="number" name="quantity" class="product-quantity__input" value="1" min="1" placeholder="0">
+
+						<button type="button" class="product-quantity__btn" data-action="plus">
+							<svg viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.96387 6.32227H5.71387V10.5723H4.28613V6.32227H0.0361328V4.92773H4.28613V0.677734H5.71387V4.92773H9.96387V6.32227Z" />
+							</svg>
+
+						</button>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<!-- Product Prices -->
+				<div class="cart-product__col">
+					<div class="product-prices">
+						<span>4 290 ₽</span>
+					</div>
+				</div>
+				<!-- //col -->
+
+				<!-- Additional services -->
+				<div class="cart-product__col">
+					<div class="additional-services">
+						<div class="additional-service">
+							<div class="additional-service__col">
+								<label class="form-checkbox__label additional-service__check">
+									<input name="service" type="checkbox">
+									<span class="form-checkbox">Дополнительная услуга 1</span>
+									<span class="form-checkbox__subtext">Краткое описание услуги - cайт рыбатекст</span>
+								</label>
+							</div>
+							<div class="additional-service__col">
+
+							</div>
+							<div class="additional-service__col">
+								<p class="additional-service__price">от 250 ₽</p>
+							</div>
+						</div>
+
+						<div class="additional-service">
+							<div class="additional-service__col">
+								<label class="form-checkbox__label additional-service__check">
+									<input name="service" type="checkbox">
+									<span class="form-checkbox">Дополнительная услуга 1</span>
+									<span class="form-checkbox__subtext">Краткое описание услуги - cайт рыбатекст</span>
+								</label>
+							</div>
+							<div class="additional-service__col">
+								<div class="additional-service__options">
+									<label class="additional-service__option-label">
+										<input type="radio" name="term">
+										<span>1 год</span>
+									</label>
+									<label class="additional-service__option-label">
+										<input type="radio" name="term">
+										<span>2 года</span>
+									</label>
+									<label class="additional-service__option-label">
+										<input type="radio" name="term">
+										<span>12 мес</span>
+									</label>
+								</div>
+							</div>
+							<div class="additional-service__col">
+								<p class="additional-service__price">от 250 ₽</p>
+							</div>
+						</div>
+
+						<div class="additional-service">
+							<div class="additional-service__col">
+								<label class="form-checkbox__label additional-service__check">
+									<input name="service" type="checkbox">
+									<span class="form-checkbox">Дополнительная услуга 1</span>
+									<span class="form-checkbox__subtext">Краткое описание услуги - cайт рыбатекст</span>
+								</label>
+							</div>
+							<div class="additional-service__col">
+
+							</div>
+							<div class="additional-service__col">
+								<p class="additional-service__price">от 250 ₽</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //col -->
+			</div>
+
+			<!-- Remove  -->
+			<button class="btn-close" type="button">
+				<svg  viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.7998 1.81445L8.94043 7.625L14.7998 13.4355L13.335 14.9004L7.47559 9.08984L1.66504 14.9004L0.200195 13.4355L6.01074 7.625L0.200195 1.81445L1.66504 0.349609L7.47559 6.16016L13.335 0.349609L14.7998 1.81445Z" />
+				</svg>
+			</button>
+			<!-- //Remove  -->
+		</div>
+		<!-- //Product block -->
+
+	</div>
+
+
+	<div class="cart-order-information">
+		<div class="cart-order-information__btns">
+			<button class="btn btn-ic-left btn-light btn-wide" type="button">
+				<svg  viewBox="0 0 11 8"  xmlns="http://www.w3.org/2000/svg">
+					<path d="M10.75 3.17578V4.32422H2.49219L4.57031 6.42969L3.75 7.25L0.25 3.75L3.75 0.25L4.57031 1.07031L2.49219 3.17578H10.75Z"/>
+				</svg>
+				<span>Продолжить покупки</span>
+			</button>
+
+			<a href="#ordering" class="btn btn-wide js-smooth-scroll-link" >
+				<span>Перейти к оформлению</span>
+				{% include '../btn-arrow.html' %}
+			</a>
+		</div>
+		<div class="cart-order-information__list b-radius-10">
+			<p class="block-title">Информация о заказе</p>
+
+			<ul>
+				<li>Кол-во товаров <span></span> <b>2 шт</b></li>
+			</ul>
+
+			<button class="btn-toggle btn-word-switcher js-toggle-cart-order-information-btn" type="button">
+				<span data-default-text="Развернуть" data-active-text="Свернуть"></span>
+				<svg viewBox="0 0 9 7"  xmlns="http://www.w3.org/2000/svg"><path d="M7.94531 0.683594L9 1.73828L4.5 6.23828L0 1.73828L1.05469 0.683594L4.5 4.12891L7.94531 0.683594Z"/></svg>
+			</button>
+
+			<div class="hidden-responsive-list">
+				<ul>
+					<li>Сумма за товар <span></span> <b>80 989 ₽</b></li>
+					<li>Способ оплаты <span></span> <b>Картой на сайте</b></li>
+					<li>Способ доставки <span></span> <b>СДЭК: Посылка</b></li>
+					<li>Стоимость доставки <span></span> <b>795 руб.</b></li>
+					<li>Срок доставки <span></span> <b>2 рабочих дня</b></li>
+				</ul>
+			</div>
+
+			<div class="cart-order-information__total">
+				<span class="block-title">Итог за заказ:</span>
+				<span class="cart-order-information__price">81 718 ₽</span>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>

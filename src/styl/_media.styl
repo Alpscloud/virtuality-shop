@@ -695,6 +695,24 @@
 		.container
 			padding-left 0
 			padding-right 0
+			
+
+	.cart-ordering-user__information
+		.form-group
+			width 50%
+			.form-group
+				width 100%
+				padding-right 0
+				
+
+	.delivery-company
+		font-size 13px
+		
+		&__name
+			font-size 15px
+		&__col
+			&:nth-child(1)
+				max-width 280px
 		
 
 
@@ -704,6 +722,12 @@
 
 
 +max-screen(767px)
+
+	.cart-ordering-delivery__comment-submit
+		width 100%
+		
+	.payment-method__col
+		width 100%
 
 	.compare-fixed__navigation
 		.slider-controls
@@ -1230,11 +1254,55 @@
 			
 	.additional-service__options
 		margin-top 15px
+		
+
+	.cart-ordering-step
+		.form-group
+			width 50%
+			&.col-w-100
+				width 100%
+				
+
+	.delivery-companies__header
+		display none
+		
+	.delivery-company
+		.row
+			flex-wrap wrap
+		&__col
+			width 50%
+			max-width 50%
+			
+			&:nth-child(1)
+				max-width 100%
+				margin-bottom 10px
+				
+		&__terms
+			text-align left
+			
+		&__radio
+			transform none
+			top 12px
+			
+	
+			
 			
 
 	.hidden-mobile
 		display none
-		
+
++max-screen(700px)
+
+	.cart-ordering__submit-btns
+		flex-wrap wrap
+		.btn
+			flex none
+			width 100%
+			margin-right 0
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+				
 +max-screen(620px)
 
 	.breadcrumbs
@@ -2875,6 +2943,157 @@
 	.cart-order-information__total
 		margin-top 15px
 		padding-top 15px
+		
+	.cart-ordering-step__header
+		padding 15px 50px 15px 20px
+		&:after
+			width 20px
+			height 20px
+			right 10px
+			background-size 10px 14px
+		
+	.cart-ordering-step__body
+		padding 20px
+		
+		.tab-controls
+			padding-bottom 8px
+			margin-bottom 12px
+			margin-left -20px
+			margin-right -20px
+			padding-left 20px
+			&__btn
+				&:last-child
+					margin-right 20px
+					
+		.form-group
+			width 100%
+			
+	.delivery-company
+		padding 15px
+		margin-bottom 10px
+		font-size 12px
+		&__name
+			font-size 12px
+			padding-left 20px
+			&-logo
+				width 65px
+				height 25px
+				padding 5px
+		&__radio
+			width 13px
+			top 7px
+			height 13px
+			&:before
+				width 7px
+				height 7px
+				transform none
+				margin-top -3.5px
+				margin-left -3.5px
+				
+		&__col
+			width 100% !important
+			max-width 100% !important
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+			&:nth-child(1)
+				margin-bottom 10px
+				
+		&__map
+			padding-top 15px
+			iframe
+				height 170px
+		&__terms
+			span
+				display block
+				margin-right 0
+				margin-bottom 5px
+				&:last-child
+					margin-bottom 0
+		&__price
+			justify-content flex-start
+			&--tooltip
+				width 20px
+				height 20px
+				svg
+					width 8px
+					height 8px
+				&_content
+					padding 15px
+				
+					horisontal-center()
+					right auto
+					&:before
+						right auto
+						left 50%
+						transform translateX(-50%) rotate(-45deg)
+	
+	.delivery-delivery__address
+		margin-top 15px
+		
+	.cart-ordering-delivery__comment .form-textarea
+		margin-bottom 20px
+		
+	.cart-ordering-delivery__comment
+		margin-top 15px
+		
+	.text-label
+		font-size 10px
+		margin-bottom 15px
+		line-height 15px
+		
+	.cart-ordering-delivery 
+		.search-form
+			&__input
+				font-size 12px
+				height 40px
+				&::-webkit-input-placeholder
+					font-size 12px
+				&::-moz-placeholder
+					font-size 12px
+				&:-moz-placeholder
+					font-size 12px
+				&:-ms-input-placeholder
+					font-size 12px
+			&__btn
+				right 5px
+				width 30px
+				height 30px
+				
+
+	.payment-method
+		height 55px
+		padding 15px
+		&__ic
+			width 25px
+			height 25px
+		&__radio
+			font-size 12px
+			padding-left 20px
+			&:before
+				width 13px
+				height 13px
+			&:after
+				width 7px
+				height 7px
+				transform none
+				margin-top -3.5px
+				left 3px
+			
+				
+			
+	.cart-ordering-step .btn,
+	.cart-ordering__submit .btn
+			padding-top 14px
+			padding-bottom 14px
+			
+	.cart-ordering__submit
+		.form-checkbox
+			br
+				display none
+			
+	.cart-ordering__submit-btns
+		margin-top 0
 
 
 	.hidden-mobile-md
