@@ -108,3 +108,561 @@
 		font 15px $Reg
 		font-weight 600
 		color $text-color
+		
+// page product
+.product
+	&-aside
+		width 370px
+		margin-left 70px
+		&__content
+			background-color $basic-white-color
+			box-shadow 7px 6px 13px -10px rgba(28, 26, 26, 0.15), 8px 8px 30px -6px rgba(28, 26, 26, 0.1)
+			padding 30px 25px
+			
+		&__block
+			padding-bottom 25px
+			margin-bottom 25px
+			border-bottom 1px solid $border-color
+			&:last-child
+				padding-bottom 0
+				margin-bottom 0
+				border-bottom none
+		
+	&-content__col
+		flex 1
+		width calc(100% - 440px)
+		
+
+.product-main-price
+	.product-prices
+		font-size 35px
+		font-weight 700
+		
+	.product-prices__old
+		font-size 20px
+		
+.product-credit
+	margin-top 15px
+	position relative
+	z-index 1
+	display inline-flex
+	align-items center
+	justify-content flex-start
+	width 100%
+	&:hover
+		cursor pointer
+		.product-credit__terms
+			color $accent-color
+			&--ic
+				&:before
+					opacity 1
+					visibility visible
+		.product-credit-tooltip
+			opacity 1
+			visibility visible
+			
+	&__price
+		flex-col-center()
+		padding 5px 10px
+		font 20px $Reg
+		font-weight bold
+		line-height 27px
+		background-color #FFC738
+		border-radius 5px
+		white-space nowrap
+		
+	&__terms
+		white-space nowrap
+		margin-left 9px
+		color $light-text-color
+		display flex
+		flex-wrap nowrap
+		align-items center
+		line-height 1
+		justify-content flex-start
+		
+		&--ic
+			svg()
+			display inline-block
+			width 14px
+			height 14px
+			fill currentColor
+			flex none
+			margin-left 4px
+			position relative
+			&:before
+				pseudo()
+				position absolute
+				width 20px
+				height 20px
+				background-color $basic-white-color
+				border-radius 4px
+				left 50%
+				transform rotate(45deg) translateX(-50%)
+				top 100%
+				margin-top 15px
+				z-index 4
+				box-shadow 7px 6px 13px rgba(28, 26, 26, 0.05), 8px 8px 30px rgba(28, 26, 26, 0.1)
+				transition all .17s ease-in-out
+				opacity 0
+				visibility hidden
+				
+		
+	&-tooltip
+		white-space normal
+		position absolute
+		horisontal-center()
+		width 100%
+		background-color $basic-white-color
+		border-radius 10px
+		box-shadow 7px 6px 13px rgba(28, 26, 26, 0.05), 8px 8px 30px rgba(28, 26, 26, 0.1)
+		padding 20px
+		font-size 13px
+		line-height 20px
+		top 100%
+		z-index 5
+		margin-top 5px
+		transition all .17s ease-in-out
+		opacity 0
+		visibility hidden
+		p
+			margin-bottom 5px
+			
+
+.product-quantity-block
+	display flex
+	flex-wrap nowrap
+	
+	.product-quantity,
+	.btn
+		flex 1
+		
+	.btn
+		padding-left 0
+		padding-right 0
+		height 55px
+		
+	.product-quantity
+		margin-right 10px
+		height 55px
+		&__input
+			width calc(100% - 80px)
+		
+a.product-feedbacks
+	color $accent-color
+	text-decoration underline
+	&:hover
+		color $text-color	
+		text-decoration none
+
+.product-heading
+	margin-bottom 25px
+	&__brand
+		display flex
+		justify-content space-between
+		align-items center
+		margin-bottom 15px
+		
+	.product-labels
+		margin-bottom 15px
+		
+	.product-articul
+		margin-bottom 20px
+		
+.product-title
+	font 28px $Bold
+	line-height 38px
+	margin-bottom 15px
+		
+
+.product-brand
+	border-radius 7px
+	border 1px solid $border-color
+	width 120px
+	height 35px
+	flex-col-center()
+	padding 7px
+	img
+		@extends .content-img
+		
+		
+
+.product-params
+	margin-bottom 30px
+	&__title
+		color $light-text-color
+		margin-bottom 17px
+		span
+			color $text-color
+	&__block
+		margin-bottom 25px
+		&:last-child
+			margin-bottom 0
+			
+.product-params__radios
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	margin-left -5px
+	margin-right -5px
+	&--item
+		padding-left 5px
+		padding-right 5px
+		
+
+.product-color
+	height 40px
+	width 40px
+	flex-col-center()
+	input
+		display none
+		&:checked + span
+			&:before
+				opacity 1
+		
+	span
+		display block
+		width 30px
+		height 30px
+		border-radius 50%
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			height 40px
+			width 40px
+			border-radius 50%
+			position-center()
+			border 2px solid $accent-color
+			transition opacity .17s ease-in-out
+			opacity 0
+			
+.product-param
+	flex-col-center()
+	height 40px
+	margin-right 10px
+	input
+		display none
+		&:checked + span
+			color $text-color
+			&:before
+				opacity 1
+	span
+		flex-col-center()
+		text-align center
+		font 15px $Reg
+		color $light-text-color
+		position relative
+		border-radius 7px
+		background-color rgba($border-color, .7)
+		padding 5px 12px
+		transition color .17s ease-in-out
+		height 30px
+		&:before
+			pseudo()
+			position absolute
+			top -5px
+			bottom -5px
+			border-radius 10px
+			left -5px
+			right -5px
+			border 2px solid $accent-color
+			transition opacity .17s ease-in-out
+			opacity 0
+			
+
+.product-characteristics
+	margin-bottom 40px
+	&-list
+		margin-bottom 15px
+		li
+			display flex
+			justify-content space-between
+			align-items flex-end
+			color $light-text-color
+			margin-bottom 15px
+			&.is-hidden
+				display none
+			&:last-child
+				margin-bottom 0
+			span:last-child
+				color $text-color
+				text-align right
+			
+			.divider
+				display block
+				flex 1
+				margin-left 3px
+				margin-right 3px
+				height 1px 
+				border-bottom 1px dotted $border-color
+	
+		
+.product-mobile-label
+	font 12px $Reg
+	font-weight bold
+	margin-bottom 20px
+
+	
+
+	
+.product-slider
+	&__col
+		width 47%
+		display flex
+		flex-direction column
+
+.product-content
+	width 53%
+	padding-left 70px
+	
+
+.product-slider-main
+	margin-bottom 30px
+	flex 1
+
+	.slick-track,
+	.slick-list
+		height 100%
+	
+	.slick-track
+		display flex
+		flex-wrap nowrap
+		
+	.slick-slide
+		height 100%
+		> div
+			height 100%
+	&__wrapper
+		flex 1
+		display flex
+		flex-direction column
+		
+		.slider-pagination
+			display none
+	
+		
+.product-slider__btn
+	width 40px
+	position relative
+	border 1px solid $border-color
+	border-radius 7px
+	background-color $basic-white-color
+	margin-left 10px
+	&:hover
+		border-color $accent-color
+	svg
+		svg()
+		position absolute
+		position-center()
+		width 7px
+		height 9px
+		fill $text-color
+		
+.product-slide-thumbnail
+	display block !important
+	border 1px solid $border-color
+	border-radius 7px
+	transition border-color .17s ease-in-out
+	position relative
+	padding-top 100%
+	
+	
+	img
+		display block
+		position absolute
+		position-center()
+		max-width 75%
+		max-height 75%
+		width auto
+		height auto
+	
+
+.product-slide
+	height 100%
+	.fancy-link
+		padding 15px
+		height 100%
+		flex-col-center()
+		img
+			@extends .content-img
+			
+.product-slider-thumbnails
+	flex 1
+	width calc(100% - 50px)
+	&__wrapper
+		display flex
+		flex-wrap nowrap
+		
+	.slick-slide
+		margin-right 10px
+		float none
+		height auto 
+		> div
+			height 100%
+			
+	.slick-track
+		display flex
+		flex-wrap nowrap
+		
+	.slick-current
+		.product-slide-thumbnail
+			border-color $accent-color
+			
+.product-videos-slider
+	&__wrapper
+		margin-left -5px
+		margin-right -5px
+		margin-top 45px
+		
+		
+	.slick-slide
+		padding-left 5px
+		padding-right 5px
+		
+// Fixed
+.product-fixed
+	&__content
+		padding 10px 20px
+		border-radius 0 0 10px 10px
+		
+	.product-articul
+		margin-right 30px
+		margin-bottom 0
+		
+	.product-card__title
+		margin-bottom 10px
+		font-size 17px
+		line-height 20px
+	&__information-content
+		width 100%
+		max-width 470px
+		
+	&__thumbnail
+		flex none
+		flex-col-center()
+		padding 5px
+		width 130px
+		height 80px
+		margin-right 20px
+		border 1px solid $border-color
+		border-radius 7px
+		img
+			@extends .content-img
+			
+	.link
+		margin-left 30px
+		white-space nowrap
+		
+	.product-prices
+		margin-bottom 0
+		margin-right 60px
+		
+	.btn-add__ic
+		display none
+		
+	.btn-add
+		padding-left 25px
+		padding-right 25px
+		
+
+// Sets
+.sect__product-sets
+	.tab-controls
+		margin-bottom 30px
+.product-set
+	padding 35px
+	overflow hidden
+	&__information
+		flex 1
+		padding-right 50px
+		&-content
+			padding-top 30px
+		
+		.product-card
+			&__thumbnail
+				width 265px
+				margin-right 30px
+				margin-bottom 0
+			&__title
+				font-size 20px
+				line-height 24px
+				margin-bottom 20px
+				
+		.product-articul
+			margin-bottom 20px
+		
+		
+	&__tools
+		padding-left 50px
+		border-left 1px solid $border-color
+		width 440px
+		flex none
+		padding-top 10px
+		padding-bottom 10px
+		
+		.product-quantity-block
+			margin-top 25px
+			
+			.btn
+				padding-left 20px
+				padding-right 20px
+	
+
+.product-set-slider
+	&__wrapper
+		margin-top 35px
+		margin-left -35px
+		margin-right -35px
+		position relative
+		&:before,
+		&:after
+			pseudo()
+			position absolute
+			top 0
+			bottom 0
+			background-color $basic-white-color
+			width 30px
+			z-index 1
+		&:before
+			left 0
+		&:after
+			right 0
+
+		.block-title
+			padding-left 35px
+			
+		.slider-controls
+			padding-left 35px
+		
+			
+	.slick-track
+		display flex
+		flex-wrap nowrap
+		justify-content flex-start
+		margin-left 0
+		margin-right auto
+	.slick-slide
+		float none
+		padding-left 35px
+		padding-right 35px
+		height auto
+		> div
+			height 100%
+		
+	.compare-fixed-product
+		padding 15px
+		height 100%
+		&:after
+			pseudo()
+			position absolute
+			vertical-center()
+			width 20px
+			height 20px
+			background url('../img/icons/svg/plus.svg') no-repeat / contain
+			left 100%
+			margin-left 25px
+		.btn-close
+			top 10px
+			right 10px
+		

@@ -48,8 +48,34 @@
 			
 	&.is-disabled,
 	&:disabled
-		opacity .5
+		background-color #DFE3E9
+		border-color #DFE3E9
+		color $light-text-color
 		pointer-events none
+		svg
+			fill $light-text-color
+		
+	&.is-added
+		background-color $darkest-accent-color
+		border-color $darkest-accent-color
+		color $basic-white-color
+		&:hover
+			background-color $accent-color
+			border-color $accent-color
+			
+		
+	
+		
+	&-unfocus
+		background-color #DFE3E9
+		border-color #DFE3E9
+		color $light-text-color
+		&:hover
+			background-color $accent-color
+			color $basic-white-color
+			border-color $accent-color
+			
+
 		
 	&-lg-ic
 		svg
@@ -138,6 +164,7 @@
 			position relative
 			background-color $dark-accent-color
 			margin-left 10px
+			transition background-color .17s ease-in-out
 			svg
 				svg()
 				position absolute
@@ -153,9 +180,17 @@
 			text-transform uppercase
 			
 		&:hover
+			background-color $light-accent-color
+			
+		&.is-added
 			background-color $darkest-accent-color
 			.btn-add__ic
 				background-color $accent-color
+			&:hover
+				.btn-add__ic
+					background-color $light-accent-color
+			
+		
 				
 	&-ic
 		width 50px
@@ -165,6 +200,7 @@
 		position relative
 		transition border-color .17s ease-in-out
 		border-radius 7px
+		transition all .17s ease-in-out
 		svg
 			svg()
 			position absolute
@@ -172,15 +208,20 @@
 			fill $light-text-color
 			width 22px
 			height 22px
-		&:hover
+		&:hover,
+		&.is-active
 			border-color $accent-color
 			svg
 				fill $text-color
-				
-		&.is-active
-			background-color $accent-color
+		&.is-added
+			border-color $darkest-accent-color
+			background-color $darkest-accent-color
 			svg
 				fill $basic-white-color
+			&:hover
+				border-color $accent-color
+				background-color $accent-color
+				
 	
 	&-arrow
 		&-sm

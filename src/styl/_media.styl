@@ -69,6 +69,26 @@
 			padding-left 0
 		&:nth-child(3)
 			max-width 180px
+			
+
+	// Product
+	.product
+		&-aside
+			width 340px
+			margin-left 30px
+			
+	.product-content
+		padding-left 30px
+		
+	.product-content__col
+		width calc(100% - 370px)
+		
+	.product-fixed 
+		.product-prices
+			margin-right 30px
+			
+	.product-fixed__thumbnail
+		margin-right 10px
 		
 
 +max-screen(1450px)
@@ -378,6 +398,26 @@
 		display none
 		padding-top 10px
 		
+	.product-fixed__information
+		.row
+			flex-wrap wrap
+		&-content
+			max-width 100%
+			
+		.link
+			margin-left 0
+			margin-top 10px
+			
+	.product-fixed
+		&__tools
+			flex-wrap wrap
+			
+		.product-prices
+			margin-right 0
+			width 100%
+			margin-bottom 10px
+			justify-content flex-end
+		
 			
 	// Footer
 	.footer-top
@@ -410,6 +450,35 @@
 		
 	.articles-content
 		width 100%
+		
+	// Product
+	.product
+		&__row
+			flex-wrap wrap
+			
+		&-content
+			&__col
+				width 100%
+				
+		&-aside
+			width 70%
+			margin 40px auto 0
+			
+		&-set
+			&__row
+				flex-wrap wrap
+			&__tools
+				width 100%
+				flex none
+				padding-left 0
+				border-left none
+				padding-top 0
+				padding-bottom 0
+				margin-top 20px
+				
+				.product-quantity-block
+					max-width 400px
+				
 			
 
 +max-screen(1050px)
@@ -733,6 +802,48 @@
 		&__col
 			&:nth-child(1)
 				max-width 280px
+				
+	.product-fixed__rating
+		.product-articul
+			margin-right 0
+			width 100%
+			margin-bottom 10px
+			
+	.fixed-panel
+		.container
+			padding-left 0
+			padding-right 0
+			
+	.product-fixed__information
+		align-items flex-start
+			
+
+	.product-set
+		padding 20px
+		.block-title
+			padding-left 20px
+		&-slider
+			&__wrapper
+				margin-left -20px
+				margin-right -20px
+				&:before,
+				&:after
+					width 15px
+					
+				.slider-controls
+					padding-left 20px
+					
+			.slick-slide
+				padding-left 20px
+				padding-right 20px
+				
+			.compare-fixed-product
+				&:after
+					width 14px
+					height 14px
+					margin-left 13px
+					
+
 		
 
 
@@ -1344,10 +1455,162 @@
 			right auto
 			margin-left 10px
 			
+
+			
+	// product
+	.product
+		&-content
+			width 100%
+			padding-left 0
+			&__row
+				flex-wrap wrap
+				
+		&-slider
+			&__col
+				width 100%
+				margin-bottom 40px
+				
+		&-heading
+			.product-labels
+				display block
+				white-space nowrap
+				overflow-x auto
+				margin-right -15px
+				margin-left -15px
+				padding-left 15px
+				padding-right 0
+				
+
+				.product-label
+					&:last-child
+						margin-right 15px
+				
+	.product-aside
+		width 100%
+				
+
+	.product-set-slider
+		.slick-slide
+			width 200px
+			
+		&__wrapper
+			&:after
+				display none
+			.slider-pagination
+				transform none
+				left auto
+				top auto
+				
+				position relative
+				
+			.slider-navigation
+				display none
+				
+
+			.slider-controls
+				justify-content center
+				
+			.compare-fixed-product
+				padding 10px
+				&__header
+					padding-right 10px
+					margin-bottom 5px
+					
+				.product-rating
+					flex-wrap wrap
+					
+				.rating-stars
+					width 60px
+					height 12px
+				.rating-star
+					width 12px
+					height 12px
+				.rating-value
+					font-size 12px
+					margin-left 4px
+					
+					
+					
+				.product-feedbacks
+					width 100%
+					margin-left 0
+					font-size 8px
+					display block
+					margin-top 3px
+					
+				.btn-ic
+					width 30px
+					height 30px
+					border-radius 6px
+					svg
+						width 12px
+						height 12px
+				
+				.product-card
+					&__thumbnail
+						width 45px
+						height 45px
+						margin-right 5px
+					&__title
+						font-size 8px
+						line-height 12px
+						margin-bottom 5px
+						
+				.product-prices
+					font-size 12px
+					line-height 16px
+					white-space nowrap
+					span
+						font-size inherit
+					&__old
+						font-size 8px !important
+						margin-right 7px
+						
+				.btn-close
+					width 12px
+					height 12px
+					top 5px
+					right 5px
+					svg
+						width 100%
+						height 100%
+
+					
+	.product-set__information 
+		.product-card__thumbnail
+			width 160px
+			height 120px
+			margin-right 15px
+		&-content
+			padding-top 0
+			
+
+	.popup-delivery
+		.search-form
+			&__input
+				height 40px
+			&__btn
+				width 30px
+				height 30px
+				right 5px
+				
+	.search-form__input
+		&::-webkit-input-placeholder
+			font-size 12px
+		&::-moz-placeholder
+			font-size 12px
+		&:-moz-placeholder
+			font-size 12px
+		&:-ms-input-placeholder
+			font-size 12px
+			
 			
 
 	.hidden-mobile
 		display none
+		
+	.visible-mobile
+		display block
 
 +max-screen(700px)
 
@@ -1361,6 +1624,90 @@
 			&:last-child
 				margin-bottom 0
 				
+	.product-fixed
+		&__content
+			padding 15px
+			.btn-close
+				display inline-block
+		.product-articul,
+		.link
+			display none
+			
+		.row
+			flex-wrap wrap
+			
+		&__information
+			flex-wrap nowrap !important
+			max-width 100%
+			width 100%
+			padding-right 20px
+			
+		&__thumbnail
+			width 90px
+			height 50px
+			margin-right 10px
+			
+		.product-card__title
+			font-size 10px
+			line-height 14px
+			margin-bottom 10px
+			
+		&__tools
+			width 100%
+			margin-top 10px
+		
+			flex-wrap nowrap
+			justify-content space-between
+			
+		.product-prices
+			width auto
+			justify-content flex-start
+			margin-bottom 0
+			font-size 15px
+			span
+				font-size inherit
+			&__old
+				font-size 12px
+				
+		.btn-ic
+			width 35px
+			height 35px
+			svg
+				width 15px
+				height 15px
+				
+		.product-feedbacks
+			font-size 10px
+			margin-left 20px
+				
+		.btn-add
+			padding 0
+			background transparent
+			width 35px
+			height 35px
+			span
+				display none
+			&__ic
+				display block !important
+				border 1px solid $border-color
+				background-color transparent
+				margin-left 0
+				width 100%
+				height 100%
+				svg
+					fill $light-text-color
+					width 15px
+					height 15px
+					
+			&.is-added
+				.btn-add__ic
+					background-color $darkest-accent-color
+					border-color $darkest-accent-color
+					svg
+						fill $basic-white-color
+						
+
+									
 +max-screen(620px)
 
 	.breadcrumbs
@@ -3224,10 +3571,258 @@
 		margin-bottom 10px
 		font-size 12px
 		line-height 18px
+		
 
+	// Product
+	.product-heading
+		margin-bottom 20px
+		
+		.product-labels
+			padding-bottom 10px
+			margin-bottom 0
+		
+		.product-articul
+			margin-bottom 10px
+			font-size 12px
+			
+		.product-status
+			font-size 12px
+			margin-bottom 0
+			
+		.rating
+			&-stars
+				height 17px
+				width 85px
+			&-star
+				height 17px
+				width 17px
+			&-value
+				font-size 14px
+				
+		.product-feedbacks
+			font-size 14px
+				
+		&__brand
+			margin-bottom 10px
+			justify-content flex-start
+			
+			
+	.product-brand
+		width 60px
+		height 20px
+		padding 3px
+		margin-right 20px
+		
+	.product-title
+		font-size 20px
+		line-height 24px
+		margin-bottom 10px
+		
+	.product-slider-main
+		&__wrapper
+			.slider-pagination
+				display block
+				
+	.product-slider-thumbnails
+		width 100%
+		&__wrapper
+			margin-left -15px
+			margin-right -15px
+			padding-left 15px
+		.slick-slide
+			width 100px
+			
+		
+	.product-slide .fancy-link
+		padding 75% 0 0 
+		position relative
+		border 1px solid $border-color
+		border-radius 10px
+		img
+			position absolute
+			position-center()
+			max-width 75%
+			max-height 75%
+			width auto
+			height auto
+			
+	.product-slider__col
+		margin-bottom 20px
+		
+	.product-params
+		margin-bottom 20px
+		&__block
+			margin-bottom 20px
+		&__title
+			font-size 12px
+			margin-bottom 10px
+			
+	.product-characteristics
+		margin-bottom 20px
+		&-list li
+			font-size 12px
+			margin-bottom 10px
+			
+	.ic-text
+		font-size 12px
+		line-height 18px
+		padding-left 22px
+		margin-bottom 10px
+		&:before
+			width 12px
+			height 12px
+			top 2px
+			
+	.product-benefits
+		.text-label
+			margin-bottom 20px
+			font-size 12px
+			line-height 16px
+			
+	.product-color
+		height 30px
+		width 30px
+		span
+			width 20px
+			height 20px
+			&:before
+				width 30px
+				height 30px
+				
+	.product-param
+		span
+			font-size 12px
+			
+	.product-mobile-label
+		display block
+			
+		
+	.product-aside
+		margin-top 20px
+		&__content
+			padding 20px
+			border 1px solid $border-color
+			box-shadow none
+			
+	.product-main-price 
+		.product-prices
+			font-size 24px
+			&__old
+				font-size 16px
+				
+	.product-credit
+		&__price
+			font-size 16px
+		&__terms
+			font-size 12px
+			
+		&-tooltip
+			padding 15px
+			
+	.product-aside__block
+		padding-bottom 20px
+		margin-bottom 20px
+		.btn
+			height 40px
+			
+		.btns
+			.btn
+				height auto
+			.btn-ic
+				width 35px
+				height 35px
+				svg
+					width 15px
+					height 15px
+					
+		.text-label
+			font-size 12px
+			margin-bottom 10px
+			
+	.product-quantity-block 
+		.product-quantity
+			height 35px
+		.btn
+			height 35px
+			padding-top 5px
+			padding-bottom 5px
+			
+
+	.title-margin-b
+		margin-bottom 20px
+		
+	.product-sets__wrapper
+		border 1px solid $border-color
+		background-color $basic-white-color
+		border-radius 10px
+		padding 20px
+		
+	.product-set
+		padding 0
+		border none
+		border-radius 0
+		overflow visible
+		
+		&__information
+			flex-wrap wrap
+			padding-right 0
+			.product-card
+				&__thumbnail
+					width 100%
+					margin-right 0
+					height auto
+					max-height 230px
+					margin-bottom 20px
+					padding 10px
+				&__title
+					font-size 16px
+					line-height 24px
+					margin-bottom 5px
+			
+		.product-articul
+			margin-bottom 10px
+			
+		&__tools
+			margin-top 20px
+			.product-quantity-block
+				padding-top 20px
+				margin-top 20px
+				border-top 1px solid $border-color
+				max-width 100%
+				
+	.sect__product-sets 
+		.tab-controls
+			margin-bottom 10px
+			padding-bottom 10px
+			margin-right -20px
+			margin-left -20px
+			padding-left 20px
+			&__btn
+				&:last-child
+					margin-right 200px
+					
+	.product-quantity__btn
+		width 30px
+		
+	.product-quantity-block .product-quantity__input
+		width calc(100% - 60px)
+		
+	.product-set-slider__wrapper
+		margin-top 20px
+		&:before
+			left -1px
+			border-left 1px solid $border-color
+		.block-title
+			display none
+		
+
+	.title-h3-size
+		font-size 20px
+		line-height 24px
+		margin-bottom 20px
 
 	.hidden-mobile-md
-		display none
+		display none !important
 			
 +max-screen(450px)
 	// Header

@@ -36,6 +36,9 @@
 		font-size 28px
 		line-height 32px
 		
+.title-margin-b
+	margin-bottom 30px
+		
 .block-title
 	font 20px $Bold
 	color $text-color
@@ -210,6 +213,10 @@
 	padding-bottom $gutter-bottom
 	margin-bottom $gutter-bottom
 	border-bottom 1px solid $border-color
+	&:last-child
+		padding-bottom 0
+		margin-bottom 0
+		border-bottom none
 
 .ul-list
 	li
@@ -262,4 +269,8 @@
 .text-label
 	margin-bottom 15px
 	
+.f-w-bold
+	font-weight bold
 	
+.toggled-item
+	display none
