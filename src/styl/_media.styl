@@ -14,6 +14,12 @@
 		display none
 		
 
+
+
+
+
+
+
 +max-screen(1550px)
 	// HEader
 	.catalog-menu__main
@@ -91,6 +97,16 @@
 		margin-right 10px
 		
 
+
+
+
+
+
+
+
+
+
+
 +max-screen(1450px)
 	// Footer
 	.footer__row
@@ -136,6 +152,16 @@
 		width calc(100% - 420px)
 			
 
+
+
+
+
+
+
+
+
+
+
 	
 +max-screen(1365px)
 	// Homepage
@@ -177,7 +203,19 @@
 		height 100px
 		margin-right 15px
 	
-			
+	
+
+
+
+
+
+
+
+
+
+
+
+
 +max-screen(1280px)
 
 	.btn-hidden-responsive-text
@@ -429,7 +467,20 @@
 			flex none
 			max-width 100%
 			margin-bottom 50px
-			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
 +max-screen(1200px)
 	// Header
 	.btn-catalog
@@ -480,6 +531,20 @@
 					max-width 400px
 				
 			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 +max-screen(1050px)
 	// Header
@@ -553,7 +618,23 @@
 			max-width 100%
 			flex none
 			margin-bottom 40px
-			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 +max-screen(992px)
 	.container
 		padding-left 15px
@@ -844,12 +925,67 @@
 					margin-left 13px
 					
 
-		
+	// product details
+	.product-details-controls
+		display block
+		white-space nowrap
+		overflow-x auto
+		padding-right 0
+		padding-left 20px
+		overflow-y hidden
+		&__btn
+			margin-right 20px
+	.about-product
+		&__row
+			flex-wrap wrap
+		&__content
+			width 100%
+		&__img
+			width 100%
+			margin-top 20px
+			
+			.fancy-link
+				padding-top 56.25%
+				min-height auto
+				
+	.characteristics-tables 
+		table 
+			td
+				&:first-child
+					width 45%
+				&:last-child
+					width 55%
+					
+	.product-additional-services
+		&__row
+			flex-wrap wrap
+		&__text
+			width 100%
+			margin-bottom 20px
+		&__col
+			width 100%
 
 
 	.hidden-tablet
 		display none
-		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 +max-screen(767px)
 
 	.cart-ordering-delivery__comment-submit
@@ -1539,8 +1675,8 @@
 					margin-top 3px
 					
 				.btn-ic
-					width 30px
-					height 30px
+					width 25px
+					height 25px
 					border-radius 6px
 					svg
 						width 12px
@@ -1567,8 +1703,8 @@
 						margin-right 7px
 						
 				.btn-close
-					width 12px
-					height 12px
+					width 8px
+					height 8px
 					top 5px
 					right 5px
 					svg
@@ -1604,6 +1740,16 @@
 		&:-ms-input-placeholder
 			font-size 12px
 			
+
+	.characteristics-tables 
+		table 
+			td
+				&:first-child
+					width 50%
+				&:last-child
+					width 50%
+
+			
 			
 
 	.hidden-mobile
@@ -1611,6 +1757,21 @@
 		
 	.visible-mobile
 		display block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 +max-screen(700px)
 
@@ -1706,6 +1867,19 @@
 					svg
 						fill $basic-white-color
 						
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 									
 +max-screen(620px)
@@ -3814,6 +3988,122 @@
 			border-left 1px solid $border-color
 		.block-title
 			display none
+			
+	.popup-marketplace 
+		.product-articul
+			margin-bottom 20px
+			
+	.marketplaces
+		&-title
+			font-size 12px
+			margin-bottom 15px
+			
+	.marketplace
+		&__row
+			flex-wrap wrap
+		&-info
+			flex-wrap wrap
+			
+			&__logo
+				width 60px
+		&-status
+			width 100%
+			font-size 12px
+			margin-top 5px
+		&__col
+			&:first-child
+				max-width 100px
+			&:last-child
+			
+				width 100%
+				text-align left
+		
+		&-price
+			font-size 12px
+			&__current
+				font-size 24px
+				
+		&-link
+			.link
+				font-size 12px
+				
+
+
+	.sect__product-information
+		.sect-title
+			text-align left
+			
+	.product-details-controls
+		margin-right -30px
+		width calc(100% + 30px)
+		margin-bottom 20px
+		&__btn
+			padding 12px 0
+			font-size 12px
+			&:last-child
+				margin-right 30px
+				
+	.product-details-tab
+		.block-title
+			margin-bottom 20px
+			
+	.characteristics-tables 
+		table 
+			td
+				padding 10px 20px
+				font-size 12px
+				line-height 16px
+				
+			thead 
+				th
+					padding 20px
+					font-size 16px
+					line-height 24px
+			
+					width 50%
+					&:last-child
+						border-left none
+						
+	.product-additional-service
+		min-height 25px
+		margin-bottom 10px
+		
+	.document
+		min-height 35px
+		margin-bottom 10px
+		&-link
+			font-size 12px
+			line-height 18px
+			&__ic
+				width 35px
+				height 35px
+				svg
+					width 10px
+					height 10px
+					margin-right 10px
+	
+	.product-card 
+		.btn-delete	
+			top 14px
+			right 10px		
+			
+	.btn-delete
+		width 10px
+		height 12px
+		
+	.compare-tables__entering 
+		.form-checkbox-toggle
+			font-size 12px
+			line-height 16px
+			display flex
+			align-items center
+			
+	.sect__compare
+		.product-card
+			.btn-toggle-labels
+				display none
+		
+
 		
 
 	.title-h3-size
@@ -3823,6 +4113,31 @@
 
 	.hidden-mobile-md
 		display none !important
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			
 +max-screen(450px)
 	// Header
@@ -3900,6 +4215,51 @@
 +max-screen(420px)
 	.promo-slide__img--product
 		max-width 130px
+		
+	.product-details-compare
+		.compare-fixed-product
+			padding 30px 15px 15px
+			
+			.product-card
+				&__thumbnail
+					width 80px
+					height 80px
+					margin-right 12px
+				&__title
+					font-size 15px
+					line-height 22px
+					max-height 66px
+					
+			.product-prices
+				font-size 15px
+				
+			.btn-close
+				top 10px
+				right 10px
+				
+			.btn-ic
+				width 40px
+				height 40px
+				svg
+					width 15px
+					height 15px
+					
+			.product-feedbacks
+				font-size 15px
+				
+			.rating-star
+				width 15px
+				height 15px
+				
+			.rating-stars
+				height 15px
+				width 75px
+				
+			.rating-value
+				font-size 15px
+				
+	.product-details-compare
+		margin-bottom 20px
 	
 			
 +max-screen(360px)

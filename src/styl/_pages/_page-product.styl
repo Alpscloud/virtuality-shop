@@ -666,3 +666,170 @@ a.product-feedbacks
 			top 10px
 			right 10px
 		
+// product details
+.product-details
+	&-tab
+		.tab-controls
+			margin-bottom 30px
+			
+	&-controls
+		border 1px solid $border-color
+		border-radius 10px
+		display flex
+		justify-content space-evenly
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 30px
+		&__btn
+			display inline-block
+			padding 15px 5px
+			font 17px $Reg
+			position relative
+			&:before
+				pseudo()
+				position absolute
+				horisontal-center()
+				bottom -1px
+				z-index 1
+				transition width .17s ease-in-out
+				width 0
+				border-radius 20px
+				background-color $accent-color
+				height 2px
+			&:hover
+				color $accent-color
+			&.is-active
+				color $accent-color
+				&:before
+					width 100%
+					
+
+.about-product
+	&__content
+		.content
+			max-width 680px
+	&__img
+		.fancy-link
+			padding-top 0
+			height 100%
+			min-height 300px
+			
+.characteristics-tables
+	table
+		width 100%
+		border-radius 10px
+		
+		border-collapse separate
+		border-spacing 0
+		margin-bottom 50px
+		&:last-child
+			margin-bottom 0
+		
+		thead
+
+			th
+				padding 15px 40px
+				border-top 1px solid $border-color
+				border-bottom 1px solid $border-color
+				font 20px $Bold
+				text-align left
+				&:first-child
+					border-top-left-radius 10px
+					border-left 1px solid $border-color
+				&:last-child
+					border-top-right-radius 10px
+					border-right 1px solid $border-color
+		
+		tr
+			padding 10px 0
+			border-bottom 1px solid $border-color
+			&:nth-child(even)
+				background-color rgba($accent-color, .05)
+			&:last-child
+				border-bottom none
+				td
+					&:first-child
+						border-bottom-left-radius 10px
+					&:last-child
+						border-bottom-right-radius 10px
+		
+		td
+			padding 15px 40px
+			color $text-color
+			font 17px $Reg
+			border-left 1px solid $border-color
+			border-bottom 1px solid $border-color
+			&:first-child
+				width 35%
+			&:last-child
+				width 65%
+				border-right 1px solid $border-color
+
+		
+
+
+.document
+	margin-bottom 15px
+	&:last-child
+		margin-bottom 0
+	&-link
+		display inline-flex
+		align-items center
+		justify-content flex-start
+		color $text-color
+		&__ic
+			display inline-block
+			flex none
+			margin-right 15px
+			width 45px
+			height 45px
+			border 1px solid $border-color
+			position relative
+			border-radius 7px
+			transition all .17s ease-in-out
+			svg
+				svg()
+				position absolute
+				position-center()
+				width 15px
+				height 15px
+				fill $text-color
+				
+		&:hover
+			color $accent-color
+			text-decoration underline
+			.document-link__ic
+				background-color $accent-color
+				border-color $accent-color
+				svg
+					fill $basic-white-color
+					
+
+.product-additional-service
+	min-height 35px
+	margin-bottom 15px
+	&:last-child
+		margin-bottom 0
+		
+	.form-checkbox:before
+		top -3px
+		
+.product-details-compare
+	margin-bottom 50px
+	
+	.compare-fixed-product
+		padding 10px
+		border-radius 10px
+		@extends .card
+		
+		.btn-close
+			top 5px
+			right 5px
+			
+		.product-rating
+			flex-wrap wrap
+			
+		.product-feedbacks
+			margin-left 0
+			width 100%
+			margin-top 5px

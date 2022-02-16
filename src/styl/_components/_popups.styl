@@ -139,3 +139,72 @@
 	.delivery-companies__list
 		max-height 350px
 		
+
+.popup-marketplace
+	.popup__body
+		text-align left
+		max-width 620px
+		
+	.product-articul
+		margin-bottom 30px
+		
+
+.marketplaces
+	&-title
+		text-transform uppercase
+		margin-bottom 20px
+		font 12px $Bold
+		letter-spacing 0.1em
+		
+.marketplace
+	padding-bottom 20px
+	margin-bottom 20px
+	border-bottom 1px solid $border-color
+	&:last-child
+		padding-bottom 0
+		margin-bottom 0
+		border-bottom none
+	&__row
+		margin-left -5px
+		margin-right -5px
+	&__col
+		padding-left 5px
+		padding-right 5px
+		&:last-child
+			width 75px
+			text-align right
+		&:first-child
+			width 100%
+			max-width 260px
+			
+	&-info
+		display flex
+		align-items center
+		justify-content space-between
+		&__logo
+			width 100px
+			img
+				display block
+				
+	&-status
+		span
+			color $accent-color
+			
+		&.not-available
+			span
+				color #E54646
+				
+	&-price
+		&__label
+			display flex
+			flex-wrap nowrap
+		&__old
+			color $light-text-color
+			text-decoration line-through
+			margin-left 4px
+			margin-left 10px
+		&__current
+			font 25px $Reg
+			font-weight bold
+			&.sale
+				color $sale-color
